@@ -1,0 +1,2579 @@
+@media screen and (min-height: 740px) and (max-height:829px) {
+}
+
+/********__________________________________Media classes_________________________________********/
+@media screen and (min-height: 727px) and (max-height:767px) {
+	.goodsreceiptGrid {
+		height: 290px !important;
+	}
+	.gridSizeLeft2 {
+		height: 408px !important;
+	}
+	.ContactsManagerScroll_section {
+		height: 316px;
+	}
+	.contactsManager_leftGride {
+		height: 517px !important;
+	}
+	.stockManagerRightGride {
+		height: 425px !important;
+	}
+	.stockManager_LeftGride {
+		height: 450px !important;
+	}
+	.purchaseViewDetails {
+		margin-left: -16px !important;
+	}
+	.purchaseGrid {
+		height: 360px !important;
+	}
+	.masterPage_gridText {
+		width: 100% !important;
+		margin-left: -4px !important;
+	}
+	.gridSizeLeft1 {
+		height: 429px !important;
+	}
+	.productRightGride {
+		width: 96%;
+		height: 145px;
+	}
+	.masterContent_leftGride {
+		height: 493px;
+	}
+	.Master_customerLeftGrid {
+		height: 89px;
+	}
+	.customer_master_RightGrid {
+		height: 468px;
+	}
+	.master_area_Grid {
+		height: 430px;
+	}
+	.master_rought_LeftGrid {
+		height: 441px;
+	}
+	.routeRightGrid {
+		height: 276px;
+		width: 96%;
+	}
+}
+
+/**********========================== @media only screen and (max-width: 1024px) =========================**************/
+@media only screen and (max-width: 1024px) {
+	.flag_enable:after {
+		width: 9px;
+		height: 9px;
+		margin-left: -3px;
+	}
+	.flagselected:after {
+		width: 9px;
+		height: 9px;
+		margin-left: -3px;
+	}
+	.fieldLeft_spacing_lg {
+		margin-left: 15%;
+	}
+	.sales_LeftGride {
+		height: 541px;
+	}
+	.contactUsGrid {
+		width: 94%;
+		height: 200px;
+		margin-left: 30px;
+	}
+	.TransportDetails-Modal {
+		margin-top: 107px !important;
+	}
+	.input_groupSize {
+		width: 130%;
+	}
+	.input_groupCashDis_sale {
+		width: 124%;
+	}
+	.input_groupVat_sale {
+		width: 140%;
+	}
+	.salesRemarkInput {
+		width: 104%;
+		margin-left: -15px;
+	}
+	.sales_grossTotal_inputGroup {
+		width: 127%;
+		margin-left: -9%;
+	}
+	.salesTIN_pos_sm {
+		margin-left: -10px;
+	}
+	.sales_summary1st_section {
+		margin-left: -29px;
+	}
+	.SalesDetailsBot_textPosition {
+		margin-left: -26px;
+	}
+	.ItemsQuantity {
+		width: 148%;
+		margin-left: -13px;
+	}
+	.imageColPos_sm {
+		margin-left: -4px;
+	}
+	.imagePos_sm {
+		margin-left: -8px;
+	}
+	.sitamap_list {
+		line-height: 1.8;
+		text-align: left;
+		margin-bottom: 10px;
+	}
+	.thumbnailSize {
+		width: 90%;
+		margin-left: 5%;
+		height: 140px;
+	}
+	.knownIssuesGrid {
+		width: 94%;
+		height: 500px;
+		margin-left: 31px;
+	}
+	.toggle>li>h2 {
+		padding: 8px 18px 8px 12px;
+	}
+	.switchPos {
+		margin-left: 70%;
+	}
+	.btn_action_Go {
+		margin-left: -15px !important;
+		margin-top: 0px !important;
+	}
+	.PO_details_inputSize {
+		MARGIN-LEFT: -40%;
+		WIDTH: 140% !important;
+	}
+	.customer_startEnd_date {
+		width: 135% !important;
+		margin-left: -13px;
+	}
+	.arrow_down_row {
+		margin-left: 7px;
+	}
+	.goodreturn_total_input1 {
+		margin-left: -8px;
+		width: 235%;
+	}
+	.total_selectInput_sm {
+		width: 114%;
+	}
+	.total_selectInput_goodsReturns {
+		margin-left: 0px;
+		width: 100%;
+	}
+	.status_input_goodReturn {
+		margin-left: -15%;
+		width: 115%;
+	}
+	.filterBottomSec {
+		margin-left: -6px !important;
+		width: 110% !important;
+	}
+	.btn_Go {
+		margin-left: 16px;
+		width: 31px !important;
+	}
+	.miscInformationBtn {
+		margin-left: 17px;
+		margin-top: -1px;
+	}
+	.peopleManagerCol-md-8 {
+		width: 69.666667%;
+	}
+	.peopleManagerCol-md-2 {
+		width: 13.666667%;
+	}
+	.showNext_pos {
+		margin-left: -30px;
+	}
+	.sales_shownext {
+		margin-left: -23px !important;
+	}
+	.sales_showNextLimit {
+		margin-left: 9px !important;
+		width: 159% !important;
+	}
+	.salesGoBtn {
+		margin-left: 40px !important;
+		width: 31px !important;
+		margin-top: 3px !important;
+	}
+	.Go_colPos {
+		margin-left: -19px;
+	}
+	.contactType_limit {
+		margin-left: 1px;
+		width: 188%;
+	}
+	.addProduct_GoodsReceipt-Modal {
+		margin-left: 2% !important;
+	}
+	.addProduct_linkPO-Modal {
+		margin-left: 14% !important;
+	}
+	.listProduct_GoodsReceipt-Modal {
+		margin-left: 24% !important;
+	}
+	.listBatch_GoodsReceipt-Modal {
+		margin-left: 10% !important;
+	}
+	.stockManager_Medium_Popup_Model {
+		top: 25px;
+		margin-left: 14%;
+	}
+	.stockManager_TransferBatch_Medium_Popup_Model {
+		top: 40px;
+		margin-left: 12%;
+	}
+	.stockManager_ChangeBatchDetailsPopup_Model {
+		top: 80px;
+	}
+	.addContent-Modal {
+		margin-left: 12%;
+	}
+	.goodreturn_total_input {
+		margin-left: -9px;
+		width: 158%;
+	}
+	.goodreturn_product_input {
+		margin-left: 11px;
+	}
+	.gr_input_group_size {
+		width: 128%;
+	}
+	.AC_updateBtn {
+		margin-top: 21px;
+		background-color: #fff;
+		height: 82px !important;
+		padding: 0px 2px !important;
+		margin-left: -18px !important;
+	}
+	.ContactManager_systemUser_settings {
+		margin-top: -8px;
+		margin-left: -32px;
+	}
+	.btn_RemoveWhite {
+		margin-left: 32px;
+	}
+	.master_division_fieldPos_smScreen {
+		margin-left: 10%;
+	}
+	.master_division_fieldPos_smScreen1 {
+		margin-left: 4%;
+	}
+	.master_division_fieldPos_smScreen2 {
+		margin-left: 14%;
+	}
+	.master_content_smScreen {
+		margin-left: 22%;
+		width: 131%;
+	}
+	.master_content_smScreen1 {
+		margin-left: 102%;
+	}
+	.master_content_smScreen2 {
+		margin-left: 55%;
+	}
+	.contactManager_systemUser_field {
+		width: 237%;
+		margin-left: 26%;
+	}
+	.lock_unlockImagebtn_icon {
+		margin-top: 0px;
+		margin-right: 61px;
+	}
+	.ContactManager_systemUser_Strip {
+		padding: 1px 8px;
+	}
+	.contactManager_userSettingNavbar {
+		margin-left: 40px;
+	}
+	.contactManager_organizationInput {
+		margin-left: 10%;
+		width: 90%;
+	}
+	.contactManager_linkedContactLabel_sm {
+		margin-left: -11%;
+	}
+	.contactManager_linkedContactInput_sm {
+		margin-left: -21px;
+		width: 120%;
+		padding: 6px 0px;
+		margin-top: 1PX;
+	}
+	.contactManager_nameTitleInput_sm {
+		width: 61px;
+		margin-left: 13px;
+	}
+	.contactManager_nameInput_sm {
+		margin-left: 10%;
+	}
+	.contactManager_contactTypeInput_sm {
+		margin-left: 13px;
+		width: 125%;
+	}
+	.contactManager_jobTitleLabel_sm {
+		margin-left: 78%;
+	}
+	.contactManager_jobTitleInput_sm {
+		margin-left: 13px;
+	}
+	.contactManager_orgnizationInput_sm {
+		margin-left: 12%;
+		width: 100%;
+	}
+	.contact_manager_input_textbox_Address {
+		width: 43%;
+		height: 22px !important;
+	}
+	.my_profile_namePrefix {
+		width: 143%;
+	}
+	.images img {
+		margin-left: 0px !important;
+	}
+	.Master_feildPos {
+		margin-left: 7%;
+	}
+	.inputMasterSize1 {
+		width: 95%;
+	}
+	.supplierOpeningBal {
+		margin-left: 14%;
+		width: 107%;
+	}
+	.inputMasterPos {
+		margin-left: 11px;
+	}
+	.purchaseGrid {
+		width: 93%;
+		height: 400px;
+		margin-left: 35px;
+	}
+	.purchase_orderDetails_col1 {
+		width: 118%;
+	}
+	.purchase_orderDetails_col3 {
+		width: 118%;
+		margin-left: -18%;
+	}
+	.purchase_orderDetails_col2 {
+		width: 118%;
+		margin-left: -8%;
+	}
+	.contacts_manager_detailsBtn {
+		margin-left: 9%;
+	}
+	.edit_element_btn {
+		padding: 0px 10px;
+		line-height: 1.3 Important;
+	}
+	.contact_manager_input_textbox {
+		width: 53%;
+		height: 22px !important;
+	}
+	.contact_manager_input_textbox1 {
+		width: 45%;
+		height: 22px !important;
+	}
+	.saleFooter_textPos {
+		margin-left: -62px;
+	}
+	.saleFooter_textPos1 {
+		margin-left: -13px;
+	}
+	.saleFooter_textPos2 {
+		margin-left: -29px;
+	}
+	.btn-modify {
+		color: #fff;
+		background-color: #f0ad4e;
+		border-color: #f0ad4e;
+	}
+	.supplierLedgerDetail_OpeningBal {
+		width: 125%;
+	}
+	.supplierLedgerDetails_smMedia {
+		margin-left: 9px;
+	}
+	.supplierLedgerDetails_smMedia_width {
+		width: 95%;
+	}
+	.supplierMaster_OpBalance {
+		margin-left: -12%;
+	}
+	.linked_contact {
+		height: 70px !important;
+	}
+	.modal-FilterCus {
+		width: 163px !important;
+		position: fixed !important;
+		/* bottom: -12px !important; */
+		left: 9px !important;
+		margin: 0 !important;
+		top: 266px !important;
+	}
+	.customerFilterOK_btn {
+		margin-left: -13px;
+	}
+	.goodsReturnCompanyClaim {
+		margin-left: -19px;
+	}
+	.customerFilterCancle_btn {
+		margin-left: -21px;
+	}
+	.customerFilterDropdwn {
+		width: 70% !important;
+	}
+	.supplierOpeningBal {
+		margin-left: 15%;
+		width: 117%;
+	}
+	.tacsCode_ipBoxSize1 {
+		margin-left: 0%;
+		width: 100%;
+	}
+	.tacsCode_ipBoxSize2 {
+		margin-left: 0%;
+		width: 100%;
+	}
+	.tacsCode_ipBoxSize3 {
+		margin-left: -3%;
+		width: 103%;
+	}
+	.purchaseViewDetails {
+		margin-left: -15px;
+	}
+	.divisionContactPerson {
+		margin-left: 20px;
+	}
+	.areaIP_pos {
+		margin-left: 7px;
+	}
+	/* 	.routeDesc {
+		margin-left: 38px;
+	} */
+	.taxCode_desc {
+		margin-left: 9px;
+		width: 374%;
+	}
+	.taxCode_LBT {
+		margin-left: 9px;
+	}
+	.customer_LeftGrid {
+		width: 90%;
+		height: 482px;
+		margin-left: 5%;
+	}
+	.masterPage_gridText {
+		width: 100%;
+		margin-left: 0px;
+		line-height: 1.2;
+		margin-top: 0%;
+	}
+	.gridSizeLeftReturnRegister {
+		height: 490px;
+		margin-top: 20px;
+	}
+	.gridSizeLeftSaleableReturns {
+		height: 500px;
+	}
+	.returnsRegisterRightGride {
+		height: 471px;
+		margin-top: 10px;
+	}
+	.goodsreceiptGrid {
+		width: 96% !important;
+		height: 335px !important;
+		margin-left: 20px !important;
+	}
+	.gridSizeLeft2 {
+		width: 90%;
+		height: 458px;
+		margin-left: 5%;
+	}
+	.voucherDate_field {
+		margin-left: -31px;
+		width: 163%;
+	}
+	.voucherDate {
+		margin-left: -35px;
+	}
+	.company_field {
+		margin-left: -8%;
+		width: 108%;
+	}
+	.supplier_field {
+		margin-left: -8%;
+		width: 108%;
+	}
+	.voucher_field {
+		margin-left: -32%;
+		width: 113%;
+	}
+	.gridSizeLeft1 {
+		width: 90%;
+		height: 469px;
+		margin-left: 5%;
+	}
+	.productRightGride {
+		width: 97%;
+		margin-left: 15px;
+		height: 175px;
+	}
+	.companyReturn_leftGride {
+		width: 90%;
+		height: 505px;
+		margin-left: 5%;
+		margin-top: 13px;
+	}
+	.contactsManager_leftGride {
+		width: 90%;
+		height: 540px;
+		margin-left: 5%;
+		margin-top: 2%;
+	}
+	.companyReturn_RightGride {
+		width: 97%;
+		margin-left: 15px;
+		height: 284px;
+	}
+	.companyClaim_createdByInput {
+		margin-left: 24px;
+		width: 91%;
+	}
+	.companyclaim_calVatSelectPos {
+		width: 73%;
+		margin-left: 41%;
+	}
+	.companyclaim_StatuslabelPos {
+		margin-left: 17px;
+	}
+	.company_claim_statusInput {
+		margin-left: 29px;
+		width: 90%;
+	}
+	.companyclaim_CreatedByInputPos {
+		width: 105%;
+		margin-left: -5%;
+	}
+	.companyclaim_CreatedByLabelPos {
+		margin-left: -42px;
+	}
+	.companyclaim_dateLabelPos {
+		margin-left: -35px;
+	}
+	.companyclaim_dateInputPos {
+		margin-left: -41px;
+		width: 118%;
+	}
+	.masterContent_leftGride {
+		width: 90%;
+		height: 530px;
+		margin-left: 5%;
+	}
+	.gridProductContent {
+		width: 100%;
+		height: 230px;
+		/*  margin-left: 5%; */
+	}
+	.debitCreditNoteReason_LeftGride {
+		width: 90%;
+		height: 500px;
+		margin-left: 5%;
+	}
+	.saleGrid {
+		width: 96% !important;
+		height: 345px !important;
+		margin-left: 20px !important;
+	}
+	.saleOrderSummery {
+		margin-left: 14px;
+		width: 89%;
+	}
+	.saleOrderSummery_customer {
+		margin-left: 16px;
+		width: 89%;
+	}
+	.saleOrderFlagCol1 {
+		width: 55px !important;
+	}
+	.saleOrderFlagCol2 {
+		width: 60px !important;
+		margin-left: -25px !important;
+	}
+	.saleOrderFlagCol3 {
+		width: 73px !important;
+		margin-left: -25px !important;
+	}
+	.saleOrderFlagCol4 {
+		width: 70px !important;
+		margin-left: -25px !important;
+	}
+	.saleOrderFlagRow3_col2 {
+		width: 227px !important;
+		margin-left: -17px !important;
+	}
+	.saleOrderFlagUrgent {
+		width: 60px !important;
+		margin-left: -16px !important;
+	}
+	/* .saleOrderFlagTIN {
+		width: 73px !important;
+		margin-left: -9px !important;
+	}
+	.saleOrderFlagDL {
+		width: 70px !important;
+		margin-left: -9px !important;
+	} */
+	.saleOrderFlagCol {
+		width: 21%;
+	}
+	.cashdisc_1Width {
+		width: 43px;
+		margin-left: 0px;
+	}
+	.OrderDetail_feild_sm_sc1 {
+		width: 123%;
+	}
+	.OrderDetail_feild_sm_sc2 {
+		width: 144%;
+	}
+	.OrderDetail_feild_sm_sc3 {
+		margin-left: -6px;
+	}
+	.OrderDetail_feild_sm_sc4 {
+		margin-left: -13px;
+	}
+	/* .contentMaster_sectionvline {
+		border-right: 1px solid #d8d8d8;
+		height: 327px;
+	} */
+	.contentMaster_col-md-3 {
+		width: 32%;
+	}
+	.contentMaster_col-md-6 {
+		width: 60%;
+	}
+	.contactManager_details {
+		margin-left: 12px;
+		width: 120%;
+	}
+	.ContactsManagerScroll_section {
+		overflow-x: hidden;
+		overflow-y: auto;
+		height: 445px;
+	}
+	.db_cr_noteResonsCode_avlForPos {
+		width: 94%;
+		margin-left: 6%;
+	}
+	.company_master_remarkPos {
+		margin-left: -41px;
+		width: 106%;
+	}
+	.company_master_companyName {
+		margin-left: 4%;
+	}
+	.masterCompany_paymentTerms {
+		margin-left: 29px;
+	}
+	.stockManager_BatchSchemeBtn_belowText {
+		margin-left: -6px;
+	}
+	.stockManager_LeftGride {
+		width: 90%;
+		height: 510px;
+		margin-left: 5%;
+	}
+	.stockManagerRightGride {
+		height: 460px;
+	}
+	.customer_master_RightGrid {
+		width: 90%;
+		height: 510px;
+		margin-left: 5%;
+	}
+	.Master_customerLeftGrid {
+		height: 120px;
+		width: 96%;
+		margin-left: 17px;
+	}
+	.master_area_Grid {
+		width: 90%;
+		height: 484px;
+		margin-left: 5%;
+	}
+	.master_rought_LeftGrid {
+		width: 90%;
+		height: 490px;
+		margin-left: 5%;
+	}
+	.routeRightGrid {
+		height: 315px;
+		width: 97%;
+		margin-left: 15px;
+	}
+	.utility_locksmith_rightGrid {
+		margin-top: 13px;
+	}
+	.goods_returnGrid {
+		width: 96% !important;
+		height: 350px !important;
+	}
+	.company_claim_labelPos {
+		margin-left: -9px;
+	}
+	.company_claim_optionWidth {
+		width: 109%;
+	}
+	.company_claim_labelPos1 {
+		margin-left: 13px;
+	}
+	.company_claim_inputPos2 {
+		margin-left: 15px;
+	}
+	.company_claim_inputPos {
+		margin-left: 41%;
+	}
+	.company_claim_inputPos1 {
+		margin-left: 27px;
+	}
+	.company_claim_Net_amount {
+		margin-left: -5px;
+	}
+	.goodReturn_lgInput {
+		margin-left: 5%;
+		width: 95%;
+	}
+	.goods_order_flag {
+		width: 152%;
+	}
+	.goodsReturn_typeInput {
+		margin-left: 2%;
+		width: 98%;
+	}
+	.goodsReturn_customerInput {
+		margin-left: 3%;
+		width: 114%;
+	}
+	.goodsReturn_RR_idInput {
+		margin-left: 8%;
+		width: 103%;
+	}
+	.goodsReturn_RR_dateLabel {
+		margin-left: -12px;
+	}
+	.goodsReturn_RR_dateInput {
+		margin-left: -16px;
+		width: 120%;
+	}
+	.peopleManager-Filter {
+		top: 155px !important;
+		bottom: 4px !important;
+	}
+	.setting_flagSize {
+		margin-right: 24px;
+	}
+	.filterBottomSec_ReturnRegister {
+		margin-left: 0px !important;
+		width: 100% !important;
+	}
+	.btn_Go_ReturnRegister {
+		width: 43px !important;
+		margin-left: 1px;
+	}
+	.showNextPos_sm {
+		margin-left: -15px;
+	}
+	.returnRegister-Filter {
+		left: 18px !important;
+	}
+	.SaleableReturn-Filter {
+		left: 18px !important;
+	}
+	.showNext_returnRegister_sm {
+		margin-left: -25px;
+	}
+	.showNext_returnRegisterInput_sm {
+		margin-left: -6px;
+	}
+	.returnsRegisterRightGride {
+		height: 459px;
+	}
+	.companyClaim-Filter {
+		top: 282px !important;
+	}
+	.sales-Filter {
+		top: 315px !important;
+	}
+	.debitCreditNoteReason_LeftGride {
+		/*  height: 520px; */
+		
+	}
+	.flagSize {
+		width: 147%;
+	}
+	.control_panelGrid {
+		height: 475px;
+	}
+	.CreditDebitNoteGridPos {
+		margin-top: 41px;
+	}
+	.product_CreditNoteGrid {
+		height: 363px;
+	}
+	.CreditNoteProduct_TypeCustInput_sm {
+		margin-left: 2%;
+		width: 98%;
+	}
+	.CreditNoteProduct_dateLabel {
+		margin-left: -18px;
+	}
+	.CreditNote_Footerwidth_class {
+		width: 57px !important;
+		margin-left: 1px;
+	}
+	.CreditNote_FooterTotalSec {
+		margin-left: 54px;
+	}
+	.CreditNote_Footerwidth_class1 {
+		width: 59px !important;
+		margin-left: 42px;
+	}
+	.CreditNote_Footerwidth_class2 {
+		width: 62px !important;
+		margin-left: 58px;
+	}
+	.AddModifyCreditDebitNoteReason-Model {
+		left: 34% !important;
+		top: 118px !important;
+	}
+	.AddModifyContactTypePopup-Model {
+		left: 3px !important;
+		top: 120px !important;
+	}
+	.CrDbNote_type {
+		width: 90%;
+		margin-left: 10%;
+	}
+	.gridSizeLeftCompanyCreditNote {
+		height: 570px;
+	}
+	.CompanyCreditNoteRightGride {
+		height: 534px;
+	}
+	.inputOrSelect_width_md {
+		width: 112px;
+	}
+	.filterOnCreditNoteProduct {
+		margin-left: -15px;
+	}
+	.AddModifyVoucherNarrationEntries-Model {
+		left: 67% !important;
+		top: 123px !important;
+	}
+	.sizeShowNext {
+		width: 119%;
+		margin-left: -19%;
+	}
+	.AddOrRemoveStock {
+		width: 136px;
+	}
+	.currentFinancialYear_select {
+		width: 90%;
+		margin-left: 10%;
+	}
+	.ControlPanelMisc_ReceiptBook_salesman {
+		width: 26%;
+		margin-right: 2px
+	}
+	.ControlPanelMisc_ReceiptBook_Id {
+		width: 13%;
+	}
+	.AddModifyManageReceiptBooks-Model {
+		left: 34% !important;
+	}
+	.FinancialYearInput1 {
+		width: 125%;
+		margin-left: -25%;
+	}
+	.FinancialYearSelect {
+		margin-left: -11%;
+		width: 90%;
+	}
+	.MyProfile_Role_Grid {
+		MARGIN-LEFT: 8px;
+		width: 100%;
+	}
+	.businessDetailsInputBox1 {
+		margin-left: 9%;
+		width: 91%;
+	}
+	.businessDetailsInputBox2 {
+		margin-left: 20%;
+		width: 90%;
+	}
+	.businessDetailsInputBox3 {
+		margin-left: 2%;
+		width: 98%;
+	}
+	.businessDetailsInputBox4 {
+		margin-left: 3%;
+	}
+	.businessDetailsInputBox5 {
+		margin-left: 6%;
+	}
+	.businessDetailsInputBox6 {
+		margin-left: -4%;
+		width: 115%;
+	}
+	.businessDetailsInputBox9 {
+		margin-left: -22%;
+		width: 122%;
+	}
+	.businessDetailsInputBox8 {
+		margin-left: 25%;
+	}
+	.businessDetailsInputBox7 {
+		margin-left: -28%;
+		width: 159%;
+	}
+	.businessDetailsInputBox10 {
+		margin-left: 35px;
+	}
+	.emptyMiscControlPanel_div {
+		margin: 0px 15PX;
+		width: 91%;
+		padding-top: 32%;
+	}
+	.StockAudit_2ndGrid {
+		margin-left: -16%;
+	}
+	.ArrowBtn {
+		margin-left: -36px;
+	}
+	.stockAudit_Input1 {
+		margin-left: 15px;
+		width: 95%;
+	}
+	.stockAudit_Input2 {
+		margin-left: 5px;
+		width: 95%;
+	}
+	.StockAudit_inputLabel {
+		margin-left: 6%;
+		width: 94%;
+	}
+}
+/**********====================END @media only screen and (max-width: 1024px) =========================**************/
+
+/**********=====================START @media only screen and (min-height: 651px) and (max-height:740pX) ====================**************/
+@media screen and (min-height: 651px) and (max-height:740px) {
+	.goodsreceiptGrid {
+		height: 304px !important;
+	}
+	.stockManagerRightGride {
+		height: 433px;
+	}
+	.stockManager_LeftGride {
+		height: 468px;
+	}
+	.gridProductContent {
+		height: 315px;
+	}
+	.masterContent_leftGride {
+		height: 498px;
+	}
+	.gridProductContent {
+		height: 267px;
+	}
+	.goodsreceiptGrid {
+		height: 300px !important;
+	}
+
+	/* 	.goods_returnGrid {
+		height:372px;
+	} */
+	.goods_returnGrid {
+		height: 329px;
+	}
+	.companyReturn_leftGride {
+		height: 434px;
+	}
+	.companyReturn_RightGride {
+		height: 272px;
+	}
+	.gridSizeLeft1 {
+		height: 438px;
+	}
+	.productRightGride {
+		height: 145px;
+	}
+	.gridSizeLeft2 {
+		height: 445px;
+	}
+	.taxCode_gridSizeLeft {
+		height: 572px;
+	}
+	.gridSizeLeftReturnRegister {
+		height: 459px;
+	}
+	.gridSizeLeftSaleableReturns {
+		height: 492px;
+	}
+	.routeRightGrid {
+		height: 270px;
+	}
+	.master_rought_LeftGrid {
+		height: 464px;
+	}
+	.utility_locksmith_leftGrid {
+		height: 490px;
+	}
+	.utility_locksmith_rightGrid {
+		height: 490px;
+	}
+	.purchaseGrid {
+		height: 344px;
+	}
+	.customer_master_RightGrid {
+		height: 475px;
+	}
+	.Master_customerLeftGrid {
+		height: 97px;
+	}
+	.master_area_Grid {
+		height: 437px;
+	}
+	.contactsManager_leftGride {
+		height: 477px;
+	}
+	.ContactsManagerScroll_section {
+		height: 228px;
+	}
+	.returnsRegisterRightGride {
+		height: 459px;
+	}
+	.master_taxCode_Grid {
+		height: 490px;
+	}
+	/* .debitCreditNoteReason_LeftGride {
+		height: 475px;
+	} */
+	.peopleManager-Filter {
+		top: 130px !important;
+	}
+	.filterBottomSec_ReturnRegister {
+		margin-left: 0px !important;
+		width: 100% !important;
+	}
+}
+/**********======================END @media only screen and (min-height: 651px) and (max-height:740pX) ====================**************/
+
+/* @media screen and (min-height: 679px) and (max-height:768px) {
+	.goodsreceiptGrid {
+		height: 304px !important;
+	}
+	.stockManagerRightGride {
+		height: 465px;
+	}
+	.stockManager_LeftGride {
+		height: 501px;
+	}
+	.gridProductContent {
+		height: 315px;
+	}
+	.masterContent_leftGride {
+		height: 535px;
+	}
+	.gridProductContent {
+		height: 267px;
+	}
+	.goodsreceiptGrid {
+		height: 330px !important;
+	}
+		.goods_returnGrid {
+		height:372px;
+	}
+	.goods_returnGrid {
+		height: 329px;
+	}
+	.companyReturn_leftGride {
+		height: 446px;
+	}
+	.companyReturn_RightGride {
+		height: 298px;
+	}
+	.gridSizeLeft1 {
+		height: 462px;
+	}
+	.productRightGride {
+		height: 171px;
+	}
+	.gridSizeLeft2 {
+		height: 473px;
+	}
+	.taxCode_gridSizeLeft {
+		height: 572px;
+	}
+	.gridSizeLeftReturnRegister {
+		height: 457px;
+	}
+	.routeRightGrid {
+		height: 296px;
+	}
+	.master_rought_LeftGrid {
+		height: 500px;
+	}
+	.utility_locksmith_leftGrid {
+		height: 515px;
+	}
+	.utility_locksmith_rightGrid {
+		height: 515px;
+	}
+	.purchaseGrid {
+		height: 400px;
+	}
+	.customer_master_RightGrid {
+		height: 502px;
+	}
+	.Master_customerLeftGrid {
+		height: 121px;
+	}
+	.master_area_Grid {
+		height: 462px;
+	}
+	.contactsManager_leftGride {
+		height: 492px;
+	}
+	.ContactsManagerScroll_section {
+		height: 242px;
+	}
+	.returnsRegisterRightGride {
+  height: 473px;
+  width: 96%;
+  margin-left: 12px;
+}
+	.master_taxCode_Grid {
+		height: 490px;
+	}
+	
+	.debitCreditNoteReason_LeftGride {
+		height: 502px;
+	}
+}
+ */
+/**********==========================START @media only screen and (min-height: 768px) ====================**************/
+@media screen and (min-height: 768px) and (max-height:800px) {
+	body {
+		line-height: 2.1 !important;
+	}
+	.footerMenu {
+		display: block;
+		width: 100%;
+		height: 28px;
+		min-height: 27px;
+		z-index: 699;
+		min-width: 600px;
+		background-color: #cc0099;
+	}
+	.GR_PO_pos {
+		margin-top: 6px;
+		margin-left: -4px;
+	}
+	.footerPosSale {
+		bottom: 33px !important;
+		height: 80px;
+		position: fixed;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+		background-color: #f2f2f2;
+		padding: 5px 0px 0px 0px;
+	}
+	.footerPos {
+		bottom: 30px !important;
+		height: 50px;
+		position: fixed;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+		background-color: #f2f2f2;
+		padding: 5px 0px 0px 0px;
+	}
+	.footerPos_GoodRec {
+		bottom: 28px !important;
+		height: 151px;
+		position: fixed;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+		background-color: #f2f2f2;
+		padding: 5px 0px 0px 0px;
+	}
+	.loginUsertextPos {
+		margin: 52px 57px;
+	}
+	.summaryPos {
+		bottom: 28px !important;
+		position: fixed;
+		right: 0;
+		left: 0;
+		/* z-index: 1030; */
+		background-color: #f2f2f2;
+		padding: 5px 0px 0px 0px;
+	}
+	.sales_LeftGride {
+		height: 645px;
+	}
+	.filterBottomSec_sales {
+		height: 32px;
+	}
+	.sales-Filter {
+		top: 363px !important;
+	}
+	.input-sm {
+		height: 25px !important;
+		/* padding: 0px 16px 0px 5px !important;
+		border-radius: 4px !important;
+		font-size: 14px !important;
+		border-color: #ddd !important;
+		color: #595959; */
+		line-height: 1 !important;
+	}
+	.input-sm_btn {
+		height: 25px !important;
+		padding: 0px 5px 0px 0px !important;
+	}
+	.saleMesg {
+		border-bottom-right-radius: 0px !important;
+		border-top-right-radius: 0px !important;
+	}
+	.saleMesgText {
+		border-bottom-left-radius: 0px !important;
+		border-top-left-radius: 0px !important;
+		width: 117% !important;
+	}
+	.text_inputfieldPos {
+		margin-top: -9px;
+	}
+	.masterContent_leftGride {
+		width: 90%;
+		height: 602px;
+		margin-left: 5%;
+	}
+	.gridProductContent {
+		width: 90%;
+		height: 335px;
+		/*  margin-left: 5%; */
+	}
+	.goodsreceiptGrid {
+		width: 97% !important;
+		height: 366px !important;
+		margin-left: 20px !important;
+		margin-top: 5px;
+	}
+	.goods_returnGrid {
+		width: 97% !important;
+		height: 420px !important;
+		margin-left: 20px !important;
+	}
+	.gridSizeLeft1 {
+		width: 90%;
+		height: 500px;
+		margin-left: 5%;
+		margin-top: 2%;
+	}
+	.gridSizeLeft2 {
+		width: 90%;
+		height: 542px;
+		margin-left: 5%;
+		margin-top: 2%;
+	}
+	.taxCode_gridSizeLeft {
+		width: 90%;
+		height: 572px;
+		margin-left: 5%;
+		margin-top: 2%;
+	}
+	.gridSizeLeftReturnRegister {
+		height: 560px;
+		margin-top: 2%;
+	}
+	.gridSizeLeftSaleableReturns {
+		height: 500px;
+	}
+	.routeRightGrid {
+		height: 320px;
+	}
+	.plusimgSize {
+		width: 20px;
+		height: 20px;
+		margin-right: 1px;
+	}
+	.lockimgSize {
+		width: 20px;
+		height: 20px;
+	}
+	.productRightGride {
+		height: 180px;
+	}
+	.customer_LeftGrid {
+		height: 550px;
+		margin-top: 2%;
+	}
+	.debitCreditNoteReason_LeftGride {
+		height: 580px;
+	}
+	.stockManagerRightGride {
+		height: 500px;
+	}
+	.stockManager_LeftGride {
+		height: 555px;
+	}
+	.returnsRegisterRightGride {
+		height: 560px;
+	}
+	.purchaseGrid {
+		height: 468px;
+	}
+	.saleGrid {
+		height: 389px !important;
+	}
+	.footerRowPos {
+		margin-top: -16px;
+	}
+	.menu_btn>div {
+		margin-top: 3px;
+	}
+	.customerAddBtnPos {
+		margin-top: -7px;
+	}
+	.customerDayIP {
+		margin-top: -2px;
+	}
+	.advposition_Home {
+		margin: 4%;
+	}
+	.header_Home {
+		height: 133px;
+	}
+	.menu_companyName {
+		bottom: 28px;
+		height: 28px;
+		background-color: #f2f2f2;
+	}
+	.menu_version {
+		bottom: 56px;
+		background-color: #cc0099;
+		height: 40px;
+		font-size: 16px;
+		color: white;
+	}
+	.menu_btn {
+		bottom: 96px;
+		background-color: #f2f2f2;
+		height: 60px;
+	}
+	.menu {
+		background-color: white !important;
+		box-shadow: 0 5px 15px rgba(0, 0, 0, .5) !important;
+		bottom: 32px;
+		position: fixed;
+		height: 554px;
+		display: none;
+	}
+	.modal-FilterCus {
+		width: 220px !important;
+		position: fixed !important;
+		/* bottom: -12px !important; */
+		left: 9px !important;
+		margin: 0 !important;
+		top: 264px !important;
+	}
+	.goodsReturnRemark_textArea {
+		height: 40px !important;
+		width: 100% !important;
+	}
+	.goodsReturnRemark {
+		margin-top: 9px !important;
+	}
+	.companyReturn_RightGride {
+		height: 373px;
+	}
+	.companyReturn_leftGride {
+		height: 550px;
+		margin-top: 13px;
+	}
+	.contactsManager_leftGride {
+		height: 600px;
+		margin-top: 2%;
+	}
+	/* .contentMaster_sectionvline {
+		border-right: 1px solid #d8d8d8;
+		height: 378px;
+	} */
+	.ContactsManagerScroll_section {
+		overflow-y: auto;
+		overflow-x: hidden;
+		height: 531px;
+	}
+	.lightBox_addProduct_GoodsReceipt {
+		height: 515px;
+		width: 956px;
+		background-color: white;
+	}
+	.switch-button-label {
+		margin-top: -6px;
+	}
+}
+/**********================END @media only screen and (min-height: 768px) ===============**************/
+
+/**********================START @media only screen and (max-width: 1280px) and (min-width: 1200px) ===============**************/
+@media screen and (max-width: 1280px) and (min-width: 1200px) {
+	.TransportDetails-Modal {
+		width: 912px !important;
+		margin-top: 107px !important;
+	}
+	.switchPos {
+		margin-left: 75%;
+	}
+	.btn_action_Go {
+		margin-left: -15px;
+		margin-top: -2px;
+	}
+	.PO_details_inputSize {
+		MARGIN-LEFT: -30%;
+		WIDTH: 130% !important;
+	}
+	.saleGrid {
+		height: 370px !important;
+	}
+	.linked_contact {
+		height: 80px !important;
+	}
+	.ContactsManagerScroll_section {
+		height: 250px;
+	}
+	.contactsManager_leftGride {
+		height: 536px;
+	}
+	body {
+		line-height: 1.5 !important;
+	}
+	.input-sm {
+		/* 	height: 23px !important; */
+		/* padding: 0px 16px 0px 5px !important;
+		border-radius: 4px !important;
+		font-size: 14px !important;
+		border-color: #ddd !important;
+		color: #595959; */
+		line-height: 1 !important;
+	}
+	.input-sm_btn {
+		height: 23px !important;
+		padding: 0px 5px 0px 0px !important;
+	}
+	.productRightGride {
+		height: 188px;
+	}
+	.masterPage_gridText {
+		width: 100%;
+	}
+	.gridSizeLeft2 {
+		height: 505px;
+	}
+	.modal-Filter {
+		top: 244px !important;
+	}
+	.gridSizeLeft1 {
+		height: 497px;
+	}
+	.purchaseGrid {
+		height: 413px;
+	}
+	.footerPos {
+		bottom: 28px !important;
+		height: 53px;
+	}
+	.masterPage_fieldSpacing {
+		margin-top: 5%;
+	}
+	.masterContent_leftGride {
+		height: 555px;
+	}
+	.gridProductContent {
+		height: 305px;
+	}
+	.customer_master_RightGrid {
+		height: 530px;
+	}
+	.master_area_Grid {
+		height: 500px;
+	}
+	.master_rought_LeftGrid {
+		height: 530px;
+	}
+	.routeRightGrid {
+		height: 330px;
+	}
+	.master_taxCode_Grid {
+		height: 555px;
+	}
+	.utility_locksmith_leftGrid {
+		height: 555px;
+	}
+	.utility_locksmith_rightGrid {
+		height: 555px;
+		margin-top: 5px;
+	}
+	.gridSizeLeftReturnRegister {
+		height: 512px;
+		margin-top: 11px;
+	}
+	.gridSizeLeftSaleableReturns {
+		height: 544px;
+	}
+	.returnsRegisterRightGride {
+		height: 512px;
+	}
+	.goods_returnGrid {
+		height: 375px !important;
+	}
+	.companyReturn_leftGride {
+		height: 493px;
+	}
+	.companyClaim-Filter {
+		top: 319px !important;
+	}
+	.companyReturn_RightGride {
+		height: 323px;
+	}
+	.debitCreditNoteReason_LeftGride {
+		height: 540px;
+	}
+	.stockManager_LeftGride {
+		height: 540px;
+	}
+	.stockManagerRightGride {
+		height: 490px;
+	}
+	.goodsreceiptGrid {
+		height: 333px !important;
+		margin-top: 4px;
+	}
+	.footerPos_GoodRec {
+		height: 133px;
+	}
+	.AC_updateBtn {
+		height: 91px !important;
+		margin-left: -20px !important;
+		padding: 0px 10px !important;
+	}
+	.voucherDate {
+		margin-left: -7px;
+	}
+	.company_claim_inputPos1 {
+		margin-left: 8px;
+	}
+	.goodreturn_customerPopup_img {
+		margin-left: -16px;
+		margin-top: 2px;
+	}
+	.peopleManager-Filter {
+		top: 145px !important;
+	}
+	.contact_manager_input_textbox {
+		width: 66%;
+	}
+	.contactManager_systemUser_field {
+		width: 164%;
+		margin-left: -5%;
+		height: 20px !important;
+	}
+	.btn_RemoveWhite {
+		margin-left: -7px;
+	}
+	.company_claim_statusInput {
+		margin-left: 43px;
+		width: 90%;
+	}
+	.returnRegister-Filter {
+		left: 58px !important;
+		top: 298px !important;
+	}
+	.SaleableReturn-Filter {
+		left: 58px !important;
+		top: 388px !important;
+	}
+	.filterBottomSec_ReturnRegister {
+		height: 29px;
+	}
+	.btn_Go_ReturnRegister {
+		height: 23px !important;
+	}
+	.ReportManager_3sec {
+		width: 100%;
+		height: 460px;
+		margin-left: 0%;
+	}
+	.ReportManager_NotificationGrid {
+		height: 492px;
+	}
+	.debitCreditNoteReason-Filter {
+		top: 405px !important;
+	}
+	.knownIssuesGrid {
+		height: 527px;
+	}
+	.releaseNote_scroll_section {
+		height: 530px;
+	}
+	.sales_LeftGride {
+		height: 572px;
+	}
+	.sales-Filter {
+		top: 343px !important;
+	}
+	.control_panelGrid {
+		height: 505px;
+	}
+	.product_CreditNoteGrid {
+		height: 385px;
+	}
+	.Bottom_total_sec {
+		margin: -1px 33px 0px 35px;
+	}
+	.CreditNote_FooterTotalSec {
+		margin-left: 71px;
+	}
+	.CreditNote_Footerwidth_class {
+		width: 74px !important;
+		margin-left: 1px;
+	}
+	.CreditNote_Footerwidth_class1 {
+		width: 74px !important;
+		margin-left: 50px;
+	}
+	.CreditNote_Footerwidth_class2 {
+		width: 80px !important;
+		margin-left: 72px;
+	}
+	.user_manager_Grid {
+		height: 333px;
+	}
+	.ReceiptAndPaymentsGrid {
+		height: 595px;
+	}
+}
+/**********================END @media only screen and (max-width: 1280px) and (min-width: 1200px) ===============**************/
+
+/**********================START @media only screen and (max-width: 1440px) and (min-width: 1420px) ===============**************/
+@media screen and (max-width: 1440px) and (min-width: 1420px) {
+	.btn_action_Go {
+		margin-left: -15px;
+		margin-top: -6px !important;
+	}
+	.saleGrid {
+		height: 424px !important;
+	}
+	body {
+		line-height: 2.1 !important;
+	}
+	.ContactsManagerScroll_section {
+		height: 315px;
+	}
+	.contactsManager_leftGride {
+		height: 609px;
+	}
+	.btn_RemoveWhite {
+		margin-top: 0px;
+	}
+	.socialNetwork_linkImages {
+		margin-top: 0px;
+	}
+	.input-sm {
+		height: 25px !important;
+		/* padding: 0px 16px 0px 5px !important;
+		border-radius: 4px !important;
+		font-size: 14px !important;
+		border-color: #ddd !important;
+		color: #595959; */
+		line-height: 1 !important;
+	}
+	.input-sm_btn {
+		height: 25px !important;
+		padding: 0px 5px 0px 0px !important;
+	}
+	.purchaseGrid {
+		height: 497px;
+	}
+	.gridSizeLeft2 {
+		height: 590px;
+	}
+	.modal-Filter {
+		top: 325px !important;
+	}
+	.gridSizeLeft1 {
+		height: 570px;
+	}
+	.productRightGride {
+		height: 235px;
+	}
+	.masterPage_fieldSpacing {
+		margin-top: 3%;
+	}
+	.addContent-Modal {
+		width: 760px !important;
+		top: 110px;
+	}
+	.masterContent_leftGride {
+		height: 645px;
+	}
+	.gridProductContent {
+		height: 320px;
+	}
+	.customer_master_RightGrid {
+		height: 625px;
+	}
+	.Master_customerLeftGrid {
+		height: 155px;
+	}
+	.customerDayIP {
+		margin-top: -2px;
+		/* margin-left: 0px; */
+	}
+	.master_area_Grid {
+		height: 590px;
+	}
+	.master_rought_LeftGrid {
+		height: 620px;
+	}
+	.routeRightGrid {
+		height: 390px;
+	}
+	.master_taxCode_Grid {
+		height: 645px;
+	}
+	.utility_locksmith_leftGrid {
+		height: 642px;
+		margin-top: 18px;
+	}
+	.utility_locksmith_rightGrid {
+		height: 645px;
+		margin-top: 0px;
+	}
+	.linked_contact {
+		height: 80px !important;
+	}
+	.gridSizeLeftReturnRegister {
+		height: 600px;
+		margin-top: 5px;
+	}
+	.gridSizeLeftSaleableReturns {
+		height: 632px;
+	}
+	.returnsRegisterRightGride {
+		height: 600px;
+	}
+	.goods_returnGrid {
+		height: 433px !important;
+		margin-left: 24px !important;
+	}
+	.companyReturn_leftGride {
+		height: 555px;
+	}
+	.companyReturn_RightGride {
+		height: 383px;
+	}
+	.debitCreditNoteReason_LeftGride {
+		height: 625px;
+	}
+	.stockManager_LeftGride {
+		height: 630px;
+	}
+	.stockManagerRightGride {
+		height: 575px;
+	}
+	.goodsreceiptGrid {
+		height: 390px !important;
+		margin-top: 4px;
+	}
+	.footerPos_GoodRec {
+		height: 158px;
+	}
+	.AC_updateBtn {
+		margin-top: 29px;
+		background-color: #fff;
+		height: 99px !important;
+		padding: 0px 12px !important;
+		margin-left: -20px !important;
+	}
+	.switch-button-label {
+		margin-top: -4px;
+	}
+	.company_field {
+		margin-left: -8%;
+		width: 108%;
+	}
+	.supplier_field {
+		margin-left: -8%;
+		width: 108%;
+	}
+	.voucher_field {
+		margin-left: -30%;
+		width: 120%;
+	}
+	.goodreturn_customerPopup_img {
+		margin-left: -14px;
+		margin-top: 3px;
+	}
+	.ContactManager_systemUser_Strip {
+		height: 29px;
+	}
+	.peopleManager-Filter {
+		top: 142px !important;
+	}
+	.btn_Go {
+		margin-top: 1px;
+		width: 42px !important;
+		height: 24px !important;
+	}
+	.filterBottomSec {
+		height: 31px;
+	}
+	.btn_ToBeDone {
+		height: 24px;
+	}
+	.fieldsSpacing_goodReturn {
+		margin-bottom: 20px;
+	}
+	.companyclaim_StatuslabelPos {
+		margin-left: 40px;
+	}
+	.company_claim_statusInput {
+		margin-left: 47px;
+		width: 93%;
+	}
+	.companyclaim_dateInputPos {
+		WIDTH: 93%;
+	}
+	.filterBottomSec_ReturnRegister {
+		height: 31px;
+	}
+	.btn_Go_ReturnRegister {
+		margin-top: 0px;
+		height: 25px !important;
+	}
+	.total_selectInput_sm {
+		margin-left: -38px;
+	}
+	.returnRegister-Filter {
+		left: 87px !important;
+		top: 334px !important;
+	}
+	.SaleableReturn-Filter {
+		left: 87px !important;
+		top: 430px !important;
+	}
+	.ReportManager_3sec {
+		width: 100%;
+		height: 539px;
+		margin-left: 0%;
+	}
+	.ReportManager_NotificationGrid {
+		height: 570px;
+		margin-left: 4.5%;
+		width: 91%;
+	}
+	.switchPos {
+		margin-left: 78%;
+	}
+	.companyClaim-Filter {
+		top: 341px !important;
+	}
+	.debitCreditNoteReason-Filter {
+		top: 449px !important;
+	}
+	.toggle>li>h2 {
+		padding: 17px 18px 17px 12px;
+	}
+	.thumbnail_OrderListPos {
+		line-height: 1.7;
+		text-align: left;
+	}
+	.sitamap_list {
+		line-height: 2;
+		text-align: left;
+		margin-bottom: 25px;
+	}
+	.thumbnailSize {
+		height: 173px;
+	}
+	.contactUsGrid {
+		height: 290px;
+	}
+	.knownIssuesGrid {
+		height: 615px;
+	}
+	.releaseNote_scroll_section {
+		height: 615px;
+	}
+	.sales_transportRemark1 {
+		height: 160px;
+	}
+	.sales_transportRemark2 {
+		height: 194px;
+	}
+	.sale_addProduct_Model {
+		margin-top: 2%;
+	}
+	.good_return_addProductPopup-Modal {
+		top: 13%;
+		margin-left: 23%;
+	}
+	.add_details_image {
+		margin-top: -6px;
+	}
+	.listProduct_GoodsReceipt-Modal {
+		margin-top: 9% !important;
+		margin-left: 33% !important;
+	}
+	.gridSizeGoodsReceipt_productList {
+		height: 360px;
+	}
+	.listBatch_GoodsReceipt-Modal {
+		margin-top: 10% !important;
+		margin-left: 24% !important;
+	}
+	.gridSizeGoodsReturn_batchList {
+		height: 340px;
+	}
+	.snowflake_image {
+		margin-top: -6px;
+		margin-left: 13px;
+	}
+	.flag_enable:after {
+		top: 7px;
+	}
+	.flagselected:after {
+		top: 7px;
+	}
+	.control_panelGrid {
+		height: 595px;
+	}
+	.editable_btnPos {
+		margin: 5px 13px 5px 8px;
+	}
+	.user_roleInputPosFullscreen {
+		margin-top: 2px;
+	}
+	.returnReg_headingPos {
+		margin-top: -2px;
+	}
+	.CreditNote_FooterTotalSec {
+		margin-left: 87px;
+		margin-top: 2px;
+	}
+	.CreditNote_Footerwidth_class {
+		width: 84px !important;
+		margin-left: 1px;
+	}
+	.CreditNote_Footerwidth_class1 {
+		width: 86px !important;
+		margin-left: 61px;
+	}
+	.CreditNote_Footerwidth_class2 {
+		width: 92px !important;
+		margin-left: 83px;
+	}
+	.product_CreditNoteGrid {
+		height: 445px;
+	}
+	/* .Bottom_total_sec {
+		margin: -1px 38px 0px 35px;
+	} */
+	.dropdown dt a span, .multiSel span {
+		padding: 5px 4px 5px 0;
+	}
+	.thumbnail_controlPanelMisc {
+		height: 320px;
+	}
+	.controlPanelMisc_ContactTypeGride {
+		height: 240px;
+	}
+	.AddModifyCreditDebitNoteReason-Model {
+		left: 38% !important;
+		top: 129px !important;
+	}
+	.text_inputfieldPosGr {
+		margin-top: -17px;
+	}
+	.gr_CreditDebit_AddBtn {
+		margin-left: -14px;
+		margin-top: -15px;
+		width: 16px;
+	}
+	.gridSizeLeftCompanyCreditNote {
+		height: 675px;
+	}
+	.CompanyCreditNoteRightGride {
+		height: 641px;
+	}
+	.CompanyCreditNote-Filter {
+		left: 9px !important;
+		top: 255px !important;
+	}
+	.btn_Go_CrDbNote {
+		height: 25px !important;
+	}
+	.inputOrSelect_width_md {
+		width: 152px;
+	}
+	.user_manager_Grid {
+		height: 385px;
+	}
+	.AddModifyVoucherNarrationEntries-Model {
+		left: 72% !important;
+		top: 130px !important;
+	}
+	.Go_btn {
+		height: 24px;
+		margin-top: -1px;
+	}
+	.BottomSection {
+		height: 33px;
+	}
+	.showNextPos {
+		margin-top: -2px;
+	}
+	.businessDetailsInputBox10 {
+		margin-left: 11px;
+	}
+	.gridSizeLeftPORegister {
+		height: 678px;
+	}
+	.gridSizeRightPORegister {
+		height: 647px;
+	}
+	.Filter_Small_Left-Model {
+		left: 8px;
+	}
+	.TextAreaBusinessDescription {
+		height: 50px;
+	}
+	.BusinessLicenceDetailsGrid {
+		height: 140px;
+	}
+	.gridSizeLeft_SystemPermission {
+		height: 592px;
+	}
+	.gridSizeRight_SystemPermission {
+		height: 438px;
+	}
+	.gridSizeLeft_SystemRole {
+		height: 623px;
+	}
+	.gridSizeRight_SystemRole {
+		height: 395px;
+	}
+	.ReceiptAndPaymentsGrid {
+		height: 675px;
+	}
+	.Customer_Border_Bg {
+		height: 170px;
+	}
+	.emptyMiscControlPanel_div {
+		height: 318px;
+		padding-top: 32%;
+	}
+	.controlPanelMisc1_Grid {
+		height: 205px;
+	}
+}
+/**********================END @media only screen and (max-width: 1440px) and (min-width: 1420px) ===============**************/
+
+/**********================START @media only screen and (min-height: 870px) and (max-height: 1200px) ===============**************/
+@media screen and (min-height: 870px) and (max-height: 1200px) {
+	.btn_action_Go {
+		margin-left: -15px;
+		margin-top: -6px;
+	}
+	.saleGrid {
+		width: 97% !important;
+		height: 505px !important;
+		margin-left: 20px !important;
+	}
+	.purchaseGrid {
+		height: 570px;
+	}
+	.footerPos {
+		bottom: 33px !important;
+		height: 58px;
+		position: fixed;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+		background-color: #f2f2f2;
+		padding: 5px 0px 0px 0px;
+	}
+	.footerMenu {
+		display: block;
+		width: 100%;
+		height: 33px;
+		min-height: 27px;
+		z-index: 699;
+		min-width: 600px;
+		background-color: #cc0099;
+	}
+	.purpleaidMenu {
+		height: 23px !important;
+	}
+	.footer_openMenu {
+		height: 23px !important;
+	}
+	.fieldsSpacing {
+		margin-bottom: 10px !important;
+	}
+	.gridSizeLeft2 {
+		height: 685px;
+	}
+	.gridSizeLeft1 {
+		height: 645px;
+	}
+	.productRightGride {
+		height: 290px;
+	}
+	.modal-Filter {
+		top: 415px !important;
+	}
+	.masterContent_leftGride {
+		height: 740px;
+	}
+	.customer_master_RightGrid {
+		height: 715px;
+	}
+	.Master_customerLeftGrid {
+		height: 210px;
+	}
+	.master_area_Grid {
+		height: 680px;
+	}
+	.master_rought_LeftGrid {
+		height: 720px;
+	}
+	.routeRightGrid {
+		height: 495px;
+	}
+	.master_taxCode_Grid {
+		height: 740px;
+	}
+	.utility_locksmith_leftGrid {
+		height: 735px;
+		margin-top: 23px;
+	}
+	.utility_locksmith_rightGrid {
+		height: 735px;
+		margin-top: 0px;
+	}
+	.contactsManager_leftGride {
+		height: 706px;
+	}
+	.ContactsManagerScroll_section {
+		height: 394px;
+	}
+	.gridSizeLeftReturnRegister {
+		height: 683px;
+		margin-top: 10px;
+	}
+	.gridSizeLeftSaleableReturns {
+		height: 720px;
+	}
+	.returnsRegisterRightGride {
+		height: 683px;
+	}
+	.goods_returnGrid {
+		height: 530px !important;
+		margin-left: 24px !important;
+	}
+	.companyReturn_leftGride {
+		height: 663px;
+	}
+	.companyReturn_RightGride {
+		height: 459px;
+	}
+	.debitCreditNoteReason_LeftGride {
+		height: 715px;
+	}
+	.stockManager_LeftGride {
+		height: 720px;
+	}
+	.stockManagerRightGride {
+		height: 645px;
+	}
+	.goodsreceiptGrid {
+		height: 480px !important;
+	}
+	.footerPos_GoodRec {
+		height: 170px;
+	}
+	.menu_btn {
+		bottom: 98px;
+		background-color: #f2f2f2;
+		height: 72px;
+	}
+	.menu_version {
+		bottom: 59px;
+		background-color: #cc0099;
+		height: 38px;
+		font-size: 16px;
+		color: white;
+	}
+	.menu_companyName {
+		bottom: 34px;
+		height: 24px;
+		background-color: #f2f2f2;
+	}
+	.switch-button-label {
+		margin-top: -5px;
+	}
+	.goodreturn_customerPopup_img {
+		margin-left: -14px;
+		margin-top: 4px;
+	}
+	.peopleManager-Filter {
+		top: 232px !important;
+	}
+	.btn_ToBeDone {
+		height: 24px;
+	}
+	.fieldsSpacing_goodReturn {
+		margin-bottom: 27px;
+	}
+	.companyclaim_StatuslabelPos {
+		margin-left: 40px;
+	}
+	.company_claim_statusInput {
+		margin-left: 47px;
+		width: 93%;
+	}
+	.companyclaim_dateInputPos {
+		WIDTH: 93%;
+	}
+	.filterBottomSec_ReturnRegister {
+		height: 31px;
+	}
+	.btn_Go_ReturnRegister {
+		margin-top: 0px;
+		height: 25px !important;
+	}
+	.total_selectInput_sm {
+		margin-left: -38px;
+	}
+	.returnRegister-Filter {
+		left: 87px !important;
+		top: 421px !important;
+	}
+	.SaleableReturn-Filter {
+		left: 87px !important;
+		top: 517px !important;
+	}
+	.ReportManager_3sec {
+		width: 100%;
+		height: 625px;
+		margin-left: 0%;
+	}
+	.ReportManager_NotificationGrid {
+		height: 655px;
+	}
+	.switchPos {
+		margin-left: 78%;
+	}
+	.companyClaim-Filter {
+		top: 435px !important;
+	}
+	.debitCreditNoteReason-Filter {
+		top: 539px !important;
+	}
+	.toggle>li>h2 {
+		padding: 17px 18px 17px 12px;
+	}
+	.thumbnail_OrderListPos {
+		line-height: 1.9;
+	}
+	.thumbnailSize {
+		height: 200px;
+	}
+	.contactUsGrid {
+		height: 360px;
+	}
+	.knownIssuesGrid {
+		height: 710px;
+	}
+	.releaseNote_scroll_section {
+		height: 708px;
+	}
+	.sales_transportRemark1 {
+		height: 165px;
+	}
+	.sales_transportRemark2 {
+		height: 204px;
+	}
+	.sale_addProduct_Model {
+		margin-top: 5%;
+	}
+	.summaryPos {
+		bottom: 33px !important;
+	}
+	.sales_LeftGride {
+		height: 740px;
+	}
+	.sidebarPos_sale {
+		margin-bottom: 35px;
+	}
+	.filterBottomSec_sales {
+		height: 32px;
+	}
+	.btn_small {
+		width: 84px !important;
+	}
+	.good_return_addProductPopup-Modal {
+		top: 13%;
+		margin-left: 23%;
+	}
+	.add_details_image {
+		margin-top: -6px;
+	}
+	.sales-Filter {
+		top: 460px !important;
+	}
+	.snowflake_image {
+		margin-top: -6px;
+		margin-left: 13px;
+	}
+	.flag_enable:after {
+		top: 7px;
+	}
+	.flagselected:after {
+		top: 7px;
+	}
+	.control_panelGrid {
+		height: 685px;
+	}
+	.editable_btnPos {
+		margin: 5px 13px 5px 8px;
+	}
+	.user_roleInputPosFullscreen {
+		margin-top: 2px;
+	}
+	.returnReg_headingPos {
+		margin-top: -2px;
+	}
+	.CreditDebitNoteGridPos {
+		margin-top: 39px !important;
+	}
+	.CreditNote_FooterTotalSec {
+		margin-left: 87px;
+		margin-top: 2px;
+	}
+	.CreditNote_Footerwidth_class {
+		width: 83px !important;
+		margin-left: 1px;
+	}
+	.CreditNote_Footerwidth_class1 {
+		width: 86px !important;
+		margin-left: 61px;
+	}
+	.CreditNote_Footerwidth_class2 {
+		width: 92px !important;
+		margin-left: 80px;
+	}
+	.product_CreditNoteGrid {
+		height: 525px;
+	}
+	.Bottom_total_sec {
+		margin: -1px 38px 0px 35px;
+	}
+	.dropdown dt a span, .multiSel span {
+		padding: 5px 4px 5px 0;
+	}
+	.thumbnail_controlPanelMisc {
+		height: 365px;
+	}
+	.controlPanelMisc_ContactTypeGride {
+		height: 275px;
+	}
+	.AddModifyCreditDebitNoteReason-Model {
+		left: 38% !important;
+		top: 155px !important;
+	}
+	.text_inputfieldPosGr {
+		margin-top: -17px;
+	}
+	.gr_CreditDebit_AddBtn {
+		margin-left: -14px;
+		margin-top: -15px;
+		width: 16px;
+	}
+	.gridSizeLeftCompanyCreditNote {
+		height: 770px;
+	}
+	.CompanyCreditNoteRightGride {
+		height: 731px;
+	}
+	.CompanyCreditNote-Filter {
+		left: 9px !important;
+		top: 304px !important;
+	}
+	.btn_Go_CrDbNote {
+		height: 25px !important;
+	}
+	.inputOrSelect_width_md {
+		width: 152px;
+	}
+	.user_manager_Grid {
+		height: 500px;
+	}
+	.AddModifyVoucherNarrationEntries-Model {
+		left: 72% !important;
+		top: 130px !important;
+	}
+	.Go_btn {
+		height: 24px;
+		margin-top: -1px;
+	}
+	.BottomSection {
+		height: 33px;
+	}
+	.showNextPos {
+		margin-top: -2px;
+	}
+	.businessDetailsInputBox10 {
+		margin-left: 11px;
+	}
+	.gridSizeLeftPORegister {
+		height: 768px;
+	}
+	.gridSizeRightPORegister {
+		height: 732px;
+	}
+	.Filter_Small_Left-Model {
+		left: 8px;
+	}
+	.TextAreaBusinessDescription {
+		height: 60px;
+	}
+	.BusinessLicenceDetailsGrid {
+		height: 180px;
+	}
+	.gridSizeLeft_SystemPermission {
+		height: 681px;
+	}
+	.gridSizeRight_SystemPermission {
+		height: 522px;
+	}
+	.gridSizeLeft_SystemRole {
+		height: 723px;
+	}
+	.gridSizeRight_SystemRole {
+		height: 487px;
+	}
+	.ReceiptAndPaymentsGrid {
+		height: 760px;
+	}
+	.Customer_Border_Bg {
+		height: 170px;
+	}
+	.emptyMiscControlPanel_div {
+		height: 318px;
+		padding-top: 32%;
+	}
+}
+/**********================END @media only screen and (min-height: 870px) and (max-height: 1200px) ===============**************/
+@media only screen and (max-width: 1230px) {
+	.MediumGrid_withUpSecBotSec {
+		width: 21.8%;
+	}
+	.AccountingMasterInput {
+		margin-left: 2.4%;
+		width: 97.6%;
+	}
+	.AccountingMasterInput1 {
+		margin-left: 10%;
+		width: 90%;
+	}
+	.AccountingMasterInput2 {
+		margin-left: 21%;
+		width: 125% !important;
+	}
+	.AccountingMasterInput3 {
+		margin-left: -15%;
+		width: 115%;
+	}
+	.AccountingMasterInput4 {
+		width: 109% !important;
+	}
+	.AccountingGroupInput {
+		margin-left: 7%;
+		width: 93%;
+	}
+	.FullGrid_withUpSec {
+		width: 97%;
+	}
+	.LargeGrid_withUpSecBotSec {
+		width: 30%;
+	}
+	.WithUpSecBotSec-col-8 {
+		width: 63.6%;
+	}
+}
+
+@media only screen and (min-width: 1366px) {
+	.AddressInput1 {
+		width: 112%;
+		margin-left: -12%;
+	}
+	.AddressInput2 {
+		margin-left: -23%;
+		width: 123%;
+	}
+	.AddressInput3 {
+		margin-left: -30%;
+		width: 130%;
+	}
+	.AddressInput4 {
+		margin-left: -16%;
+	}
+	.AddressInput5 {
+		margin-left: -15%;
+		width: 115%;
+	}
+}
+
+@media screen and (min-height: 740px) {
+	body {
+		line-height: 2.1 !important;
+	}
+	.input-sm {
+		height: 25px !important;
+		line-height: 1 !important;
+	}
+	.MediumGrid_withUpSecBotSec {
+		bottom: 55px;
+		top: 135px;
+	}
+	.GrayStrip_headingPos {
+		margin-top: -2px;
+	}
+	.FullGrid_withUpSec {
+		top: 87px;
+	}
+}

@@ -1,0 +1,176 @@
+<div id="ContactUs" data-ng-controller="ContactusCtrl" ng-init=init()>
+	<Section class="pageheader">
+		<nav class="mainnav">
+			<ul class="leftFloat_Menu" id="list-nav">
+				<li><a href="#" class="highlight_purple not_active">Contact
+						Us</a></li>
+				<li><span class="glyphicon glyphicon-play newShowGlyphicon"></span></li>
+				<li><a title="Reload this Page" ng-click="refreshAll()">Refresh</a></li>
+			</ul>
+			<ul class="rightFloat_Menu">
+				<li><a class=" not_active marginZero textCenter">Satyajeet
+						Toradmal</a> <a href="#" title="Todays Date"
+					class=" not_active marginZero textCenter"> <span
+						style="font-size: 12px;" id="date_time"></span> <script
+							type="text/javascript">
+							window.onload = date_time('date_time');
+						</script></a></li>
+				<li class="editable_btnPos">
+					<button type="button"
+						class="btn btn-default flag_enable input-sm editable-btn"
+						tabindex="20">
+						<span class="fieldLeft_spacing_lg" ng-click="editable=!editable">Editable</span>
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</Section>
+	<nav class="navbar navbar-default navbar_master">
+		<div class="container">
+			<ul class="nav navbar-nav master_nav_element_pos">
+				<li><a href="#ReleaseNote">Release Notes</a></li>
+				<li><a href="#FAQs">FAQs</a></li>
+	        	<li ><a href="#KnownIssues">Known Issues</a></li>
+				<li><a href="#SiteMap">Site Map</a></li>
+				<li><a href="#AboutUs">About Us</a></li>
+				<li class="active"><a href="#ContactUs">Contact Us</a></li>
+			</ul>
+		</div>
+	</nav>
+	<section class="container">
+		<div class="row container">
+			<h5>
+				<span class="submenuBlue_heading">Contact&nbsp;Us</span>
+			</h5>
+			<hr class="horizontal_line">
+		</div>
+		<div class="row fieldsSpacing container">
+			<div class="col-md-6">
+				<!-- <img alt="" src="images/about_us/address.png">  --><span
+					class="control-label">Address&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;3F/1,
+					Aditya Garden City, Pune, Maharashtra, India 411058</span>				
+			</div>
+			<div class="col-md-3">
+				<!-- <img alt="" src="images/about_us/phone.png">  --><span
+					class="control-label">Phone&nbsp;No.&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;(020)
+					12345678</span>
+			</div>
+			<div class="col-md-3">
+				<!-- <img alt="" src="images/about_us/email.png">  --><span
+					class="control-label">Email&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;support@purpleaid.com</span>
+			</div>
+		</div>
+		<div class="row container">
+			<h5>
+				<span class="submenuBlue_heading">Message</span>
+			</h5>
+			<hr class="horizontal_line">
+		</div>
+		<div class="row fieldsSpacing container">
+			<div class="col-md-3">
+				<div class="row">
+					<div class=" col-md-4">
+						<span class="control-label">Organization</span>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control input-sm" ng-model="showDataSelected.contactOrganization"  value="{{showDataSelected.contactOrganization}}" 
+							readonly="readonly">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="row">
+					<div class=" col-md-3">
+						<span class="control-label">Name</span>
+					</div>
+					<div class="col-md-9">
+						<input type="text" ng-model="showDataSelected.contactName" allow-textwithspace  value="{{showDataSelected.contactName}}" class="form-control input-sm">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="row">
+					<div class="col-md-3">
+						<span class="control-label">Phone</span>
+					</div>
+					<div class="col-md-9">
+						<input type="text"  ng-model="showDataSelected.contactPhone"  value="{{showDataSelected.contactPhone}}"  class="form-control input-sm" allow-numbers onblur="Purplevalidator('mobile',1,'ContactUs','blur')" onclick="Purplevalidator('mobile',1,'ContactUs','')" onfocus="Purplevalidator('mobile',1,'ContactUs','')"  >
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="row">
+					<div class="col-md-3">
+						<span class="control-label">Email</span>
+					</div>
+					<div class="col-md-9">
+						<input type="text" ng-model="showDataSelected.contactEmail"  value="{{showDataSelected.contactEmail}}"  class="form-control input-sm" onblur="Purplevalidator('email',0,'CompanyMaster','blur')" onclick="Purplevalidator('email',0,'ContactUs','')" onfocus="Purplevalidator('email',0,'ContactUs','')">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row fieldsSpacing container">
+			<div class="col-md-3">
+				<div class="row">
+					<div class=" col-md-4">
+						<span class="control-label">Category</span>
+					</div>
+					<div class="col-md-8">
+						<select class="form-control input-sm" data-ng-options="opt.id as opt.name for opt in categoryTypeList" ng-model="showDataSelected.contactCategoryId">
+							<option value='' disabled selected style='display: none;'>Please select</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="row">
+					<div class=" col-md-3">
+						<span class="control-label">Subject</span>
+					</div>
+					<div class="col-md-9">
+						<select class="form-control input-sm" data-ng-options="opt.id as opt.name for opt in  subjectTypeList" ng-model="showDataSelected.contactSubjectId">
+							<option value='' disabled selected style='display: none;'>Please select</option>
+							
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="row">
+					<div class="col-md-12">
+						<input type="text" class="form-control input-sm "
+							readonly="readonly">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row fieldsSpacing container">
+			<div class="col-md-12">
+				<div class="row fieldsSpacing">
+					<div class=" col-md-1">
+						<span class="control-label">Meassage</span>
+					</div>
+					<div class="col-md-11">
+						<textarea rows="3" cols="11" class="textarea_fixSize" allow-textwithspace ng-model="showDataSelected.contactMessage"  value="{{showDataSelected.contactMessage}}" ></textarea>
+
+					</div>
+				</div>
+				<div class="row  textRight">
+					<div class=" col-md-12">
+						<button type="button" ng-click="saveData()" class="btn btn-default submitMessage_cantactUs">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="row container">
+			<h5>
+				<span class="submenuBlue_heading">Communication History</span>
+			</h5>
+			<hr class="horizontal_line">  
+		</div>
+		<!--=============GRID==========  -->
+		<div class=" contactUsGrid"  id="grid"  tabindex="-1"></div>
+		<!--=============GRID==========  -->
+	</section>
+</div>

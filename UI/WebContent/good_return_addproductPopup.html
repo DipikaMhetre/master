@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+	<html ng-app="pharmApp" dir="ltr">
+	<head>
+		<title>Purpleaid</title>		
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<!-- Menu files -->
+		<link rel="shortcut icon" href="../favicon.ico">
+		<script src="components/angular/jquery-1.11.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.switchButton.css" />
+		<link rel="stylesheet" type="text/css" href="components/bootstrap-3.2.0/css/bootstrap.css" />
+		
+		
+		
+				
+		<script src="scripts/libs/modernizr.js"></script>									
+		<link rel="stylesheet" type="text/css" href="components/w2uiGrid/w2ui-1.4.1.css" />		
+		<script src="js/modernizr.custom.25376.js"></script>		
+		<script src="components/bootstrap-3.2.0/js/bootstrap.js"></script>
+		<link rel="stylesheet" href="stylesheets/style.css" />
+		<link rel="stylesheet" href="stylesheets/media_style.css" />
+		<link href="images/faviconP.ico" rel="icon" type="image/x-icon" />
+		<!-- Menu files Ends-->
+		
+		<!-- Angular + UI GRID -->
+		<script src="components/angular/angular.js"></script>
+		<script src="components/angular/angular-route.min.js"></script>
+		<script src="components/bootstrap-3.2.0/ui-bootstrap.js"></script>
+		<script src="components/bootstrap-3.2.0/ui-bootstrap-tpls-0.12.0.js"></script>
+		
+	</head>
+	
+	<body id="AllMainCtrl" ng-controller="MainCtrl"  class="purpleaid" >
+		<div class="grayBG" ng-init=init();>
+		
+		<div class="container lightBox_addProduct_GoodReturns">
+			<div class="row topblueStrip">
+				<h6 class="fieldsTop_Spacing"><span class="topblueStripText">ADD PRODUCT</span></h6>
+			</div>
+			<div class="row">
+				<h5><span class="submenuBlue_heading">Details</span></h5>
+				<hr class="horizontal_line">
+			</div>
+			<div class="row">
+				<div class="col-md-7">
+					<div class="row fieldsSpacing">
+						<div class=" col-md-3">
+	          				<span class="control-label">Product</span>
+	       				</div>	                   
+					   <div class=" col-md-7">
+					      <input type="text" class="form-control input-sm" >
+					   </div>
+					   <div class="col-md-2">
+       						<a><img class="add_details_image"  src="images/openPopup.png"></a>
+      					</div>					   					   
+        			</div>
+				</div>
+				<div class="col-md-5">
+					<div class="row">
+						<div class="col-md-2">
+							<span class="control-label returns_popup_labelPos">Pack</span>
+						</div>
+						<div class="col-md-10">
+						<input type="text" class="form-control input-sm " readonly="readonly">
+						</div>
+					</div>
+				</div>				
+			</div>
+			
+			<div class="row">
+				<h5><span class="submenuBlue_heading">Product Details</span></h5>
+				<hr class="horizontal_line">				
+			</div>
+			<div class="row">
+				<div class="col-md-7">
+					<div class="row fieldsSpacing">
+						<div class=" col-md-3">
+	          				<span class="control-label">Batch</span>
+	       				</div>	                   
+					   <div class=" col-md-7">
+					      <input type="text" class="form-control input-sm" >
+					   </div>
+					   <div class="col-md-2">
+       						<a><img class="add_details_image"  src="images/openPopup.png"></a>
+      					</div>					   					   
+        			</div>
+				</div>
+				<div class="col-md-5">
+					<div class="row">
+						<div class="col-md-2">
+							<span class="control-label returns_popup_labelPos">Expiry</span>
+						</div>
+						<div class="col-md-10">
+						<input type="text" class="form-control input-sm" >
+						</div>
+					</div>
+				</div>				
+			</div>
+			<div class="row">
+				
+						<div class=" col-md-1">
+	          				<span class="control-label">MRP</span>
+	       				</div>	                   
+					   <div class=" col-md-3">
+					      <input type="text" class="form-control input-sm" >
+					   </div>					  				   					   
+						<div class="col-md-1">
+							<span class="control-label">P.R.</span>
+						</div>
+						<div class="col-md-3">
+						<input type="text" class="form-control input-sm" >
+						</div>
+					
+						<div class="col-md-1">
+							<span class="control-label">S.R.</span>
+						</div>
+						<div class="col-md-3">
+						<input type="text" class="form-control input-sm" >			
+				</div>						
+			</div>
+			<div class="row">
+				<h5><span class="submenuBlue_heading">Product Details</span></h5>
+				<hr class="horizontal_line">				
+			</div>
+			<div class="row">
+				<div class="col-md-7">
+					<div class="row fieldsSpacing">
+						<div class=" col-md-3">
+	          				<span class="control-label ">Condition</span>
+	       				</div>	                   
+					   <div class=" col-md-7">
+					      <input type="text" class="form-control input-sm" >
+					   </div>					 				   					   
+        			</div>
+				</div>
+				<div class="col-md-5">
+					<div class="row">
+						<div class="col-md-2">
+							<span class="control-label returns_popup_labelPos">Quantity</span>
+						</div>
+						<div class="col-md-10">
+						<input type="text" class="form-control input-sm" >
+						</div>
+					</div>
+				</div>				
+			</div>
+			<div class="row fields_headingSpacing fieldsBot_Spacing_lg">
+				
+				<div class="col-md-12 textRight">
+				<button class="btn canclebtnSize" ng-click="cancel()">Cancel</button>
+				<button  class="btn okbtnSize" ng-click="submit(showProductSelected)"><span ng-show="statusflag == 'new'">ADD</span></button>
+				</div>
+				
+				
+			      
+       		</div>
+		</div>
+
+	</div>
+	
+		 
+    </body>    	
+</html>

@@ -1,0 +1,187 @@
+<title>FAQs</title>
+<div id="FAQs" data-ng-controller="HelpCtrl" ng-init=init()>
+	<Section class="pageheader">
+		<nav class="mainnav">
+			<ul class="leftFloat_Menu" id="list-nav">
+				<li><a class="highlight_purple not_active">FAQs</a></li>
+				<li><span class="glyphicon glyphicon-play newShowGlyphicon"></span></li>
+				<li><a title="Reload this Page" ng-click="$parent.changeView(activeUser.userId,activeUser.token,137);">Refresh</a></li>
+			</ul>
+			<ul class="rightFloat_Menu">
+				<li><a class=" not_active marginZero textCenter">Satyajit
+						Toradmal</a> <a title="Todays Date"
+					class=" not_active marginZero textCenter"> <span
+						style="font-size: 12px;" id="date_time"></span> <script
+							type="text/javascript">
+							window.onload = date_time('date_time');
+						</script></a></li>
+				<li class="editable_btnPos">
+					<button type="button"
+						class="btn btn-default flag_enable editable-btn" tabindex="20">
+						<span class="fieldLeft_spacing_lg" ng-click="editable=!editable">Editable</span>
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</Section>
+	<nav class="navbar navbar-default navbar_master">
+		<div class="container">
+			<ul class="nav navbar-nav master_nav_element_pos">
+				<li><a
+					ng-click="$parent.changeView(activeUser.userId,activeUser.token,136)">About
+						Us</a></li>
+				<li class="active"><a>FAQs</a></li>
+				<li><a
+					ng-click="$parent.changeView(activeUser.userId,activeUser.token,138)">Known
+						Issues</a></li>
+				<li><a
+					ng-click="$parent.changeView(activeUser.userId,activeUser.token,139)">Release
+						Notes</a></li>
+				<li><a
+					ng-click="$parent.changeView(activeUser.userId,activeUser.token,140)">Site
+						Map</a></li>
+			</ul>
+		</div>
+	</nav>
+	<section class="container">
+		<div class="row container">
+			<h5>
+				<span class="submenuBlue_heading">Frequently Asked Questions</span>
+			</h5>
+			<hr class="horizontal_line">
+		</div>
+		<ul class="toggle releaseNote_scroll_section menu_scrollbar">
+			<li class="">
+				<h2>What is Purpleaid?</h2>
+				<div>
+					<p>
+						<strong>Purpleaid wholesale</strong> is a E2E software solution
+						for pharma wholesalers. It allows the wholesalers to manage
+						procurement, inventory, sales, collections.
+					</p>
+					<p>The easy to use order entry, preview screens, and intutive
+						navigation makes it easy for any staff member to use the system.
+						BI dashboards offer business insights.</p>
+					<p>Our role based secutiry and data encryption ensures safety
+						of your data at all times. Purpleaid thus can really boost your
+						revenues.</p>
+				</div>
+			</li>
+			<li>
+				<h2>How can Purpleaid help me increase my revenue &
+					profitability?</h2>
+				<div>
+					<p>1. Inventory & warehouse management - Track and predict
+						product stock needs reducing stock holding to improve cash flow.
+						Currently many distributors are holding 25-35 days (50-100 lacs)
+						stock whereas delivery cycle time from medicine companies is < 5
+						days. Purpleaid can help reduce stock holding by 40-50% thus
+						freeing up to 20-50 lacs.
+					<p>2. Sales Staff empowerment & Tracking - Addressing the pain
+						area at the root by extending order entry to mobile with online /
+						offline (no network connection) access, geo tagging /gps tracking
+						to monitor sales staff movement. Further offers/scheme
+						customization, ranking & payment dues by clients (pharmacists) to
+						improve sales and collection. Purpleaid can boost sales by 20-30%.
+
+
+					
+					<p>3. Self service - Extends order entry mechanism to end
+						client (pharmacists) so they can also place orders via web, check
+						out offers/schemes, track delivery, payments due and more.
+						Purpleaid can boost sales by 10-20% and can also help in client
+						retention.
+					<p>4. BI Dashboards - Bringing in actionable KPIs, trends and
+						patterns of products, geographies, sales staff, collection dues
+						(to improve timely collection & cash inflow) will greatly enable
+						business insight, influence key decisions. This offering out
+						performs any existing solutions by increasing overall revenue &
+						profitability by 40-50%.
+					<p>5. Pharma link - Electronically (EDI, Web Service, Email
+						etc) share sales data to medicine companies. Closing the loop
+						helps the whole eco system and mainly helps medicine companies in
+						their sales forecasting/production.
+				</div>
+			</li>
+			<li>
+				<h2>Can I install it locally or it has to be on Cloud?</h2>
+				<div>
+					<p>Purpleaid is designed to work locally as well as on cloud.
+						You have choice to decide which implementation model you would
+						like to follow.</p>
+					<p>The key influencing factors for going with CLOUD are
+						Resilience, Availability and Security. We can also help you set up
+						or use existing in house hardware to implement Purpleaid at your
+						premises. We will provide software support and hardware support
+						must be arranged from your existing infra.</p>
+					<p>Further, it is possible to migrate from one implementation
+						model to another as per your needs. By exporting/importing your
+						encrypted data elements, we can easily switch between local and
+						CLOUD models.</p>
+				</div>
+			</li>
+			<li>
+				<h2>How to transition from old system to Purpleaid?</h2>
+				<div>
+					<p>If you have existing software in use, you can migrate to
+						Purpleaid using our transition plan.</p>
+					<p>1. Implement Purpleaid and Export master data from current
+						solutions and import in Purpleaid. This will save tedious data
+						entry to setup masters.</p>
+					<p>2. Start using Purpleaid in pilot mode with limited entries.
+						This is just to ensure that your staff gets trained and knows how
+						to use Purpleaid.</p>
+					<p>3. Plan a cutoff date and stop using old system and switch
+						all business transactions to Purpleaid.</p>
+					<p>4. If you need, we can set up a small data migration
+						activity to get historical data from old system to new system.</p>
+					<p>5. Use Purpleaid and enjoy the ease of use, business
+						enablers and awesome features.</p>
+				</div>
+			</li>
+			<li>
+				<h2>What level of service can I expect?</h2>
+				<div>
+					<p>We are committed to ensure Purpleaid serves you well and
+						always. Be assured that our E2E software solution is rigorously
+						tested to ensure up time, availability and data integrity. We do
+						not anticipate frequent issues but we are nevertheless prepared to
+						help, always.</p>
+					<p>For functional or how to use queries, you can refer to
+						online help (with screen shots) bundled with the software or call
+						your nominated support person.</p>
+					<p>For any technical issues or unanticipated malfunction due to
+						hardware/software issues, you can connect with your support
+						person. Our support staff can guide you over phone/email to
+						resolve the issue or if required will visit the premise to rectify
+						the issues.</p>
+					<p>Any business critical defects in software will be fixed
+						within 1 week. Any desired enhancements shall be queued and
+						delivered during next update cycle.</p>
+					<p>Typical means to get support in recommended order are 1.
+						Online Help, 2. Email/Phone and 3. Personal visits</p>
+					<p>Kindly note that as part of implementation, our experienced
+						support person will also conduct 1 week (20 hrs) training to
+						ensure you and your team is ready to use Purpleaid.</p>
+				</div>
+			</li>
+			<li>
+				<h2>How can I reach you?</h2>
+				<div>
+					<p>We are always looking forward to hear from you. Please feel
+						free to connect with us using the contact us form at the bottom of
+						this page. Please ensure you specify correct contact details for
+						us to reach you, mention the purpose and write a brief note in
+						message.</p>
+					<p>You may also write to us or call us on the contact details
+						provided below. Kindly note that the telephone lines are available
+						from 10:00am to 7:00pm Mon - Fri</p>
+					<p>Whether you are looking for a software, or you are an
+						investor or you are just looking for a job, just write to us and
+						we shall revert.</p>
+				</div>
+			</li>
+		</ul>
+	</section>
+</div>
+<script src="js/krava.js"></script>

@@ -1,0 +1,180 @@
+<title>About Us</title>
+<div id="AboutUs" data-ng-controller="HelpCtrl" ng-init=init()>
+	<Section class="pageheader">
+		<nav class="mainnav">
+			<ul class="leftFloat_Menu" id="list-nav">
+				<li><a class="highlight_purple not_active">About Us</a></li>
+				<li><span class="glyphicon glyphicon-play newShowGlyphicon"></span></li>
+				<li><a ng-click="$parent.changeView(activeUser.userId,activeUser.token,136);" title="Reload this Page">Refresh</a></li>
+			</ul>
+			<ul class="rightFloat_Menu">
+				<li><a class=" not_active marginZero textCenter">Satyajeet
+						Toradmal</a> <a title="Todays Date"
+					class=" not_active marginZero textCenter"> <span
+						style="font-size: 12px;" id="date_time"></span> <script
+							type="text/javascript">
+							window.onload = date_time('date_time');
+						</script></a></li>
+				<li class="editable_btnPos">
+					<button type="button"
+						class="btn btn-default flag_enable input-sm editable-btn"
+						tabindex="20">
+						<span class="fieldLeft_spacing_lg" ng-click="editable=!editable">Editable</span>
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</Section>
+	<nav class="navbar navbar-default navbar_master">
+		<div class="container">
+			<ul class="nav navbar-nav master_nav_element_pos">
+				<li class="active"><a>About Us</a></li>
+				<li><a
+					ng-click="changeView(activeUser.userId,activeUser.token,137)">FAQs</a></li>
+				<li><a
+					ng-click="changeView(activeUser.userId,activeUser.token,138)">Known
+						Issues</a></li>
+				<li><a
+					ng-click="changeView(activeUser.userId,activeUser.token,139)">Release
+						Notes</a></li>
+				<li><a
+					ng-click="changeView(activeUser.userId,activeUser.token,140)">Site
+						Map</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<section class="container">
+		<div class="row container">
+			<h5>
+				<span class="submenuBlue_heading">About&nbsp;Us</span> <span
+					class="purpleaid_link"><a href="http://www.purpleaid.com"
+					target="popup"
+					onclick="window.open('http://www.purpleaid.com','popup','width=1000,height=600'); return false;"
+					class="aPurpleaidwbsite">www.purpleaid.com</a></span>
+			</h5>
+
+			<hr class="horizontal_line">
+		</div>
+		<div class="row container">
+			<div class="col-md-12">
+				<p>The founder members bring extensive experience from numerous
+					Software Development Lifecyles to Purpleaid. The two founder
+					members mainly manage technology and SME roles respectively. There
+					attention to detail, focus on usability and ROI for end customer
+					has enabled us to build a product that just works like a charm. We
+					take great pride in our hand picked team of varied skills &
+					experience.</p>
+				<p>We are also fortunate to have gained trust of our share
+					holders and customers by delivering quality in timely manner.It is
+					our privilege and pride to be able to help other businesses to
+					raise the bar by materialising their vision by means of technology
+					and ingenious solutions.</p>
+			</div>
+		</div>
+		<div class="row container">
+			<h5>
+				<span class="submenuBlue_heading">Products</span>
+			</h5>
+			<hr class="horizontal_line">
+		</div>
+		<div class="row fieldsBot_Spacing_lg container">
+			<div class="col-md-4 textCenter">
+				<div class=" thumbnail thumbnailSize">
+					<div class="row purpleStripThumbnail fieldsSpacing">
+						<span> Wholesaler </span>
+					</div>
+					<ul class="thumbnail_OrderListPos">
+						<li>Purchase,Sales & Accounting</li>
+						<li>Stock Optimization</li>
+						<li>BI Dashboards & Reports</li>
+						<li>Sales Staff Tracking</li>
+						<li>Web/Mobile orders</li>
+						<li>Pharma Link Automation</li>
+					</ul>
+				</div>
+				<span class="highlight_purple"><strong>Now Available</strong></span>
+			</div>
+			<div class="col-md-4  textCenter">
+				<div class=" thumbnail thumbnailSize">
+					<div class="row purpleStripThumbnail fieldsSpacing">
+						<span class="textPos_whenGlyphPhnIcon">Retail App </span> <span
+							class="glyphicon glyphicon-phone AboutUs_glyphPhone"></span>
+					</div>
+					<ul class="thumbnail_OrderListPos">
+						<li>Stocks & schemes from various wholesalers</li>
+						<li>Delivery, payment Tracking</li>
+						<li>Returns, Expiry and Credit, Debit Notes</li>
+						<li>Tasks, Alerts, Chat</li>
+					</ul>
+				</div>
+				<span>Coming Soon</span>
+			</div>
+			<div class="col-md-4 textCenter">
+				<div class=" thumbnail thumbnailSize">
+					<div class="row purpleStripThumbnail fieldsSpacing">
+						<span>Pharma Link </span>
+					</div>
+					<ul class="thumbnail_OrderListPos">
+						<li>Creates one virtual system linking all apps together</li>
+						<li>SAP Plugin for integration</li>
+						<li>Process automation, Real time Data Exchange, analytics(BI
+							& Reports)</li>
+					</ul>
+				</div>
+				<span>Coming Soon</span>
+			</div>
+		</div>
+		<div class="row fieldsSpacing container">
+			<div class="col-md-4 textCenter">
+				<div class=" thumbnail thumbnailSize">
+					<div class="row purpleStripThumbnail fieldsSpacing">
+						<span class="textPos_whenGlyphPhnIcon">Salesman App </span> <span
+							class="glyphicon glyphicon-phone AboutUs_glyphPhone"></span>
+					</div>
+					<ul class=" thumbnail_OrderListPos">
+						<li>Product list with stock Sales, Collections, Visits</li>
+						<li>Returns, Expiry and Credit, Debit Notes</li>
+						<li>BI for Goals Vs Actuals</li>
+						<li>Tasks, Alerts, Chat</li>
+					</ul>
+				</div>
+				<span>Coming Soon</span>
+			</div>
+			<div class="col-md-4 textCenter">
+				<div class=" thumbnail thumbnailSize">
+					<div class="row purpleStripThumbnail fieldsSpacing">
+						<span>Purpleaid Retail</span>
+
+					</div>
+
+					<ul class=" thumbnail_OrderListPos">
+						<li>Purchase,Sales & Accounting</li>
+						<li>Stock Optimization</li>
+						<li>BI Dashboards & Reports</li>
+						<li>Multi sale windows</li>
+						<li>Cash register tracking</li>
+						<li>Pharma Link Automation</li>
+					</ul>
+				</div>
+				<span>Coming Soon</span>
+			</div>
+			<div class="col-md-4 textCenter">
+				<div class=" thumbnail thumbnailSize">
+					<div class="row purpleStripThumbnail fieldsSpacing">
+						<span class="textPos_whenGlyphPhnIcon">MR App</span> <span
+							class="glyphicon glyphicon-phone AboutUs_glyphPhone"></span>
+					</div>
+					<ul class="thumbnail_OrderListPos">
+						<li>Marketing & Sales activity tracking/reporting with multi
+							facets(doc, product etc.)</li>
+						<li>BI for Goals Vs Actuals</li>
+						<li>Special schemes tracker</li>
+						<li>New Product launcher</li>
+					</ul>
+				</div>
+				<span>Coming Soon</span>
+			</div>
+		</div>
+	</section>
+</div>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html dir="ltr">
+	<head>
+		<title>Purpleaid | Menu</title>
+		
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<link rel="shortcut icon" href="../favicon.ico">
+		
+		<!-- JQUERY LOADED -->
+		<script src="components/angular/jquery-1.11.1.min.js"></script>
+		
+		<!-- Angular + UI GRID -->
+		<script src="components/angular/angular.js"></script>
+		<script src="components/angular/angular-route.min.js"></script>	 
+	    <script src="app.js"></script>
+	    
+		
+
+		<!-- Index + Menu Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/component1.css" />
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="components/bootstrap-3.2.0/css/bootstrap.css" />
+		<link rel="stylesheet" href="stylesheets/style.css" />
+		
+		<!-- JS files -->
+		<script src="js/modernizr.custom.25376.js"></script>
+		<script src="components/bootstrap-3.2.0/js/bootstrap.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="scripts/libs/jquery.validate.min.js"></script>
+		<script src="scripts/libs/enquire.min.js"></script>
+		<script src="scripts/libs/plugins3rd.js"></script>
+		<script src="scripts/plugins.js"></script>
+		<script src="js/jquery.dlmenu.js"></script>		
+		<link href="images/faviconP.ico" rel="icon" type="image/x-icon" />
+		
+		<!-- Controller Files -->
+		<script src="controllers/MainCtrl.js"></script>
+		<script src="controllers/PurchaseCtrl.js"></script>
+		<script src="controllers/PersonModalInstanceCtrl.js"></script>
+	</head>
+    <body class="purpleaid">
+		<div id="perspective" class="perspective effect-rotateleft">
+			<span style="bottom: 1%; position: absolute; left: 2%;"> ABC Pharma Version: W.G.1.2.05</span> 
+			<div class="container">
+				<div class="wrapper">
+				<div class="wrapper"><!-- wrapper needed for scroll -->
+					<header class="header">
+						<div class="in">
+		                    <nav class="mainnav">
+		                   		 <button id="showMenu" type="button" class="btn btn-default btn-md btnInline">
+								    <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+								</button>
+		                        <ul class="rightFloat">
+									<li ><a href="#" title="Rajesh Mahale" class="highlight">Rajesh Mahale</a></li>
+									<li ><a href="#" title="Shortcuts">Shortcuts</a></li>
+									<li ><a href="#" title="Calculator">Calculator</a></li>
+									<li><a href="#" title="Logout">Logout</a></li>
+		                        </ul>
+		                    </nav>
+		                </div>
+            		</header>
+            		<div class="pageline"></div>       
+            		<div data-ng-view></div>  
+            	</div>         		
+				</div><!-- wrapper -->
+			</div><!-- /container -->        
+			<div id="dl-menu" class="dl-menuwrapper outer-nav right vertical">
+			<!-- <button class="dl-trigger">Open Menu</button> -->
+			<ul class="dl-menu dl-menuopen">
+				<li><a href="#">Master</a></li>
+				<li><a href="#">Sale</a></li>
+				<li><a href="#">Purchase</a>
+					<ul class="dl-submenu">
+						<li><a href="#">Goods Receipt</a></li>
+						<li><a href="#">Purchase Return</a></li>
+						<li><a href="#">Company Orders</a>
+							<ul class="dl-submenu">
+								<li><a href="#">Order Report</a></li>
+								<li><a href="#">Modify Order</a></li>
+								<li><a href="#">Close Order</a></li>
+								<li><a href="#purchase">New Order</a></li>
+								<li><a href="#">Batch Orders</a></li>
+								<li><a href="#">Order Summaries</a></li>
+								<li><a href="#">Order Import</a></li>
+								<li><a href="#">Order Export</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Rates Entry</a>	</li>
+						<li><a href="#">Batch Operation</a></li>
+						<li><a href="#">Scheme Quantity </a></li>
+						<li><a href="#">Updates</a>	</li>
+						<li><a href="#">Manual </a></li>
+						<li><a href="#">Expiry/Breakage</a>	</li>
+						<li><a href="#">Statement </a></li>
+						<li><a href="#">Company Claim</a></li>
+						<li><a href="#">VAT Reports</a>	</li>
+						<li><a href="#">LBT Reports</a>	</li>
+					</ul>
+				</li>
+				<li><a href="#">Accounting</a></li>
+				<li><a href="#">Report</a></li>
+				<li><a href="#">Bookmarks</a>
+					<ul class="dl-submenu">
+						<li><a href="#">Bookmarks Manager</a></li>
+						<li><a href="#">Dashboard</a></li>
+						<li><a href="#">Login</a></li>
+						<li><a href="#">Sale</a></li>
+						<li><a href="#">Purchase</a></li>
+						<li><a href="#">Sales Summary</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Other</a></li>
+				<li><a href="#">Help</a></li>
+			</ul>
+			</div><!-- /dl-menuwrapper -->	
+		</div><!-- /perspective -->			
+		     
+    </body>
+    <script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu();
+			});
+		</script>
+		<script src="js/modernizr.custom.js"></script>     
+</html>

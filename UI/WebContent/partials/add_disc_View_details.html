@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html ng-app="pharmApp" dir="ltr">
+<head>
+<title>Purpleaid</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Menu files -->
+<link rel="shortcut icon" href="../favicon.ico">
+<script src="components/angular/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css"
+	href="css/jquery.switchButton.css" />
+<link rel="stylesheet" type="text/css"
+	href="components/bootstrap-3.2.0/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css"
+	href="components/ngToust/ngToast.css" />
+<link rel="stylesheet" type="text/css"
+	href="components/ngToust/ngToast-animations.css" />
+
+
+
+
+<script src="scripts/libs/modernizr.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="components/w2uiGrid/w2ui-1.4.1.css" />
+<script src="js/modernizr.custom.25376.js"></script>
+<script src="components/bootstrap-3.2.0/js/bootstrap.js"></script>
+<link rel="stylesheet" href="stylesheets/style.css" />
+<link rel="stylesheet" href="stylesheets/media_style.css" />
+<link href="images/faviconP.ico" rel="icon" type="image/x-icon" />
+<!-- Menu files Ends-->
+
+<!-- Angular + UI GRID -->
+<script src="components/angular/angular.js"></script>
+<script src="components/angular/angular-route.min.js"></script>
+<script src="components/bootstrap-3.2.0/ui-bootstrap.js"></script>
+<script src="components/bootstrap-3.2.0/ui-bootstrap-tpls-0.12.0.js"></script>
+<script src="components/ngToust/ngToast.js"></script>
+<script src="components/ngToust/angular-sanitize.js"></script>
+<script src="components/fileupload/ng-file-upload.js"></script>
+<script src="components/fileupload/ng-file-upload-shim.js"></script>
+<link rel="stylesheet" type="text/css" href="css/CalcSS3.css" />
+
+
+
+
+<script src="app.js"></script>
+
+<script type="text/javascript" src="components/w2uiGrid/w2ui-1.4.1.js"></script>
+<!-- =================================================== -->
+
+<!-- =================================================== -->
+</head>
+
+<body id="AllMainCtrl" ng-controller="MainCtrl" class="purpleaid">
+	<div class="container lightBox_CreditNote_AddDisc_ViewDetails">
+		<div class="row topblueStrip">
+			<h6 class="fieldsTop_Spacing">
+				<span class="topblueStripText">Manage Discount</span> <img alt=""
+					class="close_popupImage" tabindex="2" src="images/close_popup.png">
+			</h6>
+		</div>
+		<div class="row fieldsTop_Spacing">
+			<div class=" col-md-12 ">
+				<button type="button"
+					class="btn goodReturnPreviousNext_btn input-sm_btn rightFloat">Next</button>
+				<button type="button"
+					class="btn goodReturnPreviousNext_btn input-sm_btn rightFloat">Previous</button>
+			</div>
+		</div>
+		<div class="row">
+			<h5>
+				<span class="submenuBlue_heading">Invoice Details</span>
+			</h5>
+			<hr class="horizontal_line">
+		</div>
+		<div class="row fieldsSpacing">
+
+			<div class="col-md-4">
+				<div class="row">
+					<div class=" col-md-4">
+						<span class="control-label">Invoice&nbsp;Date</span>
+					</div>
+					<div class=" col-md-8">
+						<input type="text" class="form-control input-sm" tabindex="3"
+							readonly="readonly">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="row">
+					<div class=" col-md-4">
+						<span class="control-label">Invoice#</span>
+					</div>
+
+					<div class=" col-md-8">
+						<input type="text" class="form-control input-sm" tabindex="2"
+							readonly="readonly">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="row">
+					<div class=" col-md-4">
+						<span class="control-label">Invoice&nbsp;Amount</span>
+					</div>
+					<div class=" col-md-8">
+						<input type="text" class="form-control input-sm" tabindex="3"
+							readonly="readonly">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row fieldsSpacing">
+			<div class="col-md-4">
+				<div class="row">
+					<div class=" col-md-4">
+						<span class="control-label">Product#</span>
+					</div>
+
+					<div class=" col-md-8">
+						<input type="text" class="form-control input-sm" tabindex="2"
+							readonly="readonly">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="row">
+					<div class=" col-md-4">
+						<span class="control-label">Product&nbsp;Amount</span>
+					</div>
+					<div class=" col-md-8">
+						<input type="text" class="form-control input-sm" tabindex="2"
+							readonly="readonly">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="row">
+					<div class=" col-md-4">
+						<span class="control-label">VAT</span>
+					</div>
+					<div class=" col-md-8">
+						<input type="text" class="form-control input-sm" tabindex="2"
+							readonly="readonly">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<h5>
+				<span class="submenuBlue_heading">Product & Discount Details</span>
+			</h5>
+			<hr class="horizontal_line">
+		</div>
+		<div class="row fieldsTop_Spacing">
+			<div class="col-md-12">
+				<!--=============GRID==========  -->
+				<div id="grid" tabindex="10" class="AddDisc_InvoiceDetails"></div>
+				<!--=============GRID==========  -->
+			</div>
+		</div>
+		<div class="row">
+			<h5>
+				<span class="submenuBlue_heading">Additional Discount Details</span>
+			</h5>
+			<hr class="horizontal_line">
+		</div>
+		<div class="row fieldsSpacing">
+
+			<div class="col-md-4">
+				<div class="row">
+					<div class=" col-md-4">
+						<span class="control-label">Add&nbsp;Disc&nbsp;%</span>
+					</div>
+					<div class=" col-md-8">
+						<input type="text" class="form-control input-sm" tabindex="2">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="row">
+					<div class=" col-md-4">
+						<span class="control-label">Add&nbsp;Disc&nbsp;Amt</span>
+					</div>
+					<div class=" col-md-8">
+						<input type="text" class="form-control input-sm" tabindex="3">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="row">
+					<div class=" col-md-4">
+						<span class="control-label">Net&nbsp;Invoice&nbsp;Amt</span>
+					</div>
+					<div class=" col-md-8">
+						<input type="text" class="form-control input-sm" tabindex="3">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row fieldsSpacing">
+			<div class=" col-md-2">
+				<span class="control-label">Remark</span>
+			</div>
+			<div class=" col-md-10">
+				<input type="text"
+					class="form-control input-sm ManageAddDisc_creditNote_Remark"
+					tabindex="4">
+			</div>
+		</div>
+		<div class="row Ok_Cancle_BtnPos_Popup">
+			<div class="col-md-12">
+				<button class="btn canclebtnSize" tabindex="5" ng-click="cancel()">Cancel</button>
+				<button class="btn okbtnSize" tabindex="6" ng-click="ok(record)">Save</button>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function() {
+			$('#grid').w2grid({
+				name : 'grid',
+				header : 'List of Names',
+				show : {
+
+				},
+				columns : [ {
+					field : '',
+					caption : ' Product',
+					size : '10%'
+				}, {
+					field : '',
+					caption : 'Company ',
+					size : '8%'
+				}, {
+					field : 'quantity',
+					caption : 'Quantity',
+					size : '7%'
+				}, {
+					field : 'free_quantity',
+					caption : 'Free',
+					size : '7%'
+				}, {
+					field : '',
+					caption : 'P.R. ',
+					size : '7%'
+				}, {
+					field : '',
+					caption : 'S.R.',
+					size : '7%'
+				}, {
+					field : '',
+					caption : 'M.R.P..',
+					size : '7%'
+				}, {
+					field : '',
+					caption : 'PD/CD Discount',
+					size : '10%'
+				}, {
+					field : '',
+					caption : 'Amount',
+					size : '7%'
+				}, {
+					field : '',
+					caption : 'VAT',
+					size : '7%'
+				}, {
+					field : '',
+					caption : 'Additional Disc%',
+					size : '14%',
+					render : 'percent:1',
+					editable : {
+						type : 'percent',
+						precision : 1
+					}
+				}, {
+					field : '',
+					caption : 'Additional Disc Amt',
+					size : '15%',
+					editable : {
+						type : 'money'
+					}
+				}, {
+					field : '',
+					caption : 'Net Amount',
+					size : '7%'
+				}
+
+				],
+				records : []
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,506 @@
+<div id="Sales" ng-controller="SalesCtrl" ng-init="init()"
+	onload=GetClock();>
+	<Section class="pageheader">
+		<nav class="mainnav">
+			<ul class="leftFloat_Menu" id="list-nav">
+				<li><a href="#" title="" class="highlight_purple not_active">INVOICE</a></li>
+				<li><span class="glyphicon glyphicon-play newShowGlyphicon"></span></li>
+				<li><a title="Reload this Page">Refresh</a></li>
+				<li><a tabindex="39">Save</a></li>
+				<li><a class="highlight_orange">Raise Invoice</a></li>
+				<li><a title="New Invioce" tabindex="40">New</a></li>
+				<li><a>Print Delivery Note</a></li>
+				<li><a ng-click="showTransportDetailsPopup()">Transport
+						Details</a></li>
+				<li><a class="not_implemented_link not_active">Help</a></li>
+			</ul>
+			<ul class="rightFloat_Menu">
+				<li><a href="#" title="Todays Date"
+					class="highlight_purple not_active"><span id='clockbox'></span></a></li>
+					<li class="editable_btnPos">
+					<button type="button"
+								class="btn btn-default flag_enable input-sm editable-btn"
+								tabindex="20"><span class="fieldLeft_spacing_lg ">Editable</span></button>
+	        	</li>
+			</ul>
+		</nav>
+	</Section>
+	<!-- ============================================ -->
+	<!--__________ Sidebar Grid and Filter ___________-->
+	<div id="test" class="sidebarPos_sale">
+
+		<div id="grid2" tabindex="-1" class="sales_LeftGride"></div>
+
+		<div class="row textCenter fieldsBot_Spacing ">
+			<!-- class="not_implemented_link not_active" -->
+			<a class="filter_pointer" ng-click="showFilterPopup()" tabindex="1"
+				title="Filter">Filter() </a> <img alt=""
+				class="filterOff_closeImage" tabindex="2"
+				src="images/contacts_manager/close.png">
+		</div>
+		<div class="row container filterBottomSec_sales">
+			<div class="col-md-2 limitSection_pos">
+				<span class="showNext_pos sales_shownext">Show&nbsp;next</span>
+			</div>
+			<div class="col-md-6 limitSection_pos">
+				<input
+					class="form-control input-sm contactType_limit textRight sales_showNextLimit"
+					id="shownext_limit" type="text" tabindex="3">
+			</div>
+			<div class="col-md-3 Go_colPos">
+				<button class=" btn_Go btn btn-primary salesGoBtn" tabindex="4">Go</button>
+			</div>
+		</div>
+
+	</div>
+	<!--__________ Sidebar Grid and Filter Completed ___________-->
+	<!-- ====================================================== -->
+	<section class="container">
+		<div class="row grid">
+			<div class="col-md-4 sectionvline">
+				<div class="block3">
+					<span class="head1">SALE&nbsp;SUMMERY</span>
+					<div class="row fieldsBot_Spacing_lg fields_headingSpacing">
+						<div class="col-md-2">
+							<span>Customer</span>
+						</div>
+						<div class="col-md-6">
+							<input type="text"
+								class="form-control input-sm saleOrderSummery_customer sales_customer"
+								tabindex="5">
+						</div>
+						<div class="col-md-1 imageColPos_sm">
+							<a class="imagePos_sm" ng-click="showCustomerPopup()"><img
+								class="goodreturn_customerPopup_img " src="images/openPopup.png"
+								tabindex="6"></a>
+						</div>
+						<div class="col-md-3">
+							<a href="#" class="viewDetailPos not_implemented_link not_active">View&nbsp;Details</a>
+						</div>
+					</div>
+					<div class="row fieldsBot_Spacing_lg">
+						<div class="col-md-2">
+							<span>Salesman</span>
+						</div>
+						<div class="col-md-7">
+							<select
+								class=" full_width input-sm saleOrderSummery input_rightSpecing"
+								tabindex="7">
+								<option value='' disabled selected style='display: none;'>Please
+									select</option>
+							</select>
+						</div>
+						<div class="col-md-3">
+							<a href="#" class="viewDetailPos not_implemented_link not_active">View&nbsp;Details</a>
+						</div>
+					</div>
+					<div class="row fieldsBot_Spacing_lg">
+						<div class="col-md-2">
+							<span>Order&nbsp;Type</span>
+						</div>
+						<div class="col-md-7">
+							<select
+								class=" full_width input-sm saleOrderSummery input_rightSpecing"
+								tabindex="9">
+								<option>Invoice</option>
+								<option>Delivery Challan</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 sectionvline">
+				<div class="block3 block3_orderDetailPad">
+					<span class="head1">SALE&nbsp;DETAILS</span>
+					<div class="row fields_headingSpacing">
+						<div class="col-md-4">
+							<input type="text" id="sale_id" name="sale_id"
+								class="form-control input-sm idfield OrderDetail_feild_sm_sc1"
+								tabindex="10">
+						</div>
+						<div class="col-md-4">
+							<input type="eu-date" id="sale_date" name="sale_date"
+								tabindex="11"
+								class="form-control input-sm textCenter OrderDetail_feild_sm_sc1 OrderDetail_feild_sm_sc3">
+						</div>
+						<div class="col-md-4">
+							<div
+								class="input-group input_groupSize OrderDetail_feild_sm_sc2 OrderDetail_feild_sm_sc4">
+								<input type="text" id="net_total" name="net_total" tabindex="12"
+									class="form-control input-sm purpleBG highlight_white textRight input_groupTextBoxSize">
+								<span class="input-group-addon input-sm ">Rs.</span>
+							</div>
+						</div>
+					</div>
+					<div class="row fieldsSpacing_sm">
+						<div class="col-md-4 GR_orderDetailsText_fieldspacing">
+							<span class="GR_orderDetailsFont">Sale#</span>
+						</div>
+						<div class="col-md-4 GR_orderDetailsText_fieldspacing">
+							<span class="GR_orderDetailsFont">Sale&nbsp;Date</span>
+						</div>
+						<div class="col-md-4 GR_orderDetailsText_fieldspacing">
+							<span class="GR_orderDetailsFont SalesDetailsBot_textPosition">Net&nbsp;Total</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 ">
+							<div class="input-group input_groupSize OrderDetail_feild_sm_sc2">
+								<input type="text" id="overdue" name="overdue"
+									class="form-control input-sm textRight input_groupTextBoxSize not_implemented"
+									readonly tabindex="13" disabled="disabled"> <span
+									class="input-group-addon input-sm ">Rs.</span>
+							</div>
+						</div>
+						<div class="col-md-4 ">
+							<div
+								class="input-group input_groupSize OrderDetail_feild_sm_sc2 OrderDetail_feild_sm_sc3">
+								<input type="text" id="ytd_sale" name="ytd_sale"
+									class="form-control input-sm textRight input_groupTextBoxSize not_implemented"
+									readonly tabindex="14" disabled="disabled"> <span
+									class="input-group-addon input-sm">Rs.</span>
+							</div>
+						</div>
+						<div class="col-md-4 ">
+							<div
+								class="input-group input_groupSize OrderDetail_feild_sm_sc2 OrderDetail_feild_sm_sc4">
+								<input type="text" id="last_sale" name="last_sale"
+									class="form-control input-sm textRight input_groupTextBoxSize not_implemented"
+									readonly tabindex="15" disabled="disabled"> <span
+									class="input-group-addon input-sm">Rs.</span>
+							</div>
+						</div>
+					</div>
+					<div class="row fieldsSpacing_sm">
+						<div class="col-md-4 GR_orderDetailsText_fieldspacing">
+							<span class="GR_orderDetailsFont">Overdue</span>
+						</div>
+						<div class="col-md-4 GR_orderDetailsText_fieldspacing">
+							<span class="GR_orderDetailsFont">YTD&nbsp;Sale</span>
+						</div>
+						<div class="col-md-4 GR_orderDetailsText_fieldspacing">
+							<span class="GR_orderDetailsFont SalesDetailsBot_textPosition">Last&nbsp;Sale</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<select id="type" name="type" tabindex="16"
+								class="select-wrapper input-sm opt_btn_small inputtext OrderDetail_feild_sm_sc1 input_rightSpecing">
+								<option>Cash</option>
+								<option>Credit</option>
+							</select>
+						</div>
+						<div class="col-md-4">
+							<div
+								class="input-group input_groupSize OrderDetail_feild_sm_sc2 OrderDetail_feild_sm_sc3">
+								<input type="text" id="ledger_bal" name="ledger_bal"
+									class="form-control input-sm textRight input_groupTextBoxSize"
+									readonly> <span class="input-group-addon input-sm">Rs.</span>
+							</div>
+						</div>
+
+					</div>
+					<div class="row">
+						<div class="col-md-4 GR_orderDetailsText_fieldspacing">
+							<span class="GR_orderDetailsFont">Type</span>
+						</div>
+						<div class="col-md-4 GR_orderDetailsText_fieldspacing">
+							<span class="GR_orderDetailsFont">Ledger&nbsp;Bal</span>
+						</div>
+						<div class="col-md-4 " style="margin-top: -15px;">
+							<a
+								class="ladgerBal_pos not_implemented_link not_active OrderDetail_feild_sm_sc4">View
+								Ledger</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="block3">
+					<span class="head1">SALE&nbsp;FLAGS</span>
+					<div class="row fieldsBot_Spacing_lg fields_headingSpacing">
+						<div class="col-md-3">
+							<button type="button"
+								class="btn btn-default flag_enable  input-sm goods_order_flag"
+								tabindex="19"><span class="fieldLeft_spacing_lg">Email</span></button>
+						</div>
+						<div class="col-md-3">
+							 <button type="button"
+								class="btn btn-default flag_enable  input-sm goods_order_flag" 
+								tabindex="20"><span class="fieldLeft_spacing_lg">Urgent</span></button> 
+						</div>
+					</div>
+					<div class="row fieldsBot_Spacing_lg">
+						<div class="col-md-3">
+							<button type="button"
+								class="btn btn-default flag_enable  input-sm goods_order_flag"
+								tabindex="21"><span class="fieldLeft_spacing_lg">Verified</span></button>
+						</div>
+						<div class="col-md-9">
+							<input type="text"
+								class="form-control input-sm"
+								tabindex="22">
+						</div>
+					</div>
+					<div class="row fieldsBot_Spacing_lg">
+						<div class="col-md-3">
+							<button type="button"
+								class="btn btn-default flag_enable input-sm goods_order_flag"
+								tabindex="23"><span class="fieldLeft_spacing_lg">Void</span></button>
+						</div>
+						<div class="col-md-9">
+							<input type="text"
+								class="form-control input-sm"
+								tabindex="24">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<article class="containerPos">
+		<div class="row container">
+			<div class="col-md-5 fieldsTop_Spacing">
+				<div class="input-group">
+					<span class="input-group-btn">
+						<button type="button" class="btn btn-default input-sm saleMesg">Message</button>
+					</span> <input type="text" class="form-control input-sm saleMesgText"
+						tabindex="25">
+				</div>
+			</div>
+			<div class="col-md-7">
+				<nav class="mainnav">
+					<ul class="rightFloat" id="list-nav">
+						<li><a title="Add Product" ng-click="showAddProductPopup()"
+							tabindex="26">Add Product</a></li>
+						<li><a tabindex="28">Remove Product</a></li>
+						<li><a tabindex="29">Hide Out Of Stock (OFF)</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</article>
+	<div class="container fieldsTop_Spacing">
+		<!--=============GRID==========  -->
+		<div id="grid" tabindex="30" class="saleGrid"></div>
+		<!--=============GRID==========  -->
+	</div>
+	<div class="summaryPos fieldsTop_Spacing">
+		<div class="row container">
+			<div class="col-md-5">
+				<div class="row ">
+					<div class="col-md-4">
+						<div class="input-group sales_grossTotal_inputGroup">
+							<input type="text" id="gross_total" name="gross_total"
+								class="form-control input-sm textRight input_groupTextBoxSize"
+								disabled> <span class="input-group-addon input-sm">Rs.</span>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="row sales_summary1st_section">
+							<div class="col-md-4">
+								<input type="text" id="cash_discount" name="cash_discount"
+									tabindex="31"
+									class="form-control input-sm cashdisc_1Width textRight">
+							</div>
+							<div class="col-md-8">
+								<div class="input-group input_groupCashDis_sale">
+									<input type="text" id="vat" name="vat"
+										class="form-control input-sm cashdisc_2Width textRight input_groupTextBoxSize"
+										disabled> <span class="input-group-addon input-sm">Rs.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="input-group input_groupVat_sale">
+							<input type="text" id="" name=""
+								class="form-control input-sm vatWidth textRight input_groupTextBoxSize"
+								disabled> <span class="input-group-addon input-sm">Rs.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="input-group input_groupSize">
+							<select
+								class="select-wrapper input-sm inputtext opt_btn_small not_implemented not_active input_groupTextBoxSize input_rightSpecing"
+								disabled="disabled" tabindex="32">
+
+							</select> <span class="input-group-addon input-sm">Rs.</span>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="input-group input_groupSize">
+							<select
+								class="select-wrapper input-sm inputtext opt_btn_small not_implemented not_active input_groupTextBoxSize input_rightSpecing"
+								disabled="disabled" tabindex="33">
+
+							</select> <span class="input-group-addon input-sm">Rs.</span>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="input-group input_groupSize">
+							<input type="text" id="pack_forward" name="pack_forward"
+								class="form-control input-sm textRight input_groupTextBoxSize"
+								tabindex="34"> <span class="input-group-addon input-sm">Rs.</span>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="input-group input_groupSize">
+							<input type="text" id="other_charges" name="other_charges"
+								class="form-control input-sm textRight input_groupTextBoxSize"
+								tabindex="35"> <span class="input-group-addon input-sm">Rs.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-1">
+				<input type="text"
+					class="form-control input-sm  textCenter ItemsQuantity"
+					readonly="readonly">
+			</div>
+		</div>
+		<div class="row container saleFooterPos fieldsSpacing">
+			<div class="col-md-5">
+				<div class="row">
+					<div class="col-md-4 textCenter text_inputfieldPos">
+						<span class="footerText_center2 saleFooter_textPos">Gross&nbsp;Total</span>
+					</div>
+					<div class="col-md-5 textCenter text_inputfieldPos">
+						<span class="footerText_center2 saleFooter_textPos">Cash&nbsp;Discount</span>
+					</div>
+					<div class="col-md-3 textCenter text_inputfieldPos">
+						<span class="footerText_center3 saleFooter_textPos">VAT</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-3 textCenter text_inputfieldPos">
+						<span class="footerText_center saleFooter_textPos2">Credit&nbsp;Note</span>
+					</div>
+					<div class="col-md-3 textCenter text_inputfieldPos">
+						<span class="footerText_center4 saleFooter_textPos2">Debit&nbsp;Note</span>
+					</div>
+					<div class="col-md-3 textCenter text_inputfieldPos">
+						<span class="saleFooter_textPos1">Pack&nbsp;&&nbsp;Forward</span>
+					</div>
+					<div class="col-md-3 textCenter text_inputfieldPos">
+						<span class="footerText_center5 saleFooter_textPos1">Other&nbsp;Charges</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-1 textCenter text_inputfieldPos">
+				<span class="footerText_center6 saleFooter_textPos1">Items/Quantity</span>
+			</div>
+		</div>
+		<div class="row container fieldsSpacing">
+
+			<div class="col-md-3 sectionvline">
+				<div class="row">
+					<div class="col-md-6">
+						<button type="button"
+							class="btn btn-default opt_btn_small input-sm salesTIN_pos_sm input_rightSpecing IncomeTax_Btn"
+							tabindex="36">TIN#</button>
+					</div>
+					<div class="col-md-6">
+						<button type="button"
+							class="btn btn-default opt_btn_small input-sm input_rightSpecing IncomeTax_Btn"
+							tabindex="37">D/L#</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="row">
+					<div class="col-md-1">
+						<span class="">Remark</span>
+					</div>
+					<div class="col-md-11">
+						<input type="text" class="form-control input-sm salesRemarkInput"
+							tabindex="38">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+      $('#test').BootSideMenu({side:"left", autoClose:true});
+  });
+</script>
+
+<script type="text/javascript">
+	var month = (new Date()).getMonth() + 1;
+	var year = (new Date()).getFullYear();
+	$("input[type=eu-date]").w2field("date", {
+		format : "dd/mm/yyyy"
+	});
+</script>
+
+<script type="text/javascript">
+  $( document ).ready(function() {
+  	  	/* $('#sale_id').allowNumbersOnly();
+  		$('#net_total').allowNumbersOnly();	    		
+  		$('#overdue').allowNumbersOnly();
+  		$('#ytd_sale').allowNumbersOnly();
+  		$('#last_sale').allowNumbersOnly();
+  		$('#gross_total').allowNumbersOnly();
+  		$('#cash_discount').allowNumbersOnly();
+  		$('#vat').allowNumbersOnly();	    			    		
+  		$('#pack_forward').allowNumbersOnly();
+  		$('#other_charges').allowNumbersOnly();	     */	
+  	});    	
+</script>
+
+<script type="text/javascript">
+$(function () {
+    $('#grid').w2grid({ 
+        name: 'grid', 
+        header: 'List of Names',       
+        columns: [
+					{ field: 'recid', caption: 'recid', hidden:true},
+					{ field: 'type', caption: 'Type', size: '6%', style: 'text-align: left' },
+		            { field: 'productName', caption: 'Product Name', size: '10%', style: 'text-align: left' }, 
+		            { field: 'pack', caption: 'Pack', size: '5%', style: 'text-align: right' },
+		            { field: 'company', caption: 'Company', size: '10%', style: 'text-align: left'},
+		            { field: 'batchID', caption: 'Batch#', size: '5%', style: 'text-align: right' },
+		            { field: 'expiry', caption: 'Expiry', size: '7%', style: 'text-align: center' },
+		            { field: 'mrp', caption: 'MRP', size: '7%', style: 'text-align: right' },
+		            { field: 'pd', caption: 'PD%', size: '5%', style: 'text-align: right' },
+		            { field: 'qty', caption: 'QTY', size: '5%', style: 'text-align: right' },
+		            { field: 'free', caption: 'Free', size: '5%', style: 'text-align: right'},
+		            { field: 'sRate', caption: 'S. Rate', size: '5%', style: 'text-align: right' },
+		            { field: 'vat', caption: 'VAT%', size: '5%', style: 'text-align: right' },		          	          		            
+					{ field: 'value', caption: 'Value', size: '7%', style: 'text-align: right' }		          
+		        ],
+        records: [
+                  /* { recid: 1, type: 'NS', productName: 'sdada', pack: '21', company: 'sdada', batchID: '21', expiry: '33/33/3333', mrp: '21', pd: 'sdada', qty: '21', free: 'sdada', vat: '21', value: '21'}*/       
+                  ]
+    });    
+});
+</script>
+
+<script type="text/javascript">
+$(function () {
+    $('#grid2').w2grid({ 
+        name: 'grid2', 
+        header: 'List of Names', 
+        show : {
+			toolbar : true
+		},
+        columns: [
+					{ field: 'type', caption: 'Customer', size: '10%' },
+		            { field: 'productName', caption: 'Items', size: '5%' }, 
+		            { field: 'pack', caption: 'Amount', size: '5%' }
+		        ],
+        records: [
+        ]
+    });    
+});
+</script>

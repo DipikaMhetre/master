@@ -1,0 +1,135 @@
+<div ng-controller="CreditNoteRegisterFilterCtrl" class=""
+	ng-init=init()>
+	<div class="container Filter_Large">
+		<div class="row topblueStrip ">
+			<h6 class="fieldsTop_Spacing">
+				<span class="topblueStripText">FILTERS</span> <img alt=""
+					class="close_popupImage" ng-click="cancel()" tabindex="2"
+					src="images/close_popup.png">
+			</h6>
+		</div>
+		<div class="row fieldsTop_Spacing">
+			<div class=" col-md-4">
+				<span class="control-label ">C.N.#</span>
+			</div>
+			<div class=" col-md-8">
+				<input type="text" id="" tabindex="11"ng-model="filter.creditNoteId" class="form-control input-sm">
+			</div>
+		</div>
+		<div class="row fieldsTop_Spacing">
+			<div class=" col-md-4">
+				<span class="control-label">From&nbsp;Date</span>
+			</div>
+			<div class=" col-md-8">
+				<input id="from_date" type="eu-date1" tabindex="10"
+					class="form-control input-sm textCenter" ng-model="filter.fromDate">
+			</div>
+		</div>
+		<div class="row fieldsTop_Spacing">
+			<div class=" col-md-4">
+				<span class="control-label">To&nbsp;Date</span>
+			</div>
+			<div class=" col-md-8">
+				<input type="eu-date2" id="to_date" tabindex="11"
+					class="form-control input-sm textCenter" ng-model="filter.toDate">
+			</div>
+		</div>
+		<div class="row fieldsTop_Spacing">
+			<div class=" col-md-4">
+				<span class="control-label ">Ledger</span>
+			</div>
+			<div class=" col-md-8">
+				<select class="form-control input-sm input_rightSpecing"
+					tabindex="13" ng-options="op.id as op.name for op in yesNoList"
+					ng-model="filter.ledgerFlag">
+				</select>
+			</div>
+		</div>
+		<div class="row fieldsTop_Spacing">
+			<div class=" col-md-4">
+				<span class="control-label">Approved</span>
+			</div>
+			<div class=" col-md-8">
+				<select class="form-control input-sm input_rightSpecing"
+					tabindex="12" ng-options="op.id as op.name for op in approvedList"
+					ng-model="filter.approvedFlag">
+				</select>
+			</div>
+		</div>
+		<div class="row fieldsTop_Spacing">
+			<div class=" col-md-4">
+				<span class="control-label">Created&nbsp;by</span>
+			</div>
+			<div class=" col-md-8">
+				<select class="form-control input-sm input_rightSpecing"
+					tabindex="12"
+					ng-options="op.contactId as op.contactFullName for op in contactList"
+					ng-model="filter.contactID">
+				</select>
+			</div>
+		</div>
+		<div class="row fieldsTop_Spacing">
+			<div class=" col-md-4">
+				<span class="control-label ">Status</span>
+			</div>
+			<div class=" col-md-8">
+				<select class="form-control input-sm input_rightSpecing"
+					tabindex="13" ng-options="op.id as op.name for op in statusList"
+					ng-model="filter.status">
+				</select>
+			</div>
+		</div>
+		<div class="row fieldsTop_Spacing">
+			<div class=" col-md-4">
+				<span class="control-label ">Void</span>
+			</div>
+			<div class=" col-md-8">
+				<select class="form-control input-sm input_rightSpecing"
+					tabindex="13" ng-options="op.id as op.name for op in yesNoList"
+					ng-model="filter.creditNoteVoidFlag">
+				</select>
+			</div>
+		</div>
+		<div class="row fieldsTop_Spacing">
+			<div class=" col-md-12">
+				<div class="row">
+					<div class=" col-md-4">
+						<span class="control-label">C.N.&nbsp;Amount</span>
+					</div>
+					<div class=" col-md-4">
+						<input type="text" tabindex="14" id="amount_from"
+							class="form-control input-sm textRight width_Large"
+							ng-model="filter.fromAmt">
+					</div>
+					<div class=" col-md-4">
+						<input type="text" tabindex="15" id="amount_to"
+							class="form-control input-sm textRight width_Large_leftspacing"
+							ng-model="filter.toAmt">
+					</div>
+				</div>
+				<div class="row">
+					<div class=" col-md-4"></div>
+					<div class=" col-md-4 textCenter">
+						<span class="control-label">from</span>
+					</div>
+					<div class=" col-md-4 textCenter">
+						<span class="control-label">to</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row fieldsTop_Spacing ">
+			<div class=" col-md-12">
+				<a ng-click="clearAllFilters();" class=" clearAllFilterPos">CLEAR&nbsp;ALL</a>
+			</div>
+		</div>
+		<div class="row Ok_Cancle_BtnPos_Popup">
+			<div class="col-md-12 ">
+				<button class="btn canclebtnSize" ng-click="cancel()" tabindex="11">Cancel</button>
+				<button class="btn okbtnSize" ng-click="ok(filter)" tabindex="12">Ok</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript"> var month = (new Date()).getMonth() + 1; var year = (new Date()).getFullYear(); $("input[type=eu-date]").w2field("date", { format : "dd/mm/yyyy" }); $("input[type=eu-date1]").w2field("date", { format : "dd/mm/yyyy", end : $("input[type=eu-date2]") }); $("input[type=eu-date2]").w2field("date", { format : "dd/mm/yyyy", start : $("input[type=eu-date1]") }); </script>
+',

@@ -1,0 +1,25 @@
+<div ng-controller="LoginCtrl" ng-init=init()>
+<div id="form" class="row homeLogin">
+							<div class="col-md-10">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+		                       			 	<input name="user_id" type="text" maxlength="100" class="form-control input-sm" placeholder="User ID" tabindex="1"value="{{user.userId}}" ng-model="user.userId">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<input name="password" type="password" maxlength="100" class="form-control input-sm homepassPos" placeholder="password" tabindex="2" value="{{user.userPwd}}" ng-model="user.userPwd">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="form-group">
+			                        <button  name="save" class="btn input-sm_btn btn_small btnLogin" ng-click="login()" tabindex="3">Login</button>
+									
+								</div>
+							</div>
+						</div>
+
+</div>

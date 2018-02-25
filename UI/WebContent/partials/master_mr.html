@@ -1,0 +1,269 @@
+<div id="mrMaster" data-ng-controller="MrMasterCtrl" ng-init=init()>      
+	<Section class="pageheader">
+    	<nav class="mainnav">
+        	<ul class="leftFloat" id="list-nav">
+				<li> <a href="#" title="Rajesh Mahale" class="highlight_purple not_active">MR Master</a> </li>
+                <li> <span class="glyphicon glyphicon-play newShowGlyphicon"></span></li>
+				<li> <a href="#" class="not_implemented_link not_active">Start Over</a> </li>							
+				<li> <a href="#" class="not_implemented_link not_active">Export</a> </li>							
+				<li> <a href="#" title="Print" class="not_implemented_link not_active">Print</a> </li>
+				<li> <a ng-click="saveMrMaster(showMrSelected)" tabindex="19" >Save</a> </li>	
+				<li> <a ng-click="createNew()">New</a> </li>							
+				<li> <a href="#" title="Help" class="not_implemented_link not_active">Help</a></li>
+             </ul>
+		</nav>
+     </Section>       		 
+	 <nav class="navbar navbar-default navbar_master">
+		<div class="container">
+			<ul class="nav navbar-nav master_nav_element_pos">
+	        	<li role="presentation"><a href="#masterCompany">Company</a></li>			        	
+	        	<li><a href="#masterSupplier">Supplier</a></li>
+	        	<li><a href="#masterDivision">Division</a></li>			        	
+	        	<li class="active"><a href="#masterMr">MR</a></li>
+	        </ul>
+		</div>
+	</nav>
+	<div class="row container">
+		<div class="col-md-2 sectiondivider">
+			<div class="master_leftUpper">
+				<div class="row">
+					<select class="input-sm masterPage_grid" data-ng-options="opt.companyName for opt in showCompanyList" ng-model="showCompanySelected" ng-change="onCompanySelection(showCompanySelected)" tabindex="1">
+					<option value='' disabled selected style='display:none;'>Please select a Company</option>
+					</select>
+				</div>
+				<div class="row">
+					<select class="input-sm masterPage_grid masterPage_fieldSpacing " data-ng-options="opt.divisionName for opt in showDivisionList" ng-model="showDivisionSelected" ng-change="onDivisionSelection(showDivisionSelected)" tabindex="2">
+						<option value='' disabled selected style='display:none;'>Please select a Division</option>
+					</select>
+				</div>
+			</div>						
+			<div class="row masterPage_fieldSpacing">
+	     		 <!-- =============GRID============-->
+	     		 <div id="grid" tabindex="-1" class="gridSizeLeft2"></div>
+	     		 <!-- =============GRID============-->
+			</div>
+		</div>
+		<div class="col-md-10">
+			<div class="">
+				<div class="row masterTop_GrayStrip">
+					<h6><span class="masterTop_StripText">MR&nbsp;-&nbsp;<span class="masterHeading">Mr. {{showMrSelected.mrName}}</span></span></h6>
+				</div>
+				<div class="row fields_headingSpacing">
+					<div class="col-md-6">
+						<div class="row">
+							<div class=" col-md-2">
+		          				<span class="control-label">Company</span>
+		       				</div>
+		                    <div class=" col-md-9">
+						      <input type="text" disabled class="form-control input-sm" value={{showMrSelected.mrCompanyName}} ng-="showMrSelected.mrCompanyName">
+						   </div>
+	        			</div>
+					</div>
+				</div>
+				<div class="row">
+					<h5><span class="submenuBlue_heading ">MR Details</span></h5>
+					<hr class="horizontal_line">
+				</div>	
+				<div class="row fieldsSpacing">
+					<div class="col-md-3">
+	        			<div class="row">
+	          				<span class="col-md-4 control-label">Name</span>
+	                        <div class="col-md-8">
+	                            <input type="text" id="mrname" class="form-control input-sm" tabindex="3">
+	          				</div>
+	        			</div>
+	        		</div>
+	        		<div class="col-md-5">
+	        			<div class="row">
+	          				<span class="col-md-2 control-label ">Mobile</span>
+	                        <div class="col-md-4">
+	                            <input type="text" id="mrmobile" class="form-control input-sm" tabindex="4">
+	          				</div>
+	          				<span class="col-md-2 control-label ">Landline</span>
+	                        <div class="col-md-4">
+	                            <input type="text" id="mrlandilne" class="form-control input-sm" tabindex="5">
+	          				</div>
+	        			</div>
+	        		</div>
+	        		<div class="col-md-4">
+	        			<div class="row">
+	          				<span class="col-md-2 control-label">Email</span>
+	                         <div class="col-md-10">
+	                           <input type="text" id="mremail" class="form-control input-sm" tabindex="6">
+	          				</div>
+	        			</div>
+	        		</div>
+	       		</div>
+	       		<div class="row">
+					<div class="col-md-1">
+						<span class="control-label">Remark</span>
+					</div>
+					<div class="col-md-11">
+						<input type="text" class="form-control input-sm" tabindex="7">
+					</div>
+				</div>
+				<div class="row">
+					<h5><span class="submenuBlue_heading">MR Divisions</span></h5>
+					<hr class="horizontal_line">
+				</div>
+				<div class=" row fieldsSpacing">
+					<div class="col-md-3">						
+						<div class="input-group masterPage_grid">
+							<input type="text" class="form-control purchase_search" id="mySearch" placeholder="Search" tabindex="8"> 
+							<span class="input-group-addon addonBG input_addon_pad"> <span>
+								<button class="btn btnPad btn-default glyphicon glyphicon-search " type="button"></button> </span>
+							 </span>
+						</div>
+					</div>
+					
+					<div class="col-md-9">
+						<nav class="mainnav">
+							<ul class="rightFloat" id="list-nav">
+								<li >
+								<a  title="Show Selected">Show Selected(OFF)</a>
+                            </li>
+							<li >
+								<a href="#" title="Group Selected" class="not_active not_implemented_link">Group Selected(OFF)</a>
+                            </li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="row container">
+					<table class=" table-bordered productMaster_tableSize">
+						<thead>
+							<tr>
+								<th></th>
+								<th>Code</th>
+								<th>Name</th>
+								
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>abc</td>
+								<td>rst</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>def</td>
+								<td>uvw</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>ghi</td>
+								<td>xyz</td>
+							</tr>							
+						</tbody>
+					</table>
+				</div>
+				<div class="row fields_headingSpacing">
+					<h5><span class="submenuBlue_heading ">MR Escalation Contacts</span></h5>
+					<hr class="horizontal_line">
+				</div>	
+				<div class="row fieldsSpacing">
+					<div class="col-md-3">
+	        			<div class="row">
+	          				<span class="col-md-4 control-label">ASM&nbsp;Name</span>
+	                        <div class="col-md-8">
+	                            <input type="text" id="asmname" class="form-control input-sm iptextRight" tabindex="9">
+	          				</div>
+	        			</div>
+	        		</div>
+	        		<div class="col-md-5">
+	        			<div class="row">
+	          				<span class="col-md-2 control-label ">Mobile</span>
+	                        <div class="col-md-4">
+	                            <input type="text" id="asmmobile" class="form-control input-sm" tabindex="10">
+	          				</div>
+	          				<span class="col-md-2 control-label ">Landline</span>
+	                        <div class="col-md-4">
+	                            <input type="text" id="asmlandline" class="form-control input-sm" tabindex="11">
+	          				</div>
+	        			</div>
+	        		</div>
+	        		<div class="col-md-4">
+	        			<div class="row">
+	          				<span class="col-md-2 control-label">Email</span>
+	                         <div class="col-md-10">
+	                           <input type="text" id="asmemail" class="form-control input-sm" tabindex="12">
+	          				</div>
+	        			</div>
+	        		</div>
+	       		</div>
+	       		<div class="row fieldsSpacing">
+					<div class="col-md-3">
+	        			<div class="row">
+	          				<span class="col-md-4 control-label">ZSM&nbsp;Name</span>
+	                        <div class="col-md-8">
+	                            <input type="text" id="zsmname" class="form-control input-sm " tabindex="13">
+	          				</div>
+	        			</div>
+	        		</div>
+	        		<div class="col-md-5">
+	        			<div class="row">
+	          				<span class="col-md-2 control-label ">Mobile</span>
+	                        <div class="col-md-4">
+	                            <input type="text" id="zsmmobile" class="form-control input-sm" tabindex="14">
+	          				</div>
+	          				<span class="col-md-2 control-label ">Landline</span>
+	                        <div class="col-md-4">
+	                            <input type="text" id="zsmlandline" class="form-control input-sm" tabindex="15">
+	          				</div>
+	        			</div>
+	        		</div>
+	        		<div class="col-md-4">
+	        			<div class="row">
+	          				<span class="col-md-2 control-label">Email</span>
+	                         <div class="col-md-10">
+	                           <input type="text" id="zsmemail" class="form-control input-sm" tabindex="16">
+	          				</div>
+	        			</div>
+	        		</div>
+	       		</div>
+				
+				
+							
+				<div class="row">
+					<h5><span class="submenuBlue_heading ">MR Settings</span></h5>
+					<hr class="horizontal_line">
+				</div>      
+		        <div class="row">	
+		    		<div class="col-md-9">
+		    			 <div class="row">
+		    			 	<span class="col-md-2">
+				       			<input class="checkBox" type="checkbox" ng-value={{showMrSelected.mrActiveFlag}} ng-model=showMrSelected.mrActiveFlag tabindex="17">
+				       			<span>Active</span>
+				       		</span>
+				       		<span class="col-md-4">
+				       			<input class="checkBox" type="checkbox" ng-value={{showMrSelected.mrEmailreportFlag}} ng-model=showMrSelected.mrEmailreportFlag tabindex="18">
+				       			<span>Email Reports</span>
+				       		</span>
+		    			 </div>
+		    		</div>
+		       	</div>									
+			</div>
+		</div>
+	</div>   		 
+</div>
+
+<script type="text/javascript">
+	    $( document ).ready(function() {
+	    	  // Handler for .ready() called.
+	    	  $('#mrname ').allowTextOnlyWithSpace();
+	    		$('#mrmobile ').allowNumbersOnly();
+	    		$('#mrlandilne ').allowNumbersOnly();
+	    		$('#mremail ').allowEmailOnly();
+	    		$('#asmname ').allowTextOnlyWithSpace();
+	    		$('#asmmobile ').allowNumbersOnly();
+	    		$('#asmlandline ').allowNumbersOnly();
+	    		$('#asmemail ').allowEmailOnly();
+	    		$('#zsmname  ').allowTextOnlyWithSpace();
+	    		$('#zsmmobile  ').allowNumbersOnly();
+	    		$('#zsmlandline  ').allowNumbersOnly();
+	    		$('#zsmemail ').allowEmailOnly();
+	    			    		
+	    	});
+    	
+    </script> 

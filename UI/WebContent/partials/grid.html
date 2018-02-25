@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W2UI Demo: combo-2</title>
+    <!-- <link rel="stylesheet" type="text/css" href="http://w2ui.com/src/w2ui-1.4.1.min.css" /> -->
+   <!--  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://w2ui.com/src/w2ui-1.4.1.js"></script> -->
+	<script type="text/javascript" src="components/w2uiGrid/grid.js"></script>
+</head>
+<body>
+	<div id="main" style="width: 100%; height: 100%;"></div>
+	<div><input type="button"onClick="mySave()"></div>
+	<script type="text/javascript">
+		function mySave(){
+			alert("Hi in mySave");
+		}
+	</script>
+	<script type="text/javascript">
+		$(function () {
+		    // initialization
+		    $('#main').w2layout(config.layout);
+		    w2ui.layout.content('left', $().w2grid(config.grid));
+		    w2ui.layout.content('main', $().w2form(config.form));
+		});
+	</script>
+
+</body>
+</html>

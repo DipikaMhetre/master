@@ -1,0 +1,196 @@
+<div id="ReportManager" data-ng-controller="ReportMasterCtrl" ng-init=init()>
+	<Section class="pageheader">
+		<nav class="mainnav">
+			<ul class="leftFloat" id="list-nav">
+				<li><a href="#" title="  " class="highlight_purple not_active">Report
+						Manager</a></li>
+				<li><span class="glyphicon glyphicon-play newShowGlyphicon"></span></li>
+				<li><a href="#" title="Start Over" class="">Start Over</a></li>
+				<li><a href="#" title="Help"
+					class="not_implemented_link not_active">Help</a></li>
+			</ul>
+			<ul class="rightFloat_Menu">
+				<li class="serchReport_text"><span>Search&nbsp;Report</span></li>
+				<li class="serchReport_input"><input
+					class="form-control input-sm serchReport_searchINput"></li>
+				<li><button type="button" class="btn btn_ToBeDone">Search</button></li>
+				<li>
+					<button type="button" class="btn btn_ToBeDone">To be done</button>
+				</li>
+			</ul>
+		</nav>
+	</Section>
+	<div id="liquid1" class="liquid" style="width: 96%; margin-left: 2%; position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); " >
+		<span class="previous"> <img alt="" src="images/flex-prev.png" class="report_manager_imgPre"></span>
+		<div class="wrapper" >
+			<ul >
+			<li ng-repeat="item in showCategoryList |orderBy:'-reportCategoryPosition':true"><a  class="thumbnail"  ng-click="getReportList(item.reportCategoryId)"   ng-class="thumbnail" ng-model="CategorySelected" > <img  src="images/openPopup.png"><span>{{item.reportCategoryName}}</span></a></li>
+			<!-- <li ng-repeat="item in showCategoryList"></li> -->
+				<!-- <li class=""><a class="thumbnai" ng-model=""> <img alt="" src="images/openPopup.png"> <span>Summary</span></a></li>
+				<li ><a  class="thumbnail" ng-model=""> <img alt="" src="images/openPopup.png">  <span>Accounting</span></a></li>
+				<li><a class="thumbnail"> <img alt="" src="images/openPopup.png"> <span>Sale</span></a></li>
+				<li><a  class="thumbnail"> <img alt="" src="images/openPopup.png"> <span>Purchase</span></a></li>
+				<li><a  class="thumbnail"> <img alt="" src="images/openPopup.png"> <span>Stock</span></a></li>
+				<li><a  class="thumbnail"> <img alt="" src="images/openPopup.png"> <span>People</span></a></li>
+				<li><a  class="thumbnail"> <img alt="" src="images/openPopup.png"> <span>Miscellenous</span></a></li>
+				<li><a  class="thumbnail"> <img alt="" src="images/openPopup.png"> <span>Logs</span></a></li> -->
+				<!-- <li><a href="#" class="thumbnail"> <img alt="" src="images/openPopup.png"> <span>Summary</span></a></li>
+				<li><a href="#" class="thumbnail"> <img alt="" src="images/openPopup.png"> <span>Accounting</span></a></li>
+				<li><a href="#" class="thumbnail"> <img alt="" src="images/openPopup.png"> <span>Summary</span></a></li>
+				<li><a href="#" class="thumbnail"> <img alt="" src="images/openPopup.png"> <span>Accounting</span></a></li>
+				<li><a href="#" class="thumbnail"> <img alt="" src="images/openPopup.png"> <span>Summary</span></a></li>
+				<li><a href="#" class="thumbnail"> <img alt="" src="images/openPopup.png"> <span>Accounting</span></a></li> -->
+			</ul>
+		</div>
+		<span class="next"><img alt="" src="images/flex-next.png" class="report_manager_imgNext"></span>
+	</div>
+	<div class="row container" style="margin-top: 10px">
+		<div class="col-md-3 sectiondivider">
+			<div class="row ">
+				<div class="row textCenter">
+						<span class="">Notifications</span>
+					</div>
+					<div id="grid" tabindex="2" class="ReportManager_NotificationGrid"></div>
+					<div class="row textCenter">				
+				<a  tabindex="3" title="Filter">Filter() </a>
+				<img alt="" class="filterOff_closeImage" tabindex="4"					
+					src="images/contacts_manager/close.png">
+			</div>
+			</div>
+		</div>
+
+		<div class="col-md-9">
+			<div class="row masterTop_GrayStrip">
+				<h6>
+					<span class="masterTop_StripText"> Summary Reports</span>
+				</h6>
+			</div>
+			<div class="row fieldsSpacing">
+				<div class="col-md-4">
+					<div class="row textCenter">
+						<span class="">List of Reports</span>
+					</div>
+					<div  id="grid2" value={showSubReportList.reportId}  tabindex="2" class="ReportManager_3sec row"></div>
+
+
+				</div>
+				<div class="col-md-4">
+					<div class="row textCenter">
+						<span class="highlight_blue">Name of Reports</span>
+					</div>
+					<div id="grid3" ng-hide="hideGrid3" value={showSubCategaryList.reportId} tabindex="2" class="ReportManager_3sec"></div>
+				</div>
+				<div class="col-md-4">
+					<div class="row textCenter">
+						<span class="highlight_gold">Name of sub category</span>
+					</div>
+					<div class="ReportManager_3sec" style="border: 1px solid #c0c0c0;">{{ReportDesc}}</div>
+				</div>
+			</div>
+			<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4"></div>
+				<div class="col-md-4 textCenter">
+					<button type="button" class="btn myButton" style="width: 150px;">Show Report</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<!-- <script type="text/javascript" src="components/angular/jquery-1.11.1.min.js"></script> -->
+<script type="text/javascript" src="js/jquery.liquidcarousel.pack.js"></script>
+<script type="text/javascript">
+		$(document).ready(function() {
+			$('#liquid1').liquidcarousel({height:50, duration:100, hidearrows:false});
+		});
+</script>
+
+<script type="text/ng-template" id="productFilter.html">
+
+<div class="" ng-init=init()>
+	<div class="container lightBox_masterPrductFilter">
+		<div class="row topblueStrip ">
+			<h6 class="blueStripTextPos">
+				<span class="topblueStripText">FILTERS</span>
+			</h6>
+		</div>
+		<div class="row fieldsTop_Spacing">
+			<div class=" col-md-3">
+				<div class="row">
+					<div class=" col-md-4">
+						<span class="control-label">Type</span>
+					</div>
+					<div class=" col-md-7">
+						<select	class="form-control productboxSize input-sm productFilterIP_size"
+							tabindex="1">
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row fieldsTop_Spacing">
+			<div class=" col-md-3">
+				<div class="row">
+					<div class=" col-md-4">
+						<span class="control-label">Priority</span>
+					</div>
+					<div class=" col-md-7">
+						<select
+							class="form-control productboxSize input-sm productFilterIP_size"
+							tabindex="1">
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row fieldsTop_Spacing">
+			<div class=" col-md-3">
+				<div class="row">
+					<div class=" col-md-4">
+						<span class="control-label">from&nbsp;date</span>
+					</div>
+					<div class=" col-md-7">
+						<input type="text" id="prodotherid"
+							class="form-control input-sm productFilterIP_size"	>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row fieldsTop_Spacing">
+			<div class=" col-md-3">
+				<div class="row">
+					<div class=" col-md-4">
+						<span class="control-label">to&nbsp;date</span>
+					</div>
+					<div class=" col-md-7">
+						<input type="text" id="prodname"
+							class="form-control input-sm productFilterIP_size">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row fieldsTop_Spacing ">
+			<div class=" col-md-3">
+				<a ng-click="clearAllFilters();" title="Remove Product"
+					class=" clearAllFilterPos">CLEAR&nbsp;ALL</a>
+			</div>
+		</div>
+		<div class="row fieldsTop_Spacing fieldsBot_Spacing">
+			<div class=" col-md-3" style="margin-left: -29px;">
+				<span>
+					<div class=" col-md-5 productFilterBtnPos">
+						<button type="button" class="canclebtnSize">Cancel</button>
+					</div>
+					<div class=" col-md-5 ">
+						<button type="button" ng-click="ok(filter)" class="okbtnSize">OK</button>
+					</div>
+					
+				</span>
+			</div>
+		</div>
+	</div>
+	</div>
+  <script>
+ 

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+	<html ng-app="pharmApp" dir="ltr">
+	<head>
+		<title>Purpleaid</title>		
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<!-- Menu files -->
+		<link rel="shortcut icon" href="../favicon.ico">
+		<script src="components/angular/jquery-1.11.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="components/bootstrap-3.2.0/css/bootstrap.css" />
+				
+		<script src="scripts/libs/modernizr.js"></script>									
+		<link rel="stylesheet" type="text/css" href="components/w2uiGrid/w2ui-1.4.1.css" />		
+		
+	
+		<script src="js/modernizr.custom.25376.js"></script>		
+		<script src="components/bootstrap-3.2.0/js/bootstrap.js"></script>
+		<link rel="stylesheet" href="stylesheets/style.css" />
+		<link href="images/faviconP.ico" rel="icon" type="image/x-icon" />
+		<!-- Menu files Ends-->
+		
+		<!-- Angular + UI GRID -->
+		<script src="components/angular/angular.js"></script>
+		<script src="components/angular/angular-route.min.js"></script>
+		<script src="components/bootstrap-3.2.0/ui-bootstrap.js"></script>
+		<script src="components/bootstrap-3.2.0/ui-bootstrap-tpls-0.12.0.js"></script>
+		<script src="app.js"></script>
+	    
+		<!-- Controller Files -->
+		<script src="controllers/MainCtrl.js"></script>
+		<script src="controllers/PurchaseCtrl.js"></script>
+		<script src="controllers/PersonModalInstanceCtrl.js"></script>
+		<script src="controllers/CompanyMasterCtrl.js"></script>
+		<script src="controllers/MrMasterCtrl.js"></script>
+		<script src="controllers/DivisionMasterCtrl.js"></script>	
+		<script src="controllers/SupplierMasterCtrl.js"></script>				
+		<script type="text/javascript" src="components/w2uiGrid/w2ui-1.4.1.js"></script>
+	</head>
+	
+	<body id="AllMainCtrl" data-ng-controller="MainCtrl" class="purpleaid" onload=GetClock();>
+         <div class="row container">
+         	<ng-view></ng-view>
+         </div>
+         
+			<section class="column" style="background-color:white; box-shadow: 0 5px 15px rgba(0,0,0,.5); bottom: 27px; position: fixed; height: 554px;
+ 					display:none;" id="purpleaid_menu" > 
+ 				<div class="fieldsTop_Spacing">
+ 					<input type="text"  class="form-control input-sm textCenter menu_user" value="Rajesh Mahale">
+ 				</div>	
+ 				
+					<div id="dl-menu" class="dl-menuwrapper outer-nav right vertical">
+	<!-- <button class="dl-trigger">Open Menu</button> -->
+	<ul class="dl-menu dl-menuopen menu_contentPos" >
+		<li>
+			<a href="#masterCompany">Masters</a>
+			<ul class="dl-submenu">
+				<li><a href="#masterCompany">Company Master</a></li>
+				<li><a href="#masterDivision">Division Master</a></li>
+				<li><a href="#masterSupplier">Supplier Master</a></li>	
+				<li><a href="#masterMr">MR Master</a></li>
+				<li><a href="#">Product Master</a></li>				
+				<li><a href="#">Custumer Master</a></li>								
+			</ul>
+		</li>
+		<li><a href="#sales">Sale</a></li>
+		<li><a href="#purchase">Purchase</a>
+			<ul class="dl-submenu">
+				<li><a href="#">Goods Receipt</a></li>
+				<li><a href="#">Purchase Return</a></li>
+				<li><a href="#">Company Orders</a>
+					<ul class="dl-submenu">
+						<li><a href="#">Order Report</a></li>
+						<li><a href="#">Modify Order</a></li>
+						<li><a href="#">Close Order</a></li>
+						<li><a href="#purchase">New Order</a></li>
+						<li><a href="#">Batch Orders</a></li>
+						<li><a href="#">Order Summaries</a></li>
+						<li><a href="#">Order Import</a></li>
+						<li><a href="#">Order Export</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Rates Entry</a>	</li>
+				<li><a href="#">Batch Operation</a></li>
+				<li><a href="#">Scheme Quantity </a></li>
+				<li><a href="#">Updates</a>	</li>
+				<li><a href="#">Manual </a></li>
+				<li><a href="#">Expiry/Breakage</a>	</li>
+				<li><a href="#">Statement </a></li>
+				<li><a href="#">Company Claim</a></li>
+				<li><a href="#">VAT Reports</a>	</li>
+				<li><a href="#">LBT Reports</a>	</li>
+			</ul>
+		</li>
+		<li><a href="#">Accounting</a></li>
+		<li><a href="#">Report</a></li>
+		<li><a href="#">Bookmarks</a>
+			<ul class="dl-submenu">
+				<li><a href="#">Bookmarks Manager</a></li>
+				<li><a href="#">Dashboard</a></li>
+				<li><a href="#">Login</a></li>
+				<li><a href="#">Sale</a></li>
+				<li><a href="#">Purchase</a></li>
+				<li><a href="#">Sales Summary</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Other</a></li>
+		<li><a href="#">Help</a></li>
+	</ul>
+	</div>
+					 <nav class="menu_btn">									
+						<div class="row container">
+							<div class="col-md-3">
+								<a href="#"><img class="menu_imageSize" src="images/menu_images/logout.png"></a><br>
+								<span class="menu_logoutPos">Logout</span>	
+						    </div>
+						    <div class="col-md-3">
+						    	<a href="#"><img class="menu_imageSize" src="images/menu_images/profile.png"></a><br>
+								<span class="menu_profilePos">Profile</span>
+						    </div>
+						    <div class="col-md-3">
+						    	<a href="#"><img class="menu_imageSize" src="images/menu_images/calculator.png"></a><br>
+								<span class="menu_calPos">Calc</span>
+						    </div>
+						    <div class="col-md-3">
+						    	<a href="#"><img class="menu_imageSize" src="images/menu_images/favourite.png"></a><br>
+								<span class="menu_favoritePos">Favorite</span>
+						    </div>
+						</div>
+						</nav>	
+				
+				<div class="row menu_version">
+							<span class="">Purpleaid Wholesale <span class="purpleaid_version">U1.0.002</span>
+							</span>
+						
+						</div>
+					
+					
+						<div class="row menu_companyName">
+							<span class="">ABC Pharma, Jalgoan
+							</span>
+						</div>
+					
+					
+			
+				</section>											
+        	<nav class="mainnav navbar-fixed-bottom footerMenu">					
+				<ul class="leftFloat_Menu">
+					<li>
+						<button type="button" id="showMenu" class="purpleaidMenu" onclick="showmenu()">Purpleaid Menu</button>
+	                </li>	
+	                <li >
+	                	<button type="button" class="footer_openMenu">PO: UNICHEM</button>
+	                </li>	
+	            </ul>												        
+           	</nav>
+           				
+<!-- Menu files -->
+    <script src="js/ticker.js"></script>
+    <script src="js/classie.js"></script>
+	<script src="js/menu.js"></script>			
+   <!--  <script src="scripts/libs/jquery-1.9.1.min.js"></script> -->
+	<script src="scripts/libs/jquery.validate.min.js"></script>
+	<script src="scripts/libs/enquire.min.js"></script>
+	<script src="scripts/libs/plugins3rd.js"></script>
+	<script src="scripts/plugins.js"></script>
+	<script src="js/jquery.dlmenu.js"></script>
+	<script>
+		$(function() {
+			$( '#dl-menu' ).dlmenu();
+			
+		});
+	</script>
+	<script language="JavaScript">
+			function showmenu()
+			{
+				var styl = document.getElementById('purpleaid_menu').style;
+				if (styl.display == "none") {
+					styl.display = "block";
+				} else {
+					styl.display = "none";
+				};
+			}
+	</script>
+		
+	<script src="js/modernizr.custom.js"></script>
+	<!-- <script type="text/javascript" src="http://w2ui.com/src/w2ui-1.4.1.js"></script> -->
+	<script type="text/javascript" src="components/w2uiGrid/grid.js"></script>
+	
+		<script type="text/javascript">
+			function load (config) {
+			
+				$('#main').w2layout(config.layout);
+			    w2ui.layout.content('left', $().w2grid(config.grid));
+			   /*  w2ui.layout.content('main', $().w2form(config.form)); */						
+			}		
+		</script>
+		
+		<script type="text/javascript">
+			function focusGrid(){
+			debugger;
+			//document.activeElement=$("#main");
+			//$(window).scrollTop($('#main').offset().top);
+			
+			w2ui.grid.keyboard=true;
+			w2ui.grid.click(1,'click');
+			document.activeElement=$("#grid_grid_main");											
+		}
+		</script>
+	
+</html>

@@ -1,0 +1,1440 @@
+<style>
+::-webkit-scrollbar {
+	display: none;
+}
+</style>
+
+<title>Help</title>
+<div id="Help" data-ng-controller="HelpCtrl" ng-init=init()>
+	<Section class="pageheader">
+		<nav class="mainnav">
+			<ul class="leftFloat_Menu" id="list-nav">
+				<li><a class="highlight_purple not_active">Help</a></li>
+				<li><span class="glyphicon glyphicon-play newShowGlyphicon"></span></li>
+				<li><a ng-click="$parent.changeView(activeUser.userId,activeUser.token,161);">Refresh</a></li>
+			</ul>
+			<ul class="rightFloat_Menu">
+				<li><a class=" not_active marginZero textCenter">Satyajit
+						Toradmal</a> <a href="#" title="Todays Date"
+					class=" not_active marginZero textCenter"> <span
+						style="font-size: 12px;" id="date_time"></span> <script
+							type="text/javascript">
+							window.onload = date_time('date_time');
+						</script></a></li>
+				<li class="editable_btnPos">
+					<button type="button" ng-class="editable ? 'flagselected' : ''"
+						class="btn btn-default flag_enable editable-btn" tabindex="20">
+						<span class="fieldLeft_spacing_lg" ng-click="editable=!editable">Editable</span>
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</Section>
+	<section>
+		<div class="row container">
+			<div id="test" class="col-md-2 sidebarPos_sale HelpMenu">
+				<div class="row fieldsSpacing">
+					<div class="col-md-12"
+						style="text-align: center; margin-top: 10px;">
+						<span style="font-size: 17px; font-weight: bold;">Contents</span>
+					</div>
+				</div>
+				<div class="row fieldsSpacing">
+					<div class="col-md-12">
+						<form class="search">
+							<input type="text" placeholder="Search..." />
+						</form>
+					</div>
+				</div>
+				<ul class="tree">
+					<li><span>1. Sales</span>
+						<ul class="tree_sub">
+							<li><a>1.1&nbsp;&nbsp;Sale Invoice</a></li>
+							<li><a>1.2&nbsp;&nbsp;Sale Challan</a></li>
+							<li><a>1.3&nbsp;&nbsp;Credit Note Register</a></li>
+							<li><a>1.4&nbsp;&nbsp;Debit Note Register</a></li>
+						</ul></li>
+					<li><span>2. Stock Management</span>
+						<ul class="tree_sub">
+							<li><a ng-click="show='PurchaseOrderRegister'"
+								ng:class="{'active' : show=='PurchaseOrderRegister'}">2.1&nbsp;&nbsp;Purchase
+									Order Register</a></li>
+							<li><a ng-click="show='PurchaseOrder'"
+								ng:class="{'active' : show=='PurchaseOrder'}">2.2&nbsp;&nbsp;Purchase
+									Order</a></li>
+							<li><a ng-click="show='GoodsReceiptRegister'">2.3&nbsp;&nbsp;Goods
+									Receipt Register</a></li>
+							<li><a ng-click="show='GoodsReceipt'"
+								ng:class="{'active' : show=='GoodsReceipt'}">2.4&nbsp;&nbsp;Goods
+									Receipt</a></li>
+							<li><a ng-click="show='StockManager'">2.5&nbsp;&nbsp;Stock
+									Manager</a></li>
+							<li><a ng-click="show='StockAudit'">2.6&nbsp;&nbsp;Stock
+									Audit</a></li>
+						</ul></li>
+					<li><span>3. Return Management</span>
+						<ul class="tree_sub">
+							<li><a ng-click="show=''">3.1&nbsp;&nbsp; Return
+									Register</a></li>
+							<li><a ng-click="show=''">3.2&nbsp;&nbsp;Goods Return</a></li>
+							<li><a ng-click="show=''">3.3&nbsp;&nbsp;Saleable
+									Returns</a></li>
+							<li><a ng-click="show=''">3.4&nbsp;&nbsp;Company Claim</a></li>
+						</ul></li>
+					<li><span>4. Accounting</span>
+						<ul class="tree_sub">
+							<li><a ng-click="show='CreditNoteRegister'"
+								ng:class="{'active' : show=='CreditNoteRegister'}" class="">4.1&nbsp;&nbsp;Credit
+									Note Register</a></li>
+							<li><a ng-click="show=''">4.2&nbsp;&nbsp;Debit Note
+									Register</a></li>
+							<li><a ng-click="show=''">4.3&nbsp;&nbsp;Manage
+									Financial year</a></li>
+							<li><a ng-click="show='AccountingMaster'"
+								ng:class="{'active' : show=='AccountingMaster'}">4.4&nbsp;&nbsp;Accounting
+									Master</a></li>
+							<li><a ng-click="show='AccountingGroup'"
+								ng:class="{'active' : show=='AccountingGroup'}">4.5&nbsp;&nbsp;Accounting
+									Group</a></li>
+							<li><a ng-click="show=''">4.6&nbsp;&nbsp;Receipts and
+									Payments</a></li>
+							<li><a ng-click="show=''">4.7&nbsp;&nbsp;Cheque Printing</a></li>
+							<li><a ng-click="show=''">4.8&nbsp;&nbsp;Bank Deposit
+									Slip</a></li>
+							<li><a ng-click="show=''">4.9&nbsp;&nbsp;Cheque Bounce
+									Return Entry</a></li>
+							<li><a ng-click="show=''">4.10&nbsp;&nbsp;Bank
+									Reconciliation</a></li>
+							<li><a ng-click="show=''">4.11&nbsp;&nbsp;Unallotted
+									Receipts & Payments</a></li>
+						</ul></li>
+					<li><span>5. Utility</span>
+						<ul class="tree_sub">
+							<li><a ng-click="show=''">Locksmith</a></li>
+							<li><a ng-click="show=''">People Manager</a></li>
+							<li><a ng-click="show=''">System Permissions & Roles</a></li>
+							<li><a ng-click="show=''">Control Panel</a>
+								<ul class="tree_sub">
+									<li><a ng-click="show=''">System Parameter</a></li>
+									<li><a ng-click="show=''">Miscellaneous</a></li>
+								</ul></li>
+							<li><a href="">Manage Active User</a></li>
+						</ul></li>
+					<li><span>6. Reporting Center</span></li>
+					<li><span>7. Master</span>
+						<ul class="tree_sub">
+							<li><a ng-click="show=''"
+								ng:class="{'active' : show=='MasterCompany'}">7.1 Company</a></li>
+							<li><a ng-click="show=''"
+								ng:class="{'active' : show=='MasterSupplier'}">7.2 Supplier</a></li>
+							<li><a ng-click="show=''"
+								ng:class="{'active' : show=='MasterDivision'}">7.3 Division</a></li>
+							<li><a ng-click="show=''"
+								ng:class="{'active' : show=='MasterProduct'}">7.4 Product</a></li>
+							<li><a ng-click="show=''"
+								ng:class="{'active' : show=='MasterContent'}">7.5 Content</a></li>
+							<li><a ng-click="show=''"
+								ng:class="{'active' : show=='MasterCustomer'}">7.6 Customer</a></li>
+							<li><a ng-click="show=''"
+								ng:class="{'active' : show=='MasterArea'}">7.7 Area</a></li>
+							<li><a ng-click="show=''"
+								ng:class="{'active' : show=='MasterRoute'}">7.8 Route</a></li>
+							<li><a ng-click="show=''"
+								ng:class="{'active' : show=='MasterTaxCode'}">7.9 Tax Code</a></li>
+							<li><a ng-click="show=''"
+								ng:class="{'active' : show=='MasterBusinessDetails'}">7.10
+									Business Details</a></li>
+						</ul></li>
+					<li><span>8. Bookmarks</span></li>
+					<li><span>9. Help</span></li>
+					<li><a>10. Shortcut Keys</a></li>
+				</ul>
+			</div>
+			<div class="col-md-10 HelpMenulinkDetails" ng-app
+				ng-init="show='HomeScreen'">
+				<!-- =================== START Home Screen  =======================  -->
+				<div class="row" ng-show="show=='HomeScreen'">
+					<div class="col-md-12">
+						<section class="">
+							<h1 class="textCenter">Welcome to Purpleaid !!</h1>
+						</section>
+						<section class="loginUsertextPos">
+							<div class="row fields_headingSpacing textCenter ">
+								<img src="images/purpleaid_home.png">
+							</div>
+						</section>
+					</div>
+				</div>
+				<!-- =================== END Home Screen  =======================  -->
+
+				<!-- ===================START 4.4 Accounting Master=======================  -->
+				<div class="row" ng-show="show=='AccountingMaster'">
+					<div class="col-md-9 sectionvline">
+						<div class="row Help_mainHeading container fieldsBot_Spacing">
+							<h6 class="HeadingSpacing">
+								<span class="HelpMainHeading_Text">4. Accounting</span>
+							</h6>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p></p>
+							</div>
+						</div>
+						<div class="row">
+							<h5>
+								<span class="Help_heading">4.4 Accounting Master</span>
+							</h5>
+							<hr class="horizontal_line">
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p></p>
+							</div>
+						</div>
+						<div class="row fieldsBot_Spacing">
+							<div class="col-md-12">
+								<h1 class="HelpSectionHeading">Accounting Master Screen</h1>
+								<img alt="" src="images/help/4.4-1.png"
+									class="Help_images_large">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Important Data
+											Element</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Data Elements</th>
+													<th>Details</th>
+												</tr>
+											</thead>
+											<tr>
+												<td>1</td>
+												<td>A/C Group</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Ledger Type</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>A/C No.</td>
+												<td>A/C No. depend on Bank Ledger Type, When Ledger
+													Type Bank selected then A/C No field editable otherwise A/C
+													No field hide from screen</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Actions</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Action</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td></td>
+													<td>Refresh</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td>Save</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td>New</td>
+													<td></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row fields_headingSpacing">
+							<h5>
+								<span class="Help_heading">4.4.1 Filter</span>
+							</h5>
+							<hr class="horizontal_line">
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p></p>
+							</div>
+						</div>
+						<div class="row fieldsBot_Spacing">
+							<div class="col-md-12">
+								<h1 class="HelpSectionHeading">Filter Popup</h1>
+								<img alt="" src="images/help/4.4-2.png"
+									class="Help_images_Small">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Important Data
+											Element</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Data Elements</th>
+													<th>Details</th>
+												</tr>
+											</thead>
+											<tr>
+												<td>1</td>
+												<td>Account Code</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Ledger Type</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Account Group</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>Account Desc.</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td>Created by</td>
+												<td></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Actions</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Action</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td></td>
+													<td>Ok</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td>Cancel</td>
+													<td></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div id="accordion_AccountingMaster" class="AccordionTopPos">
+							<h3 class="highlight_blue"></h3>
+							<div class="AccordianChild_div">
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- =================== START Purchase Order Register=======================  -->
+				<div class="row" ng-show="show=='PurchaseOrderRegister'">
+					<div class="col-md-9 sectionvline">
+						<div class="row Help_mainHeading container fieldsBot_Spacing">
+							<h6 class="HeadingSpacing">
+								<span class="HelpMainHeading_Text">2. Stock Management</span>
+							</h6>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p>Stock management is the function of understanding the
+									stock mix of a company and the different demands on that stock.
+									The demands are influenced by both external and internal
+									factors and are balanced by the creation of purchase order
+									requests, Goods Receipt and stock manage.</p>
+							</div>
+						</div>
+						<div class="row">
+							<h5>
+								<span class="Help_heading">2.1 Purchase Order Register</span>
+							</h5>
+							<hr class="horizontal_line">
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p></p>
+							</div>
+						</div>
+						<div class="row fieldsBot_Spacing">
+							<div class="col-md-12">
+								<h1 class="HelpSectionHeading">Purchase Order Register
+									Screen</h1>
+								<img alt="" src="images/help/6.png" class="Help_images_large">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Important Data
+											Element</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Data Elements</th>
+													<th>Details</th>
+												</tr>
+											</thead>
+											<tr>
+												<td>1</td>
+												<td>Company List</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Purchase Order List</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Show Next</td>
+												<td></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Actions</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Action</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td></td>
+													<td>Editable</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td>Refresh</td>
+													<td>To reload the current screen, click refresh
+														button.</td>
+												</tr>
+												<tr>
+													<td></td>
+													<td>Export</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td>Email</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td>Print</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td>New</td>
+													<td>To create a new purchase order, click New button.</td>
+												</tr>
+												<tr>
+													<td></td>
+													<td>Filter</td>
+													<td></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row fields_headingSpacing">
+							<h5>
+								<span class="Help_heading">2.1.1 Filter</span>
+							</h5>
+							<hr class="horizontal_line">
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p></p>
+							</div>
+						</div>
+						<div class="row fieldsBot_Spacing">
+							<div class="col-md-12">
+								<h1 class="HelpSectionHeading">Filter Popup</h1>
+								<img alt="" src="images/help/7.png" class="Help_images_large">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Important Data
+											Element</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Data Elements</th>
+													<th>Details</th>
+												</tr>
+											</thead>
+											<tr>
+												<td>1</td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td></td>
+												<td></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Actions</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Action</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td></td>
+													<td>Ok</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td>Cancel</td>
+													<td></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div id="accordion_PurchaseOrderRegister" class="AccordionTopPos">
+							<h3 class="highlight_blue"></h3>
+							<div class="AccordianChild_div">
+								<p></p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- =================== END Purchase Order Register=======================  -->
+
+
+				<!-- =================== START 2.3 Goods Receipt Register=======================  -->
+				<div class="row" ng-show="show=='GoodsReceiptRegister'">
+					<div class="col-md-9 sectionvline">
+						<div class="row Help_mainHeading container fieldsBot_Spacing">
+							<h6 class="HeadingSpacing">
+								<span class="HelpMainHeading_Text">2. Stock Management</span>
+							</h6>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p>Stock management is the function of understanding the
+									stock mix of a company and the different demands on that stock.
+									The demands are influenced by both external and internal
+									factors and are balanced by the creation of purchase order
+									requests, Goods Receipt and stock manage.</p>
+							</div>
+						</div>
+						<div class="row">
+							<h5>
+								<span class="Help_heading">2.3 Goods Receipt Register</span>
+							</h5>
+							<hr class="horizontal_line">
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p></p>
+							</div>
+						</div>
+						<div class="row fieldsBot_Spacing">
+							<div class="col-md-12">
+								<h1 class="HelpSectionHeading">Goods Receipt Register
+									Screen</h1>
+								<img alt="" src="images/help/2.3-1.png"
+									class="Help_images_large">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Important Data
+											Element</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Data Elements</th>
+													<th>Details</th>
+												</tr>
+											</thead>
+											<tr>
+												<td>1</td>
+												<td></td>
+												<td></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Actions</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Action</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row fields_headingSpacing">
+							<h5>
+								<span class="Help_heading">2.3.1 Filter</span>
+							</h5>
+							<hr class="horizontal_line">
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p></p>
+							</div>
+						</div>
+						<div class="row fieldsBot_Spacing">
+							<div class="col-md-12">
+								<h1 class="HelpSectionHeading">Filter Popup</h1>
+								<img alt="" src="images/help/2.3-2.png"
+									class="Help_images_Small">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Important Data
+											Element</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Data Elements</th>
+													<th>Details</th>
+												</tr>
+											</thead>
+											<tr>
+												<td>1</td>
+												<td></td>
+												<td></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Actions</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Action</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td></td>
+													<td>Ok</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td>Cancel</td>
+													<td></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div id="accordion_GoodsReceiptRegister" class="AccordionTopPos">
+							<h3 class="highlight_blue"></h3>
+							<div class="AccordianChild_div">
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- =================== END 2.3 Goods Receipt Register=======================  -->
+
+				<!-- =================== START  2.4 Goods Receipt  =======================  -->
+				<div class="row" ng-show="show=='GoodsReceipt'">
+					<div class="col-md-9 sectionvline">
+						<div class="row Help_mainHeading container fieldsBot_Spacing">
+							<h6 class="HeadingSpacing">
+								<span class="HelpMainHeading_Text">2. Stock Management</span>
+							</h6>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p>Stock management is the function of understanding the
+									stock mix of a company and the different demands on that stock.
+									The demands are influenced by both external and internal
+									factors and are balanced by the creation of purchase order
+									requests, Goods Receipt and stock manage.</p>
+							</div>
+						</div>
+						<div class="row">
+							<h5>
+								<span class="Help_heading">2.4 Goods Receipt</span>
+							</h5>
+							<hr class="horizontal_line">
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p>While the Goods receipt process is simply a means of
+									matching the goods that a company receives with the Purchase
+									Order.</p>
+							</div>
+						</div>
+						<div class="row fieldsBot_Spacing">
+							<div class="col-md-12">
+								<h1 class="HelpSectionHeading">Goods Receipt Screen</h1>
+								<img alt="" src="images/help/2.4-1.png"
+									class="Help_images_large">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Important Data
+											Element</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Data Elements</th>
+													<th>Details</th>
+												</tr>
+											</thead>
+											<tr>
+												<td>1</td>
+												<td>Company</td>
+												<td>Select Company from company dropdown.</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Supplier</td>
+												<td>Select Supplier from supplier dropdown, it show
+													selected company supplier.</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Voucher ID</td>
+												<td>Voucher ID system generated, you can also retrive
+													already present Goods Receipt from Voucher ID.</td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>Verified</td>
+												<td></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Actions</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Action</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td></td>
+													<td>Refresh</td>
+													<td>To reload the current screen, click refresh
+														button.</td>
+												</tr>
+												<tr>
+													<td></td>
+													<td>Save</td>
+													<td>To save the Goods Receipt, click Save button</td>
+												</tr>
+												<tr>
+													<td></td>
+													<td>New</td>
+													<td>To create new Goods Receipt, click New button</td>
+												</tr>
+												<tr>
+													<td></td>
+													<td>Link PO</td>
+													<td>To link Goods Receipt with Purchase Order, click
+														Link PO button</td>
+												</tr>
+												<tr>
+													<td></td>
+													<td>Add Product</td>
+													<td>To add product in Goods Receipt, click on Add
+														Product button it show popup for adding product and
+														batches.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row fields_headingSpacing">
+							<h5>
+								<span class="Help_heading">2.4.1 Add Product</span>
+							</h5>
+							<hr class="horizontal_line">
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p></p>
+							</div>
+						</div>
+						<div class="row fieldsBot_Spacing">
+							<div class="col-md-12">
+								<h1 class="HelpSectionHeading">Add Product Popup</h1>
+								<img alt="" src="images/help/2.4-2.png"
+									class="Help_images_large">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Important Data
+											Element</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Data Elements</th>
+													<th>Details</th>
+												</tr>
+											</thead>
+											<tr>
+												<td>1</td>
+												<td></td>
+												<td></td>
+											</tr>
+
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Actions</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Action</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>4</td>
+													<td>Ok</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>5</td>
+													<td>Cancel</td>
+													<td></td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div id="accordion_GoodsReceipt" class="AccordionTopPos"></div>
+					</div>
+				</div>
+				<!-- =================== END  2.4 Goods Receipt  =======================  -->
+
+
+				<!-- =================== START Purchase Order  =======================  -->
+				<div class="row" ng-show="show=='PurchaseOrder'">
+					<div class="col-md-9 sectionvline">
+						<div class="row Help_mainHeading container fieldsBot_Spacing">
+							<h6 class="HeadingSpacing">
+								<span class="HelpMainHeading_Text">2. Stock Management</span>
+							</h6>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p>Stock management is the function of understanding the
+									stock mix of a company and the different demands on that stock.
+									The demands are influenced by both external and internal
+									factors and are balanced by the creation of purchase order
+									requests, Goods Receipt and stock manage.</p>
+							</div>
+						</div>
+						<div class="row">
+							<h5>
+								<span class="Help_heading">2.2 Purchase Order</span>
+							</h5>
+							<hr class="horizontal_line">
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p>A purchase order serves a simple purpose: It tells some
+									company that you want to purchase some item. purchase orders
+									become permanent records of items that you've ordered. Purchase
+									orders help a purchasing agent to manage incoming orders and
+									pending orders</p>
+							</div>
+						</div>
+						<div class="row fieldsBot_Spacing">
+							<div class="col-md-12">
+								<h1 class="HelpSectionHeading">Purchase Order Screen</h1>
+								<img alt="" src="images/help/4.png" class="Help_images_large">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Important Data
+											Element</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Data Elements</th>
+													<th>Details</th>
+												</tr>
+											</thead>
+											<tr>
+												<td>1</td>
+												<td>Net Amount</td>
+												<td>The Net Amount shows the total expended for the
+													item.</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Scheme</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Void</td>
+												<td>When Void flag ON then Purchase Order soft deleted
+													from record</td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td>Show Selected (ON/OFF)</td>
+												<td>When Show Selected(ON) then it show only selected
+													product for that Purchase Order</td>
+											</tr>
+											<tr>
+												<td>6</td>
+												<td>Sales Statistics</td>
+												<td>When click on last Sales Statistic dropdown it show
+													the readonly information of Last Sale, Current Sale,
+													Closing Stocks and Pending Orders depend on user selection</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Actions</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Action</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>7</td>
+													<td>Refresh</td>
+													<td>To reload the current screen, click refresh
+														button.</td>
+												</tr>
+												<tr>
+													<td>8</td>
+													<td>Save</td>
+													<td>To save your purchase order, click Save button.</td>
+												</tr>
+												<tr>
+													<td>9</td>
+													<td>New</td>
+													<td>To create a new purchase order, click New button.</td>
+												</tr>
+												<tr>
+													<td>10</td>
+													<td>Raise Invoice</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>11</td>
+													<td>New Invoice</td>
+													<td></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row fields_headingSpacing">
+							<h5>
+								<span class="Help_heading">2.2.1Add Product</span>
+							</h5>
+							<hr class="horizontal_line">
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p>Add Product Popup show the details of selected product of
+									PO screen. From that popup you can define the quantity and free
+									quantity of product for that Purchase Order.</p>
+							</div>
+						</div>
+						<div class="row fieldsBot_Spacing">
+							<div class="col-md-12">
+								<h1 class="HelpSectionHeading">Add Product Popup</h1>
+								<img alt="" src="images/help/5.png" class="Help_images_large">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Important Data
+											Element</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Data Elements</th>
+													<th>Details</th>
+												</tr>
+											</thead>
+											<tr>
+												<td>1</td>
+												<td>Quantity</td>
+												<td>Enter the quantity of selected product for that
+													Purchase Order</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Free</td>
+												<td>Enter the free quantity of selected product for
+													that Purchase Order</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Value</td>
+												<td>The system is able to automatically determine the
+													value of existing product.</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Actions</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Action</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>4</td>
+													<td>Ok</td>
+													<td>To add the selected product in the purchase order
+														click Ok</td>
+												</tr>
+												<tr>
+													<td>5</td>
+													<td>Cancel</td>
+													<td></td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row fields_headingSpacing">
+							<h5>
+								<span class="Help_heading">2.2.2 Filter</span>
+							</h5>
+							<hr class="horizontal_line">
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p></p>
+							</div>
+						</div>
+						<div class="row fieldsBot_Spacing">
+							<div class="col-md-12">
+								<h1 class="HelpSectionHeading">Filter Popup</h1>
+								<img alt="" src="images/help/7.png" class="Help_images_large">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Important Data
+											Element</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Data Elements</th>
+													<th>Details</th>
+												</tr>
+											</thead>
+											<tr>
+												<td>1</td>
+												<td></td>
+												<td></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<h5>
+										<span class="submenuBlue_heading">Actions</span>
+									</h5>
+									<hr class="horizontal_line">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="bordered">
+											<thead>
+												<tr>
+													<th class="HelpTableCol1">ID</th>
+													<th class="HelpTableCol2">Action</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>4</td>
+													<td>Ok</td>
+													<td>To add the selected product in the purchase order
+														click Ok</td>
+												</tr>
+												<tr>
+													<td>5</td>
+													<td>Cancel</td>
+													<td></td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div id="accordion_PurchaseOrder" class="AccordionTopPos">
+							<h3 class="highlight_blue">How to create new Purchase Order?</h3>
+							<div class="AccordianChild_div">
+								<p>
+									1. In Purpleaid Menu, choose <span
+										class="glyphicon glyphicon-play highlight_LightGrey"
+										aria-hidden="true"></span> Stock Management <span
+										class="glyphicon glyphicon-chevron-right highlight_LightGrey"
+										aria-hidden="true"></span> Purchase Order<br>The Purchase
+									Order screen appears.
+								</p>
+								<p>2. Enter the necessary data in the Purchase Order screen
+									areas.</p>
+								<p>3. Select Product and click on Add Product button, and
+									enter quantity in Quantity input field and Free quantity in
+									Free input field</p>
+								<p>4. click Ok.</p>
+								<p>5. If you add more product then follow step 3. and 4.</p>
+								<p>6. Click on save button to Save the Purchase Order</p>
+							</div>
+							<h3 class="highlight_blue">How to delete PO?</h3>
+							<div class="AccordianChild_div">
+								<p>1. Choose Purchase Order</p>
+								<p>2. Set void flag, Void flag work like a delete but it
+									soft delete.</p>
+							</div>
+							<h3 class="highlight_blue">How to Modify PO?</h3>
+							<div class="AccordianChild_div">
+								<p>1. If you wish to change data of purchase order, you must
+									select the desired PO.</p>
+								<p>2. Change the data</p>
+								<p>3. Choose Save button to modify the Purchase order</p>
+							</div>
+							<h3 class="highlight_blue">Note</h3>
+							<div class="AccordianChild_div">
+								<p>1. If the purchase order still contains incorrect or
+									incomplete items, you can Hold the purchase order and continue
+									processing it later.</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- =================== END Purchase Order=======================  -->
+			</div>
+
+		</div>
+	</section>
+</div>
+<script>
+	$(function() {
+		$(".tree").treemenu({
+			delay : 300
+		}).openActive();
+	});
+</script>
+
+<script src="js/accordion.js"></script>

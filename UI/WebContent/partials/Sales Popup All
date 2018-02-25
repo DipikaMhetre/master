@@ -1,0 +1,240 @@
++++++++++++++++++++++====================Sale   ADD PRODUCT ===================+++++++++++++++++++++++
+
+<!-- =====Controller Class for add Product  ===>  sale_addProduct_Model=====   -->
+
+<script  type="text/ng-template" id="grAddModifyProduct.html">
+		<div class="container lightBox_addProductSales">
+			<div class="row topblueStrip">
+				<h6 class="fieldsTop_Spacing"><span class="topblueStripText">ADD PRODUCT</span></h6>
+			</div>
+			<div class="row">
+				<h5><span class="submenuBlue_heading">Product Details</span></h5>
+				<hr class="horizontal_line">
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="row">
+						<div class="form-group col-md-4 fieldsSpacing">
+	          				<span class="control-label productDetail_saleText">Product</span>
+	       				</div>
+	                    <div class="form-group col-md-6 fieldsSpacing">
+					      <select class="form-control productboxSize input-sm" style="width: 140%;" tabindex="1">
+					         <option value="">LOSAR-A (LUPIN-NS)</option>
+					      </select>
+					      
+					   </div>
+					  <div class="col-md-2">
+					    <img src="images/snowflake.png" class="">
+					   </div>
+        			</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col-md-4">
+							<span class="control-label productDetail_saleText">Product&nbsp;Type</span>
+						</div>
+						<div class="col-md-8">
+						<input type="text" class="form-control input-sm">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col-md-4">
+							<span class="control-label productDetail_saleText">DPCO</span>
+						</div>
+						<div class="col-md-8">
+						<input type="text" class="form-control input-sm DPCOboxAlign" readonly="readonly" value="NO">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col-md-3">
+							<span class="control-label productDetail_saleText">PD%</span>
+						</div>
+						<div class="col-md-4">
+						<input type="text" class="form-control input-sm PD_firstTextBox" value="0%" tabindex="2">
+						</div>
+						<div class="col-md-5">
+							<div class="input-group">
+								<input type="text" class="form-control input-sm textRight " style="margin-left: -22px; width: 179%;" value="0">
+							    <span class="input-group-addon input-sm">Rs.</span>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1">
+					<span class="control-label productDetail_saleText">Remark</span>
+				</div>
+				<div class="col-md-11">
+					<input type="text" class="form-control input-sm borderWhite" readonly="readonly">
+				</div>
+			</div>
+			<div class="row">				
+				<h5><span class="submenuBlue_heading">Batch Details And Sales History</span></h5>			
+				<hr class="horizontal_line">
+			</div>
+			 <div class="row fieldsSpacing">
+			 	<div class="col-md-3">
+					<div class="row">
+          				<span class="col-md-4 control-label ">Pack</span>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control input-sm" readonly="readonly" value="10 TAB">
+          				</div>
+        			</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+          				<span class="col-md-4 control-label">Box</span>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control input-sm " readonly="readonly" value="10">
+          				</div>
+        			</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+          				<span class="col-md-4 control-label">Self#</span>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control input-sm " readonly="readonly" value="104/K">
+          				</div>
+        			</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+          				<span class="col-md-4 control-label">Total&nbsp;Stock</span>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control input-sm iptextRight borderWhite totalstockBoxAlign" readonly="readonly" value="102">
+          				</div>
+        			</div>
+				</div>
+			 </div>
+			 <div class="row fieldsBot_Spacing">
+					<!--=============GRID==========  -->
+           			<div id="grid2" tabindex="-1" class="sale_addProduct_GridSize"></div>
+           			<!--=============GRID==========  -->
+	          	
+        		</div>
+			<div class="row">
+	          		<span class=" col-md-2 leftMargin_1 control-label">Sale History</span>
+        		</div>
+        		<div class="row">
+					<!--=============GRID==========  -->
+           			<div id="grid3" tabindex="-1" class="sale_addProduct_GridSize"></div>
+           			<!--=============GRID==========  -->	          	
+        		</div>
+			<div class="row">
+				<h5><span class="submenuBlue_heading">Order Summary</span></h5>
+				<hr class="horizontal_line">
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+        			<div class="form-group">
+          				<span class="col-md-4 control-label">Qantity</span>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control input-sm iptextRight" readonly="readonly" value="50" tabindex="7">
+          				</div>
+        			</div>
+        		</div>
+        		<div class="col-md-3">
+        			<div class="form-group">
+          				<span class="col-md-4 control-label">Free</span>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control input-sm iptextRight" readonly="readonly" value="10" tabindex="8">
+          				</div>
+        			</div>
+        		</div>
+        		<div class="col-md-3">
+        			<div class="form-group">
+          				<span class="col-md-4 control-label">Value</span>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control orangeBG input-sm iptextRight whiteText" readonly="readonly" value="56.70 Rs.">
+          				</div>
+        			</div>
+        		</div>
+       		</div>      
+       		<div class="row textRight fieldsBot_Spacing">
+				<button class="btn okbtnSize" ng-click="ok(record)">ADD</button> 
+				<button class="btn canclebtnSize" ng-click="cancel()">Cancel</button>			     
+       		</div>
+		</div>
+<script type="text/javascript">
+$(function () {
+    $('#grid3').w2grid({ 
+        name: 'grid3', 
+        header: 'List of Names',
+        show: {
+          
+        },
+        columns: [  
+            { field: 'fname', caption: 'Ind', size: '50%', resizable: true, sortable: true },      
+            { field: 'fname', caption: 'Ser.', size: '140%', resizable: true, sortable: true }, 
+            { field: 'fname', caption: 'Invoice#', size: '140%', resizable: true, sortable: true },      
+            { field: 'fname', caption: 'Inv Date', size: '100%', resizable: true, sortable: true },      
+            { field: 'fname', caption: 'Batch', size: '100%', resizable: true, sortable: true },      
+            { field: 'fname', caption: 'MRP', size: '100%', resizable: true, sortable: true },
+            { field: 'fname', caption: 'PD%', size: '100%', resizable: true, sortable: true },      
+            { field: 'fname', caption: 'QTY', size: '100%', resizable: true, sortable: true },      
+            { field: 'fname', caption: 'Schemes', size: '100%', resizable: true, sortable: true },      
+             { field: 'fname', caption: 'S. Rate', size: '100%', resizable: true, sortable: true },      
+            { field: 'fname', caption: 'VAT%', size: '100%', resizable: true, sortable: true }, 
+            { field: 'fname', caption: 'Value', size: '100%', resizable: true, sortable: true }, 
+        ],
+        records: [
+        ]
+    });    
+});
+</script>
+<script type="text/javascript">
+$(function () {
+    $('#grid2').w2grid({ 
+        name: 'grid2', 
+        header: 'List of Names',
+        show: {
+          
+        },
+        columns: [  
+            { field: 'fname', caption: 'Locked', size: '50%', resizable: true, sortable: true },      
+            { field: 'fname', caption: 'Batch', size: '140%', resizable: true, sortable: true }, 
+            { field: 'fname', caption: 'Expiry', size: '140%', resizable: true, sortable: true },      
+            { field: 'fname', caption: 'MRP', size: '100%', resizable: true, sortable: true },      
+            { field: 'fname', caption: 'VAT%', size: '100%', resizable: true, sortable: true },      
+            { field: 'fname', caption: 'Stock Qty', size: '100%', resizable: true, sortable: true },
+            { field: 'fname', caption: 'Stock Free', size: '100%', resizable: true, sortable: true },      
+            { field: 'fname', caption: 'Scheme Qty', size: '100%', resizable: true, sortable: true },      
+            { field: 'fname', caption: 'Schemes', size: '100%', resizable: true, sortable: true },      
+             { field: 'fname', caption: 'Quantity', size: '100%', resizable: true, sortable: true },      
+            { field: 'fname', caption: 'Free', size: '100%', resizable: true, sortable: true },       
+        ],
+        records: [
+        ]
+    });    
+});
+</script>
+
+</script>
+
+                  \
+                  \
+                  \
+                  \
+                  \
+                  \
+                  \
+                  \
+                  \
+                  \
+                  \
+                  \
+                  \
+                  \               
+                  \
+                  \
+                  
+                  
+                  
+                  
+                 
+                  

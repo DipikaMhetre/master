@@ -1,0 +1,219 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Remove Line Breaks Online Tool</title>
+<meta name="description" content="Online tool for removing line breaks from text and html. Many other text tools online." />
+<meta name="keywords" content="remove,removing,line,breaks,linebreaks,text,online,tool" />
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="robots" content="index,follow" />
+<link type="text/css" href="/css/thestyle-2014-v3.css" rel="stylesheet" media="all" />
+<link rel="alternate" type="application/rss+xml" title="TextFixer RSS" href="http://www.textfixer.com/rss.xml" />
+<!-- code -->
+<meta name="viewport" content="initial-scale=1" />
+<link rel="image_src" href="http://www.textfixer.com/text-fixer-website.jpg" />
+<script type="text/javascript" src="/js/ads.js"></script>
+<script type="text/javascript" src="/js/jquery-2014-10.js"></script>
+<script type="text/javascript">
+$(function() {
+var fbTitle = encodeURIComponent($(document).attr('title'));
+if(fbTitle == ""){fbTitle = "Text Fixer - Tools and Tutorials";}
+var fbSummary = encodeURIComponent($('meta[name="description"]').attr('content'));
+if(fbSummary == ""){fbSummary = "A very handy site to check out.";}
+var fbImage = encodeURIComponent("http://www.textfixer.com/text-fixer-website.jpg");
+var fbShareUrl = "http://www.facebook.com/sharer/sharer.php?s=100&p%5Btitle%5D=" + fbTitle + "&p%5Burl%5D=" + encodeURI(location.href)+ "&p%5Bimages%5D%5B0%5D="+ fbImage + "&p%5Bsummary%5D="+fbSummary;
+$('#share a').attr('href',fbShareUrl);
+});
+</script>
+<script type="text/javascript">
+if( window.canRunAds === undefined ){
+  // adblocker detected, show fallback
+  //showFallbackImage();
+  var supportSite = 1;
+}
+</script>
+<script type="text/javascript" src="/js/redirect.js"></script>
+<script type="text/javascript" src="/js/remove-line-breaks.js"></script>
+
+</head>
+<body>
+<div id="wrapper">
+<div id="header"><a href="http://feeds.feedburner.com/textfixer"><img src="/images/subscribe.png" width="43" height="44" alt="Subscribe" id="subscribe"/></a><a href="http://www.textfixer.com/" id="logo">Text Fixer - Website Tools and Tutorials</a></div>
+<div id="nav"><ul id="navbar"><li id="home"><a href="http://www.textfixer.com/">Home</a></li><li><a href="/tutorials" title="Web publishing tutorials">Tutorials</a></li><li><a href="/html" title="Online html tools">HTML Tools</a></li><li><a href="/tools" title="Online text tools" id="current">Text Tools</a></li><li><a href="/resources" title="Website resources">Resources</a></li><li id="about"><a href="/about" title="About TextFixer">About</a></li></ul></div><div id="main">
+<div id="content">
+<h1 id="tools">Line Break Removal Tool</h1>
+<div class="adleft">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- TF New 336 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-2658408605230215"
+     data-ad-slot="7048678779"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div><p>You can remove line breaks from blocks of text but preserve paragraph breaks with this tool.</p>
+<p>If you've ever received text that was formatted in a skinny column with line breaks at the end of each line, like text from an email, an XML file or copy and pasted text from a PDF column then this tool is pretty darn handy.</p>
+<p>You also have the option of just removing all line breaks from your XML, PDF or whatever text without preserving paragraph breaks.</p>
+<p>Use this tool because spending hours manually removing line breaks sucks. Manually removing line breaks really really sucks. </p>
+<p>For those of you into programming with javascript, check out <a href="/tutorials/javascript-line-breaks.php">remove line breaks with javascript.</a></p>
+<noscript class="wrn">
+<p>This <strong>online text/html tool</strong> requires a javascript enabled browser to work.</p>
+</noscript><form method="post" action="remove-line-breaks.php" class="online-tools">
+<h2>Remove Line Breaks</h2>
+<p>Paste your text in the box below and then click the button.</p>
+<p>The new text will appear in the box at the bottom of the page.</p>
+<p class="flat"><input type="radio" id="noparagraphs" name="paragraphs" value="no" checked="checked" /> Remove line breaks and paragraph breaks</p>
+<p class="flat"><input type="radio" id="paragraphs" name="paragraphs" value="yes" /> Remove line breaks only (preserve paragraphs)</p>
+
+<p><textarea id="oldText" name="oldText" rows="6" cols="36"></textarea></p>
+<p><input type="button" name="Remove-Line-Breaks" value="Remove Line Breaks" onclick="javascript:removeBreaks()" class="frmbtn" /> <input type="button" name="Clear-Text" id="Clear-Text" value="Reset" onclick="javascript:clearText()" class="frmbtn" style="margin-left:30px;color:#666;" /></p>
+<h2>New Text without Line Breaks</h2>
+<p class="flat">Copy your new text without line breaks from the box below.</p>
+<p><textarea id="newText" name="newText" rows="9" cols="36" onclick="javascript:this.form.newText.focus();this.form.newText.select();"></textarea> 
+</p></form>
+<p>* I also have another great tool that will convert <a title="from word to html" href="http://textfixer.com/html/convert-word-to-html.php">from word to html</a> online and one tool that will go from plain text to html - you could use it to <a title="convert plain text email to html" href="http://textfixer.com/html/convert-text-html.php">convert plain text email to html</a>. </p>
+<div style="padding-top:5px;padding-bottom:10px;">
+<p style="text-align:right;"><img src="/images/share-this-page.png" width="187" height="40" alt="Share this page!"><a href="https://www.facebook.com/sharer/sharer.php" target="_blank" rel="nofollow" id="linkFacebook" class="shareicon"><img src="/images/facebook-40.png" width="40" height="40" alt="Facebook"></a>&nbsp; <a href="https://plus.google.com/share?url=http://www.textfixer.com/" target="_blank" rel="nofollow" id="linkGooglePlus" class="shareicon"><img src="/images/google-plus-40.png" width="40" height="40" alt="Google Plus"></a>&nbsp; <a href="http://twitter.com/share?url=http://artbuyersreview.com/" target="_blank" rel="nofollow" id="linkTwitter" class="shareicon"><img src="/images/twitter-40.png" width="40" height="40" alt="Twitter"></a></p>
+<script type="text/javascript">
+var cPage = window.location.href;
+document.getElementById("linkTwitter").href = "http://twitter.com/share?url=" + cPage; 
+document.getElementById("linkGooglePlus").href = "https://plus.google.com/share?url=" + cPage; 
+</script>
+</div>
+
+<div class="admbottom2" style="margin-bottom:15px;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Resp Bottom -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2658408605230215"
+     data-ad-slot="4622569172"
+     data-ad-format="horizontal"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<h3><strong>Other Tools and Tutorials on this Website</strong></h3>
+<ul>
+<li><a href="/tutorials/how-to-make-your-own-blog.php" title="Starting a blog">Starting a Blog</a>. From web hosting to installing WordPress.</li>
+<li><a title="Word Document into html code conversion tool" href="/html/convert-word-to-html.php">Convert Word to HTML</a></li>
+<li><a title="Convert plain text to html code" href="/html/convert-text-html.php">Text to HTML</a></li>
+<li><a title="Automatically put words in alphabetical order" href="/tools/alphabetical-order.php">Put words in alphabetical order</a></li>
+<li><a title="Generate Random Words Tool" href="/tools/random-words.php">Generate Random Words</a></li>
+</ul>
+
+</div></div>
+<div id="sidebar"><div id="sidebarTop">
+
+
+<!-- <div style="margin-top:20px;margin-bottom:15px;"><a target="_blank" rel="nofollow" class="shareicon" href="https://www.youtube.com/watch?v=Oor4kAH4BCI">
+<img src="/images/secrets-col.png" width="210" height="154" alt="Watch video..."></a></div> -->
+
+<div style="margin-top:20px;margin-bottom:15px;"><a target="_blank" rel="nofollow" class="shareicon" href="http://www.bluehost.com/track/scotth/rcol2"><img src="/images/bh-learn-more.jpg" width="210" height="144" alt="Learn more..."></a></div>
+<!--
+<div style="margin-top:20px;margin-bottom:15px;"><a target="_blank" rel="nofollow" class="shareicon" href="http://www.bluehost.com/track/scotth/rcol2"><img src="/images/bh-42.png" width="210" height="210" alt="Learn more..."></a></div>
+-->
+
+<div id="sidebarorange">
+<h3 class="headlineorange"><a href="/tutorials/brainstorming-blog-name.php" class="orangey2">Website Name Ideas!</a></h3>
+<p class="paraorange">Find a domain name for your website using these brainstorming tools to <a href="/tutorials/brainstorming-blog-name.php" class="orangey">create a website name.</a></p>
+</div>
+
+<div id="sidebarTop2"><h3 id="popular-tools">Popular Tools and Online Tutorials</h3><ul><li><a href="/html" title="List of html web publisher tools" class="tl">List of Online HTML Tools</a></li>
+<li><a href="/html/convert-word-to-html.php" title="Convert Word to HTML">Convert Word to HTML</a></li><li><a href="/html/convert-text-html.php" title="Convert plain ascii text into html paragraphs">Text to HTML</a></li>
+<li><a href="/tools/remove-line-breaks.php" title="Remove line breaks from text">Remove Line Breaks</a></li>
+<li><a href="/tools/alphabetical-order.php" title="Put text in alphabetical order">Alphabetical Order</a></li>
+<li><a href="/html/html-table-generator.php" title="HTML Table Generator">HTML Table Generator</a></li>
+<li><a href="/tools/random-words.php" title="Random Word Generator">Random Word Generator</a></li>
+<li><a href="/tools/alphabetize-text-words.php" title="Alphabetize text">Text Alphabetizer</a></li>
+<li><a href="/html/javascript-pop-up-window.php" title="Create a Pop up Window">Create a Pop up Window</a></li>
+<li><a href="/tools/online-word-counter.php" title="Online word counter">Word Counter</a></li><li><a title="List of Common Words - good for arrays" href="/resources/common-english-words.php">List of Common Words</a></li><li><a title="Copy/paste code for common CSS tables styles" href="/tutorials/css-tables.php">Common CSS Table Styles</a></li><li><a title="Country dropdowns html for quick copy and paste" href="/resources/country-dropdowns.php">Country Dropdowns Code</a></li>
+<li><a href="/tutorials/css-table-alternating-rows.php" title="Alternating row colors for a HTML table">Alternating Table Rows</a></li>
+<li><a href="/tutorials/highlight-table-row.php" title="Highlight table row on hover">Hover Highlight a Table Row</a></li>
+<li><a href="/tutorials/brainstorming-blog-name.php" title="Brainstorm to create a name for your blog or website">Brainstom a Website Name</a></li>
+<li><a href="/tutorials/starting-a-blog.php" title="Starting a blog or website">Starting a Blog</a></li>
+
+</ul></div>
+
+<div id="sidebarorange">
+<h3 class="headlineorange"><a href="/tutorials/setting-up-web-hosting.php" class="orangey2">Create your Blog!</a></h3>
+<p class="paraorange">From web hosting to WordPress, a step by step guide on <a href="/tutorials/how-to-make-your-own-blog.php" class="orangey">how to make your own blog</a>.</p>
+</div>
+
+<div id="bh210" style="padding-bottom:15px;"><a href="http://www.bluehost.com/track/scotth/rcol" rel="nofollow" target="blank"><img src="/images/bh2.png" width="210" height="175" alt="blog web hosting" /></a></div>
+<div id="sidebarTop3"><h3 class="more-tools">Some New Stuff</h3><ul>
+<li><a title="Random Choice Generator" href="/tools/random-choice.php">Random Choice Generator</a></li>
+<li><a title="Random Password Generator" href="/tools/random-password-generator.php">Random Password Generator</a></li>
+<li><a href="/html/qr-code-generator.php" title="QR Code Generator">QR Code Generator</a></li>
+<li><a title="HTML Search Box Examples" href="/tutorials/html-search-box.php">HTML Search Box</a></li>
+<li><a title="More Search Box Examples" href="/tutorials/search-box-examples.php">Search Box Examples</a></li>
+<li><a href="/tools/remove-duplicate-lines.php" title="Remove Duplicate Lines">Remove Duplicate Lines</a></li>
+<li><a href="/html/html-text-generator.php" title="Online tool to generate HTML Text">HTML Text Generator</a></li>
+<li><a title="CSS Tables" href="http://www.textfixer.com/tutorials/css-tables.php">Copy/Paste CSS Table Styles</a></li><li><a title="HTML Email Link" href="/html/email-html-code.php">HTML Email Link</a></li>
+<li><a href="/tutorials/javascript-line-breaks.php" title="Remove line breaks with JavaScript">Remove Line Breaks with JavaScript</a></li>
+<li><a title="The three kinds of web hosting and how to choose the right one." href="/tutorials/web-hosting-kinds.php">How to Choose Web Hosting</a></li><li><a title="A Simple Guide to Achieving your Personal Goals" href="/tutorials/one-page-self-help-book.php">The One Page Self Help Book</a></li></ul>
+</div>
+</div></div><div id="ftr"><ul id="fmenu"><li>&copy; 2007-<script type="text/javascript">var theDate=new Date();document.write(theDate.getFullYear());</script> TextFixer.com</li><li><a title="Online HTML Tools" href="/html">Online HTML Tools</a></li><li><a title="Online Text Tools" href="/tools">Online Text Tools</a></li><li><a title="privacy policy" href="/privacy" rel="nofollow">Privacy Policy</a></li><li><a title="Affiliate Disclaimer" href="/affiliate" rel="nofollow">Affiliate Disclaimer</a></li><li><a title="contact" href="/contact" rel="nofollow">Contact</a></li></ul></div></div>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1074040-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript">
+if(supportSite === 1){
+$('<!--<div style="width:320px;padding:21px 15px 15px 0px;float:left;"><a href="https://www.youtube.com/watch?v=WQQJC_cwQ1A" target="_blank" rel="nofollow" class="shareicon"><img src="/images/grizzly-bear-attack.png" width="320" height="180" alt=""></a><a href="https://www.youtube.com/watch?v=WQQJC_cwQ1A" target="_blank" rel="nofollow" class="shareicon"><img src="/images/watch-video.png" width="320" height="101" alt=""></a></div>-->').insertAfter( "h1" );
+$('.adleft').hide();
+$('.adright').hide();
+}
+</script>
+<script>
+function removeBreaks(){
+
+	var para = document.getElementById("paragraphs").checked;
+	var nopara = document.getElementById("noparagraphs").checked;
+	var noBreaksText = document.getElementById("oldText").value;
+
+	noBreaksText = noBreaksText.replace(/(\r\n|\n|\r)/gm,"<1br />");
+
+	re1 = /<1br \/><1br \/>/gi;
+	re1a = /<1br \/><1br \/><1br \/>/gi;
+
+	if(nopara == 1 || nopara ==  true){
+	noBreaksText = noBreaksText.replace(re1," ");
+	}else{
+	noBreaksText = noBreaksText.replace(re1a,"<1br /><2br />");
+	noBreaksText = noBreaksText.replace(re1,"<2br />");
+	}
+
+	re2 = /\<1br \/>/gi;
+	noBreaksText = noBreaksText.replace(re2, " ");
+
+	re3 = /\s+/g;
+	noBreaksText = noBreaksText.replace(re3," ");
+
+	re4 = /<2br \/>/gi;
+	noBreaksText = noBreaksText.replace(re4,"\n\n");
+	document.getElementById("newText").value = noBreaksText;
+	}
+
+	function clearText(){
+	   $('#oldText').val('');
+	   $('#newText').val('');
+	   $("#oldText").focus()
+	}
+
+
+
+</script>
+
+</body>
+
+</html>

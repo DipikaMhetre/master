@@ -1,0 +1,114 @@
+<title>Known Issues</title>
+<div id="KnownIssues" data-ng-controller="HelpCtrl" ng-init=init()>
+	<Section class="pageheader">
+		<nav class="mainnav">
+			<ul class="leftFloat_Menu" id="list-nav">
+				<li><a class="highlight_purple not_active">Known Issues</a></li>
+				<li><span class="glyphicon glyphicon-play newShowGlyphicon"></span></li>
+				<li><a title="Reload this Page" ng-click="changeView(activeUser.userId,activeUser.token,138);">Refresh</a></li>
+			</ul>
+			<ul class="rightFloat_Menu">
+				<li><a class=" not_active marginZero textCenter">Satyajit
+						Toradmal</a> <a title="Todays Date"
+					class=" not_active marginZero textCenter"> <span
+						style="font-size: 12px;" id="date_time"></span> <script
+							type="text/javascript">
+							window.onload = date_time('date_time');
+						</script></a></li>
+				<li class="editable_btnPos">
+					<button type="button"
+						class="btn btn-default flag_enable input-sm editable-btn"
+						tabindex="20">
+						<span class="fieldLeft_spacing_lg" ng-click="editable=!editable">Editable</span>
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</Section>
+	<nav class="navbar navbar-default navbar_master">
+		<div class="container">
+			<ul class="nav navbar-nav master_nav_element_pos">
+				<li><a
+					ng-click="changeView(activeUser.userId,activeUser.token,136)">About
+						Us</a></li>
+				<li><a
+					ng-click="changeView(activeUser.userId,activeUser.token,137)">FAQs</a></li>
+				<li class="active"><a>Known Issues</a></li>
+				<li><a
+					ng-click="changeView(activeUser.userId,activeUser.token,139)">Release
+						Notes</a></li>
+				<li><a
+					ng-click="changeView(activeUser.userId,activeUser.token,140)">Site
+						Map</a></li>
+			</ul>
+		</div>
+	</nav>
+	<section class="container">
+		<div class="row container">
+			<h5>
+				<span class="submenuBlue_heading">Known Issues Register</span>
+			</h5>
+			<hr class="horizontal_line">
+		</div>
+		<!--=============GRID==========  -->
+		<div class=" knownIssuesGrid" id="grid" tabindex="-1"></div>
+		<!--=============GRID==========  -->
+	</section>
+</div>
+<script type="text/javascript">
+	$(function() {
+		if(typeof w2ui.grid !== "undefined"){
+			w2ui.grid.destroy();
+		}
+		$('#grid').w2grid({
+			name : 'grid',
+			header : 'List of Names',
+			show : {
+				toolbar : true,
+			},
+			columns : [ {
+				field : 'recid',
+				caption : 'Issue ID',
+				size : '63px',
+				sortable : true,  resizable: false,style: 'text-align: center '
+			}, {
+				field : 'issue',
+				caption : 'Issue',
+				size : '80%',
+				sortable : true, resizable: false,style: 'text-align: left'
+			},{
+				field : 'workaround',
+				caption : 'Work around',
+				size : '80%',
+				sortable : true, style: 'text-align: left'
+			},{
+				field : 'targetrelease',
+				caption : 'Target Release',
+				size : '100px',
+				sortable : true, style: 'text-align: center '
+			},
+			],
+			 records: [
+			           { recid: 1, issue: '<p>Pagination logic is based on person ID but list is displayed using name <br> so when showing next records if the new set has names appearing earlier in sort then<br> the grid will get refreshed so little jumping of records. But no record loss.', workaround: 'Fix pending ', targetrelease: '-'},
+			           { recid: 2, issue: 'Locksmith - after company or any entity is made inactive it does not appear again in the list. <br> Need to get retrieve all (active/inactive) entities.', workaround: '', targetrelease: '-'},
+			           { recid: 3, issue: 'Product - Add Content pop up - Unit field is not implemented and pop up does not load <br>   properly first time.Just close and open pop up again. Content add is having some issues <br>  and not working. Fix in progress.', workaround: '', targetrelease: '-'},
+			           { recid: 4, issue: 'Goods Receipt - Diff calculation ', workaround: '', targetrelease: '-'},
+			           { recid: 5, issue: 'Stock Audit - Outcome status ', workaround: '', targetrelease: '-'},
+			           { recid: 6, issue: 'Goods Receipt - Back button not implemented', workaround: '', targetrelease: '-'},
+			           { recid: 7, issue: 'Purchase Order - Next, Previous and Back button not implemented and grid append ', workaround: '', targetrelease: '-'},
+			           { recid: 8, issue: 'Goods Receipt Register Filter - "To date" not added in filter', workaround: '', targetrelease: 'Next release'},
+			           { recid: 9, issue: 'Credit Note: Additional Discount -  Show Next not  implemented', workaround: '', targetrelease: '-'},
+					    { recid: 10, issue: 'Goods Receipt Register -  New and enter not implemented', workaround: '', targetrelease: '-'},
+						{ recid: 11, issue: 'Purchase Order Register - some filter not work and for amount it show zero', workaround: '', targetrelease: '-'},
+						{ recid: 12, issue: 'Goods Receipt Register -  some filter not work and for amount it show zero', workaround: '', targetrelease: '-'},
+						{ recid: 13, issue: 'Purchase Order -  Supplier not filter on company', workaround: '', targetrelease: '-'},
+						{ recid: 14, issue: 'Goods Receipt -  ', workaround: '', targetrelease: '-'},
+						{ recid: 15, issue: 'Purchase Order -  Total of PO amount not show ', workaround: '', targetrelease: '-'},
+						{ recid: 15, issue: 'Goods Receipt Register -  Right side grid not arranged', workaround: '', targetrelease: '-'}
+				
+					   
+		],
+		  
+		});
+	});
+</script>

@@ -1,0 +1,122 @@
+'
+<div id="GRLinkPOPopup" class="grayBG" ng-init=init();>
+	<div class="container lightBox_linkPO_GoodsReceipt">
+		<div class="row topblueStrip">
+			<h6 class="fieldsTop_Spacing">
+				<span class="topblueStripText">Link PO</span>
+			</h6>
+		</div>
+		<div class="row">
+			<h5>
+				<span class="submenuBlue_heading">PO Details</span>
+			</h5>
+			<hr class="horizontal_line">
+		</div>
+		<div class="row">
+			<div class="col-md-3 ">
+				<div class="row">
+					<div class="col-md-4">
+						<span class="control-label">Product&nbsp;Name</span>
+					</div>
+					<div class="col-md-8">
+						<select
+							ng-options="product.goodsReceiptProductProductName for product in productList"
+							ng-model="productSelected"
+							ng-change="onProductSelection(productSelected)"
+							class="form-control input-sm"></select>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 ">
+				<div class="row">
+					<div class="col-md-4">
+						<span class="control-label">Quantity</span>
+					</div>
+					<div class="col-md-8">
+						<input type="text" disabled class="form-control input-sm"
+							ng-model="productSelected.goodsReceiptProductQty"
+							value={{productSelected.goodsReceiptProductQty}}>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="row">
+					<div class="col-md-4">
+						<span class="control-label">Free</span>
+					</div>
+					<div class="col-md-8">
+						<input type="text" disabled class="form-control input-sm"
+							tabindex="2" ng-model="productSelected.goodsReceiptProductFree"
+							value={{productSelected.goodsReceiptProductFree}}>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="row">
+					<div class="col-md-4">
+						<span class="control-label">Total</span>
+					</div>
+					<div class="col-md-8">
+						<input type="text" disabled class="form-control input-sm"
+							tabindex="2" ng-model="productSelected.total"
+							value={{productSelected.total}}>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<h5>
+				<span class="submenuBlue_heading">PO List</span>
+			</h5>
+			<hr class="horizontal_line">
+		</div>
+		<div class="row fieldsSpacing">
+			<div class="col-md-12">
+				<button ng-click="linkAll()" class="btn btn-primary"
+					style="padding: 0px 12px;">Link all products to the
+					selected PO</button>
+			</div>
+		</div>
+		<!--=============GRID========== -->
+		<div id="grid3" class="linkPO_Grid fieldsSpacing" tabindex="-1"></div>
+		<!--=============GRID========== -->
+		<div class="row">
+			<div class="col-md-6">
+				<span>Total&nbsp;:</span>
+			</div>
+			<div class="col-md-2">
+				<input type="text" class="form-control input-sm" tabindex="2"
+					style="margin-left: 56px;">
+			</div>
+			<div class="col-md-2">
+				<input type="text" class="form-control input-sm" tabindex="2"
+					style="margin-left: 28px;">
+			</div>
+			<div class="col-md-2">
+				<input type="text" class="form-control input-sm" tabindex="2">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-7"></div>
+			<div class="col-md-2 textCenter text_inputfieldPos">
+				<span style="margin-left: 5px;">PO&nbsp;Qty</span>
+			</div>
+			<div class="col-md-1 textCenter text_inputfieldPos">
+				<span style="margin-left: -5px;">GR&nbsp;Qty</span>
+			</div>
+			<div class="col-md-2 textCenter text_inputfieldPos">
+				<span>Diff</span>
+			</div>
+		</div>
+		<div class="row fields_headingSpacing">
+			<div class="col-md-offset-6">
+				<button class="btn canclebtnSize" ng-click="ok()">Save & Close</button>
+				<button class="btn canclebtnSize" ng-click="save()">Save Current</button>
+				<button class="btn canclebtnSize" ng-click="cancel()">Cancel</button>
+				<button ng-click="prev()" class="btn okbtnSize">Previous/Save</button>
+				<button ng-click="next()" class="btn okbtnSize">Next/Save</button>
+			</div>
+		</div>
+	</div>
+</div>
+',

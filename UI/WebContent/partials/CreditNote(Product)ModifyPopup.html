@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html ng-app="pharmApp" dir="ltr">
+<head>
+<title>Purpleaid</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Menu files -->
+<link rel="shortcut icon" href="../favicon.ico">
+<script src="components/angular/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css"
+	href="css/jquery.switchButton.css" />
+<link rel="stylesheet" type="text/css"
+	href="components/bootstrap-3.2.0/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css"
+	href="components/ngToust/ngToast.css" />
+<link rel="stylesheet" type="text/css"
+	href="components/ngToust/ngToast-animations.css" />
+
+
+
+
+<script src="scripts/libs/modernizr.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="components/w2uiGrid/w2ui-1.4.1.css" />
+<script src="js/modernizr.custom.25376.js"></script>
+<script src="components/bootstrap-3.2.0/js/bootstrap.js"></script>
+<link rel="stylesheet" href="stylesheets/style.css" />
+<link rel="stylesheet" href="stylesheets/media_style.css" />
+<link href="images/faviconP.ico" rel="icon" type="image/x-icon" />
+<!-- Menu files Ends-->
+
+<!-- Angular + UI GRID -->
+<script src="components/angular/angular.js"></script>
+<script src="components/angular/angular-route.min.js"></script>
+<script src="components/bootstrap-3.2.0/ui-bootstrap.js"></script>
+<script src="components/bootstrap-3.2.0/ui-bootstrap-tpls-0.12.0.js"></script>
+<script src="components/ngToust/ngToast.js"></script>
+<script src="components/ngToust/angular-sanitize.js"></script>
+<script src="components/fileupload/ng-file-upload.js"></script>
+<script src="components/fileupload/ng-file-upload-shim.js"></script>
+<link rel="stylesheet" type="text/css" href="css/CalcSS3.css" />
+
+
+
+
+<script src="app.js"></script>
+
+<script type="text/javascript" src="components/w2uiGrid/w2ui-1.4.1.js"></script>
+<!-- =================================================== -->
+
+<!-- =================================================== -->
+</head>
+
+<body id="AllMainCtrl" ng-controller="MainCtrl" class="purpleaid">
+	
+	<script type="text/javascript">
+$(function () {
+    $('#grid3').w2grid({ 
+        name: 'grid3', 
+        header: 'List of Names',
+        show: {
+          
+        },
+        columns: [  
+            { field: 'fname', caption: 'Sale Date', size: '100%', resizable: true, sortable: true },      
+            { field: 'fname', caption: 'Invoice#', size: '100%', resizable: true, sortable: true },      
+            { field: 'fname', caption: 'Quantity', size: '100%', resizable: true, sortable: true },      
+            { field: 'fname', caption: 'Free', size: '100%', resizable: true, sortable: true },      
+            { field: 'fname', caption: 'Sale Rate', size: '100%', resizable: true, sortable: true },
+            { field: 'fname', caption: 'Net Rate', size: '100%', resizable: true, sortable: true },      
+            { field: 'fname', caption: 'VAT', size: '100%', resizable: true, sortable: true },      
+            { field: 'fname', caption: 'Total Amt', size: '100%', resizable: true, sortable: true }      
+        ],
+        records: [
+        ]
+    });    
+});
+</script>
+
+</body>
+</html>

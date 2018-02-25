@@ -1,0 +1,61 @@
+
+<div id="GRLinkPOPopup"class="grayBG" ng-init=init();>
+		<div class="container lightBox_linkPO_GoodsReceipt">
+			<div class="row topblueStrip">
+				<h6 class="fieldsTop_Spacing"><span class="topblueStripText">Link PO</span></h6>
+			</div>
+			<div class="row">
+				<h5><span class="submenuBlue_heading">PO Details</span></h5>
+				<hr class="horizontal_line">
+			</div>
+			<div class="row">		
+				<div class="col-md-6 ">
+					<div class="row">
+						<div class="col-md-4">
+							<span class="control-label">Product&nbsp;Name</span>
+						</div>
+						<div class="col-md-8">
+							<select class="form-control input-sm"> 
+								<option value='' disabled selected style='display:none;'></option>							
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 ">
+					<div class="row">
+						<div class="col-md-4">
+							<span class="control-label">Quantity</span>
+						</div>
+						<div class="col-md-8">
+						<input type="text" class="form-control input-sm">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col-md-4">
+							<span class="control-label">Free</span>
+						</div>
+						<div class="col-md-8">
+						<input type="text" class="form-control input-sm" tabindex="2">
+						</div>						
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<h5><span class="submenuBlue_heading">PO List</span></h5>
+				<hr class="horizontal_line">				
+			</div>
+				<!--=============GRID==========  -->
+           		<div id="grid" tabindex="-1"></div>
+           		<!--=============GRID==========  -->
+			<div class="row fields_headingSpacing">
+				 
+				 <button class="btn canclebtnSize" ng-click="cancel()">Cancel</button>
+			      <button class="btn okbtnSize"">Priviouse</button>
+					 <button class="btn okbtnSize"">Next</button>
+       		</div>
+		</div>
+
+</div>

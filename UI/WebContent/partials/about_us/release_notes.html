@@ -1,0 +1,154 @@
+
+<title>Release Notes</title>
+<div id="ReleaseNote" data-ng-controller="HelpCtrl" ng-init=init()>
+	<Section class="pageheader">
+		<nav class="mainnav">
+			<ul class="leftFloat_Menu" id="list-nav">
+				<li><a class="highlight_purple not_active">Release Notes</a></li>
+				<li><span class="glyphicon glyphicon-play newShowGlyphicon"></span></li>
+				<li><a title="Reload this Page" ng-click="$parent.changeView(activeUser.userId,activeUser.token,139);">Refresh</a></li>
+			</ul>
+			<ul class="rightFloat_Menu">
+				<li><a class=" not_active marginZero textCenter">Satyajit
+						Toradmal</a> <a title="Todays Date"
+					class=" not_active marginZero textCenter"> <span
+						style="font-size: 12px;" id="date_time"></span> <script
+							type="text/javascript">
+							window.onload = date_time('date_time');
+						</script></a></li>
+				<li class="editable_btnPos">
+					<button type="button"
+						class="btn btn-default flag_enable input-sm editable-btn"
+						tabindex="20">
+						<span class="fieldLeft_spacing_lg" ng-click="editable=!editable">Editable</span>
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</Section>
+	<nav class="navbar navbar-default navbar_master">
+		<div class="container">
+			<ul class="nav navbar-nav master_nav_element_pos">
+				<li><a
+					ng-click="changeView(activeUser.userId,activeUser.token,136)">About
+						Us</a></li>
+				<li><a
+					ng-click="changeView(activeUser.userId,activeUser.token,137)">FAQs</a></li>
+				<li><a
+					ng-click="changeView(activeUser.userId,activeUser.token,138)">Known
+						Issues</a></li>
+				<li class="active"><a>Release Notes</a></li>
+
+				<li><a
+					ng-click="changeView(activeUser.userId,activeUser.token,140)">Site
+						Map</a></li>
+
+
+			</ul>
+		</div>
+	</nav>
+	<section class="container">
+		<div class="row container">
+			<h5>
+				<span class="submenuBlue_heading">Release Notes Register</span>
+			</h5>
+			<hr class="horizontal_line">
+		</div>
+	</section>
+	<section class="container releaseNote_scroll_section menu_scrollbar"
+		id="releaseNotes_scrollstyle">
+		<div
+			class="release_note_container fieldsBot_Spacing_lg releaseNoteBg2">
+			<div class="row releaseNoteBg1 fieldsBot_Spacing">
+				<h5>
+					<span class="submenuBlue_heading"> Purpleaid Wholesale beta
+						000.000.002</span> <span class="purpleaid_link submenuBlue_heading">29/10/2015</span>
+				</h5>
+				<hr class="horizontal_line hr_line">
+			</div>
+			<div class="row fieldsSpacing container ">
+				1. Master: Company <br>
+				2. Master: Supplier <br> 
+				3. Master: Division <br>				  
+				4. Master: Product <br>
+				5. Master: Content Master <br> 
+				6. Master: Customer <br>
+				7. Master: Area <br>
+				8. Master: Route <br>
+				<!-- 9. Master: Tax Code<br> -->
+				9. Master: Business Details <br>
+				10. Stock Management: Purchase Order Register <br>
+				11. Stock Management: Create/Modify PO (Purchase) <br>
+				12. Stock Management: Goods Receipt Register<br>
+                13. Stock Management: Goods Receipt <br>
+                14. Stock Management: Stock Manager <br>
+				15. Stock Management: Stock Audit <br> 
+				16. Return Management: Return Register <br>
+				17. Return Management: Goods Return <br>
+			<!-- 	17. Return Management: Saleable Returns <br> -->
+				18. Return Management: Company Claim <br>
+				19. Accounting: Credit Note Register <br>
+				20. Accounting: Credit Note Register: Goods Return <br> 
+				21. Accounting: Credit Note Register: Additional Discount <br>
+				22. Accounting: Credit Note Register: Direct <br>
+				<!-- 22. Accounting: Credit Note Register: Rate Difference <br> -->
+				<!-- 19. Accounting: Debit Note Register <br>
+				19. Accounting: Debit Note Register: Direct <br>
+				19. Accounting: Debit Note Register: Rate Difference <br>
+				19. Accounting: Debit Note Register: Discount Rollback <br>
+				19. Accounting: Debit Note Register: Interest <br> -->
+				23. Utility: Locksmith <br> 
+				24. Utility: Peopler Manager <br>
+				25. Utility: Manage Active Users <br>
+				26. Utility: System Permission and Role <br>
+				27. Utility: Control Panel - System Parameter  <br>
+				<!-- 27. Utility: Control Panel - Miscellaneous  -->
+				28. Help <br>
+				29. Help: About Us <br> 
+				30. Help: FAQs <br>
+				31. Help: Known Issues <br> 
+				32. Help: Site Map <br> 
+				33. Help: Release Notes <br>
+				34. Profile: My Profile <br> 
+				<br> *************************************** In
+				progress ************************************** <br>				 
+				1. Field validations - validation Integration pending for new screens<br>
+				2. Control Panel - Miscellaneous<br> 
+				3. Stock Audit - Changes pending<br>
+				4. Credit Note - Rate Difference<br> 
+				5. Debit Note - Register, Direct, Rate Difference, Discount, Interest <br> 
+				6. Company Credit Note<br> 
+				7. Saleable Returns<br> 
+				8. Account master<br>
+				9. Sales<br> 
+				10. Help: Contact Us - to be integrated with main project. Also required Purpleaid cloud project on another machine<br>
+				11. Report Management: Report Manager - Db driven list of reports to be linked with actual reports
+			
+			</div>
+
+		</div>
+		<div
+			class="release_note_container fieldsBot_Spacing_lg releaseNoteBg2">
+			<div class="row releaseNoteBg1 fieldsBot_Spacing">
+				<h5>
+					<span class="submenuBlue_heading"> Purpleaid Wholesale beta
+						000.000.001</span> <span class="purpleaid_link submenuBlue_heading">25/09/2015</span>
+				</h5>
+				<hr class="horizontal_line hr_line">
+			</div>
+			<div class="row fieldsSpacing container ">
+				1. Master: Company <br> 2. Master: Supplier<br> 3. Master:
+				Division<br> 4. Master: Product<br> 5. Master: Content
+				Master<br> 6. Master: Customer<br> 7. Master: Area<br>
+				8. Master: Route<br> 9. Master: Salesman<br> 10.
+				Create/Modify PO (Purchase)<br> 11. Goods Receipt<br> 12.
+				Stock Manager<br> 13. Utility: Locksmith<br> 14. Utility:
+				People Manager <br> 15. Return Management: Return Register<br>
+				16. Return Management: Goods Return<br> 17. Return Management:
+				Company Claim<br> 18. About: About Us<br> 19. About:
+				Contact Us<br> 20. About: FAQs<br> 21. About: Known Issues<br>
+				22. About: Release Note<br> 23. About: Site Map<br>
+			</div>
+		</div>
+	</section>
+</div>

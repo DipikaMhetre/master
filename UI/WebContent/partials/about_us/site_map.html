@@ -1,0 +1,366 @@
+<title>Site Map</title>
+<div id="SiteMap" data-ng-controller="HelpCtrl" ng-init=init()>
+	<Section class="pageheader">
+		<nav class="mainnav">
+			<ul class="leftFloat_Menu" id="list-nav">
+				<li><a class="highlight_purple not_active">Site Map</a></li>
+				<li><span class="glyphicon glyphicon-play newShowGlyphicon"></span></li>
+				<li><a title="Reload this Page"
+					ng-click="$parent.changeView(activeUser.userId,activeUser.token,140);">Refresh</a></li>
+			</ul>
+			<ul class="rightFloat_Menu">
+				<li><a class=" not_active marginZero textCenter">Satyajeet
+						Toradmal</a> <a title="Todays Date"
+					class=" not_active marginZero textCenter"> <span
+						style="font-size: 12px;" id="date_time"></span> <script
+							type="text/javascript">
+							window.onload = date_time('date_time');
+						</script></a></li>
+				<li class="editable_btnPos">
+					<button type="button" ng-class="editable ? 'flagselected' : ''"
+						class="btn btn-default flag_enable input-sm editable-btn"
+						tabindex="20">
+						<span class="fieldLeft_spacing_lg" ng-click="editable=!editable">Editable</span>
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</Section>
+	<nav class="navbar navbar-default navbar_master">
+		<div class="container">
+			<ul class="nav navbar-nav master_nav_element_pos">
+				<li><a
+					ng-click="changeView(activeUser.userId,activeUser.token,136)">About
+						Us</a></li>
+				<li><a
+					ng-click="changeView(activeUser.userId,activeUser.token,137)">FAQs</a></li>
+				<li><a
+					ng-click="changeView(activeUser.userId,activeUser.token,138)">Known
+						Issues</a></li>
+				<li><a
+					ng-click="changeView(activeUser.userId,activeUser.token,139)">Release
+						Notes</a></li>
+				<li class="active"><a>Site Map</a></li>
+				<!-- <li><a >Contact Us</a></li> -->
+			</ul>
+		</div>
+	</nav>
+	<article class="sitemapBG"
+		style="background-image: url('images/about_us/stock-vector-abstract-technology-lines-vector-background-eps-62508946_1stBG2.5.png');">
+		<section class="container">
+			<div class="row container">
+				<h5>
+					<span class="submenuBlue_heading">Site Map</span>
+				</h5>
+				<hr class="horizontal_line">
+			</div>
+		</section>
+		<div
+			class="row fieldsBot_Spacing container releaseNote_scroll_section menu_scrollbar">
+			<div class="col-md-3">
+				<ul class="thumbnail_OrderListPos sitamap_list">
+					<li><strong>Sales</strong>
+						<ul class="sitemap_listPos">
+							<li><a class="sitemap_link">Sales Register - Not Available</a></li>
+							<li><a class="sitemap_link">Sale Invoice - Not Available</a></li>
+							<li><a class="sitemap_link">Sale Challan - Not Available</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,126)">
+									Credit Note Register</a>
+								<ul class="sitemap_listPos">
+									<li><a
+										ng-click="changeView(activeUser.userId,activeUser.token,126)"
+										class="sitemap_link">Goods Return</a></li>
+									<li><a
+										ng-click="changeView(activeUser.userId,activeUser.token,126)"
+										class="sitemap_link">Rate Difference</a></li>
+									<li><a
+										ng-click="changeView(activeUser.userId,activeUser.token,126)"
+										class="sitemap_link">Direct</a></li>
+									<li><a
+										ng-click="changeView(activeUser.userId,activeUser.token,126)"
+										class="sitemap_link">Additional Discount</a></li>
+								</ul></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,141)">Debit
+									Note Register</a>
+								<ul class="sitemap_listPos">
+									<li><a class="sitemap_link"
+										ng-click="changeView(activeUser.userId,activeUser.token,141)">Rate
+											Difference</a></li>
+									<li><a class="sitemap_link"
+										ng-click="changeView(activeUser.userId,activeUser.token,141)">Direct</a></li>
+									<li><a class="sitemap_link"
+										ng-click="changeView(activeUser.userId,activeUser.token,141)">Discount
+											Rollback</a></li>
+									<li><a class="sitemap_link"
+										ng-click="changeView(activeUser.userId,activeUser.token,141)">Interest</a></li>
+								</ul></li>
+						</ul></li>
+				</ul>
+				<ul class="thumbnail_OrderListPos  sitamap_list">
+					<li><strong>Stock Management</strong>
+						<ul class="sitemap_listPos">
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,124)">Purchase
+									Order Register</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,1)">Purchase
+									Order</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,157)">Good
+									Receipt Register</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,44)">Goods
+									Receipt</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,48)">Stock
+									Manager</a>
+								<ul class="sitemap_listPos">
+									<li><a class="sitemap_link"
+										ng-click="changeView(activeUser.userId,activeUser.token,48)">Batch
+											Scheme</a></li>
+									<li><a class="sitemap_link"
+										ng-click="changeView(activeUser.userId,activeUser.token,48)">Change
+											Batch Details</a></li>
+									<li><a class="sitemap_link"
+										ng-click="changeView(activeUser.userId,activeUser.token,48)">Stock
+											Adjustments</a></li>
+									<li><a class="sitemap_link"
+										ng-click="changeView(activeUser.userId,activeUser.token,48)">Transfer/Merge
+											Batch</a></li>
+									<li><a class="sitemap_link"
+										ng-click="changeView(activeUser.userId,activeUser.token,48)">Reassign
+											Product(s)</a></li>
+								</ul></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,151)">Stock
+									Audit</a></li>
+						</ul></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<ul class="thumbnail_OrderListPos  sitamap_list">
+					<li><strong>Returns Management</strong>
+						<ul class="sitemap_listPos">
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,52)">Returns
+									Register</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,53)">Goods
+									Return</a></li>
+							<li><a class="sitemap_link">Saleable Return - Not Available</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,57)">Company
+									Claim</a></li>
+
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,126)">Customer
+									Credit Note Register</a>
+								<ul class="sitemap_listPos">
+									<li><a
+										ng-click="changeView(activeUser.userId,activeUser.token,126)"
+										class="sitemap_link">Goods Return</a></li>
+									<li><a
+										ng-click="changeView(activeUser.userId,activeUser.token,126)"
+										class="sitemap_link">Rate Difference</a></li>
+									<li><a
+										ng-click="changeView(activeUser.userId,activeUser.token,126)"
+										class="sitemap_link">Direct</a></li>
+									<li><a
+										ng-click="changeView(activeUser.userId,activeUser.token,126)"
+										class="sitemap_link">Additional Discount</a></li>
+								</ul></li>
+							<li><a class="sitemap_link">Company Credit Note Register - Not Available</a></li>
+						</ul></li>
+				</ul>
+				<ul class="thumbnail_OrderListPos  sitamap_list">
+					<li><strong>Accounting</strong>
+						<ul class="sitemap_listPos">
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,126)">
+									Credit Note Register</a>
+								<ul class="sitemap_listPos">
+									<li><a
+										ng-click="changeView(activeUser.userId,activeUser.token,126)"
+										class="sitemap_link">Goods Return</a></li>
+									<li><a
+										ng-click="changeView(activeUser.userId,activeUser.token,126)"
+										class="sitemap_link">Rate Difference</a></li>
+									<li><a
+										ng-click="changeView(activeUser.userId,activeUser.token,126)"
+										class="sitemap_link">Direct</a></li>
+									<li><a
+										ng-click="changeView(activeUser.userId,activeUser.token,126)"
+										class="sitemap_link">Additional Discount</a></li>
+								</ul></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,141)">Debit
+									Note Register - Not Available</a>
+								<ul class="sitemap_listPos">
+									<li><a class="sitemap_link"
+										ng-click="changeView(activeUser.userId,activeUser.token,141)">Rate
+											Difference</a></li>
+									<li><a class="sitemap_link"
+										ng-click="changeView(activeUser.userId,activeUser.token,141)">Direct</a></li>
+									<li><a class="sitemap_link"
+										ng-click="changeView(activeUser.userId,activeUser.token,141)">Discount
+											Rollback</a></li>
+									<li><a class="sitemap_link"
+										ng-click="changeView(activeUser.userId,activeUser.token,141)">Interest</a></li>
+								</ul></li>
+							<li><a class="sitemap_link">Manage Financial year - Not Available</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,142)">Accounting
+									Master - Not Available</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,143)">Accounting
+									Group - Not Available</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,144)">Receipts
+									and Payments - Not Available</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,145)">Cheque
+									Printing - Not Available</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,146)">Bank
+									Deposit Slip - Not Available</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,147)">Cheque
+									Bounce Return Entry - Not Available</a></li>
+							<li><a class="sitemap_link">Journal Voucher - Not Available</a></li>
+							<li><a class="sitemap_link" class="">Bank Reconciliation - Not Available</a></li>
+							<li><a class="sitemap_link" class="">Unallotted Receipts
+									& Payments - Not Available</a></li>
+						</ul></li>
+				</ul>
+
+			</div>
+			<div class="col-md-3">
+				<ul class="thumbnail_OrderListPos  sitamap_list">
+					<li><strong>Utility</strong>
+						<ul class="sitemap_listPos">
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,65)">Locksmith</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,61)">People
+									Manager</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,93)">System
+									Permissions & Roles</a>
+								<ul class="sitemap_listPos">
+									<li><a class="sitemap_link"
+										ng-click="changeView(activeUser.userId,activeUser.token,93)">System
+											Permissions</a></li>
+									<li><a class="sitemap_link"
+										ng-click="changeView(activeUser.userId,activeUser.token,117)">System
+											Roles</a></li>
+								</ul></li>
+							<li><a
+								ng-click="changeView(activeUser.userId,activeUser.token,95)"
+								class="sitemap_link"> Control Panel </a>
+								<ul class="sitemap_listPos">
+									<li><a class="sitemap_link">System Parameters</a></li>
+									<li><a class="sitemap_link"
+										ng-click="changeView(activeUser.userId,activeUser.token,95)">Miscellaneous - Not Available</a>
+										<ul class="sitemap_listPos">
+											<li><a class="sitemap_link"
+												ng-click="changeView(activeUser.userId,activeUser.token,95)">Contact
+													Type</a></li>
+											<li><a class="sitemap_link"
+												ng-click="changeView(activeUser.userId,activeUser.token,95)">Credit/Debit
+													Note Reason</a></li>
+											<li><a class="sitemap_link"
+												ng-click="changeView(activeUser.userId,activeUser.token,95)">Voucher
+													Narration Entries</a></li>
+											<li><a class="sitemap_link"
+												ng-click="changeView(activeUser.userId,activeUser.token,95)">Manage
+													Financial Year</a></li>
+											<li><a class="sitemap_link"
+												ng-click="changeView(activeUser.userId,activeUser.token,95)">Manage
+													Receipt Books</a></li>
+										</ul></li>
+								</ul></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,92)">Manage
+									Active User</a></li>
+						</ul></li>
+				</ul>
+				<ul class="thumbnail_OrderListPos  sitamap_list">
+					<li><strong>Reporting Center - Not Available</strong>
+						<ul class="sitemap_listPos">
+							<li><a class="sitemap_link">Reporting Manager</a></li>
+						</ul></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<ul class="thumbnail_OrderListPos  sitamap_list">
+					<li><strong>Masters</strong>
+						<ul class="sitemap_listPos">
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,15)">Company</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,20)">Supplier</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,24)">Division</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,28)">Product</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,32)">Content</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,11)">Customer</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,36)">Area</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,40)">Route</a></li>
+							<li><a class="sitemap_link">Tax Codes - Not Available</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,122)">Business
+									Details</a></li>
+						</ul></li>
+				</ul>
+				<ul class="thumbnail_OrderListPos  sitamap_list">
+					<li><strong>Bookmarks</strong>
+						<ul class="sitemap_listPos">
+							<li><a class="sitemap_link">Bookmarks Manager - Not Available</a></li>
+							<li><a
+								ng-click="changeView(activeUser.userId,activeUser.token,1)"
+								class="sitemap_link">Create or Modify PO</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,15)">Company</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,11)">Customer</a></li>
+							<li><a class="sitemap_link"
+								ng-click="changeView(activeUser.userId,activeUser.token,28)">Product</a></li>
+						</ul></li>
+				</ul>
+				<ul class="thumbnail_OrderListPos  sitamap_list">
+					<li><strong>Help</strong>
+						<ul class="sitemap_listPos">
+							<li><a class="sitemap_link">Help</a></li>
+							<li><a class="sitemap_link">About</a>
+								<ul class="sitemap_listPos">
+									<li><a
+										ng-click="changeView(activeUser.userId,activeUser.token,139)"
+										class="sitemap_link">Release Notes</a></li>
+									<li><a
+										ng-click="changeView(activeUser.userId,activeUser.token,137)"
+										class="sitemap_link">FAQs</a></li>
+									<li><a
+										ng-click="changeView(activeUser.userId,activeUser.token,138)"
+										class="sitemap_link">Known Issues</a></li>
+									<li><a
+										ng-click="changeView(activeUser.userId,activeUser.token,140)"
+										class="sitemap_link">Site Map</a></li>
+									<li><a
+										ng-click="changeView(activeUser.userId,activeUser.token,136)"
+										class="sitemap_link">About Us</a></li>
+									<li><a class="sitemap_link">Contact Us - Not Available</a></li>
+								</ul></li>
+						</ul></li>
+				</ul>
+			</div>
+		</div>
+
+	</article>
+</div>
